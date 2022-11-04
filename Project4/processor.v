@@ -112,7 +112,9 @@ module processor(
 	 pc my_pc(pc_out, pc_in, clock, 1'b1, reset);
 	 // next instruction, pc plus + 1
 	 wire [31:0] pc_next;
-	RCA my_RCA(pc_out,32'd1,0,pc_next);
+	 //wire temp1;
+	 //wire temp2;
+	CSA my_CSA(pc_out,32'd1,pc_next,0);//change to 32bit CSA;
 	assign pc_in = pc_next;
 	 assign address_imem = pc_out[11:0];
 	 
