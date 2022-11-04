@@ -1,0 +1,341 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim
+valu
+Z1 !s110 1667540227
+!i10b 1
+!s100 CM2POFHhm`MRQRPIcjMQG0
+IYLJVR54OZX=_L_d>kQj_H1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1667271722
+8E:/Duke_Materials/22fall/550/Labs/Project4/alu.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1667540227.000000
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4
+Z7 tCvgOpt 0
+vdffe_ref
+R1
+!i10b 1
+!s100 m2?1a8:`omUTO_3UK>MQz1
+ITla=e0AfEgO^mI1f@47l31
+R2
+R0
+w1667334672
+8E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v|
+!i113 1
+R5
+R6
+R7
+vdmem
+Z8 !s110 1667540228
+!i10b 1
+!s100 Ig2U5z`UQ`aKkLjgP8hjc1
+I9>Bi]n95L]AZ4LZCIz0kg2
+R2
+R0
+w1667499367
+8E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/dmem.v
+Z9 L0 40
+R3
+r1
+!s85 0
+31
+Z10 !s108 1667540228.000000
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v|
+!i113 1
+R5
+R6
+R7
+vextend
+R1
+!i10b 1
+!s100 <B5J0QeSKjWmm9`jR;Tl=1
+IaRNb:1df_>6=NkWHP6]dk3
+R2
+R0
+w1667271449
+8E:/Duke_Materials/22fall/550/Labs/Project4/extend.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/extend.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/extend.v|
+!i113 1
+R5
+R6
+R7
+vfrequency_divider
+R1
+!i10b 1
+!s100 PR;BUXg<Ua826cZW;>f`X0
+I9A5W;B:Y00aam]XX6CIYf3
+R2
+R0
+w1667336659
+8E:/Duke_Materials/22fall/550/Labs/Project4/frequency_divider.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/frequency_divider.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/frequency_divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/frequency_divider.v|
+!i113 1
+R5
+R6
+R7
+vfull_adder
+R8
+!i10b 1
+!s100 S4PWdlCf=RKal3Ojf8fjn2
+IQPZglDWlgJiP3BQLEPP4Q0
+R2
+R0
+w1667340098
+8E:/Duke_Materials/22fall/550/Labs/Project4/full_adder.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/full_adder.v|
+!i113 1
+R5
+R6
+R7
+vimem
+R8
+!i10b 1
+!s100 o^5>PIDNm3aYnn8=JE;bl2
+I6eg5>_YXcV[kD[ShZHha30
+R2
+R0
+w1667499329
+8E:/Duke_Materials/22fall/550/Labs/Project4/imem.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/imem.v
+R9
+R3
+r1
+!s85 0
+31
+R10
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/imem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/imem.v|
+!i113 1
+R5
+R6
+R7
+vinsn_decoder
+R1
+!i10b 1
+!s100 8PXhcJ;MckQ2a^R4<2i9d3
+IV4bRDkk3IKUEd62=@Y_K42
+R2
+R0
+w1667479223
+8E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v|
+!i113 1
+R5
+R6
+R7
+vpc
+R1
+!i10b 1
+!s100 J^6EbQI71?zVZUU5BO1Qm0
+I<`o?1a97iGa;DmL8imeBe3
+R2
+R0
+w1667059334
+8E:/Duke_Materials/22fall/550/Labs/Project4/pc.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/pc.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/pc.v|
+!i113 1
+R5
+R6
+R7
+vprocessor
+R1
+!i10b 1
+!s100 d^<Rj;IDbBLFCl]^KneD[0
+IdfLhLzHT?g1P=]^=<hX`b2
+R2
+R0
+w1667481564
+8E:/Duke_Materials/22fall/550/Labs/Project4/processor.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/processor.v
+L0 50
+R3
+r1
+!s85 0
+31
+!s108 1667540226.000000
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/processor.v|
+!i113 1
+R5
+R6
+R7
+vRCA
+R1
+!i10b 1
+!s100 :fQYCl]HJGgfPRC8[TA_T3
+ICjHHfVQYNNH^ASTZ=UO5D1
+R2
+R0
+w1667271570
+8E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/RCA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a
+vregfile
+R1
+!i10b 1
+!s100 DmD;oHDODD3i3BzzlYW_;3
+IWO1GI[0FB]HH<DLeSXVXA2
+R2
+R0
+w1667535004
+8E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/regfile.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v|
+!i113 1
+R5
+R6
+R7
+vripple_carry_adder_4b
+R1
+!i10b 1
+!s100 l@GBNUM4:DfOEL?cI>oVR0
+IGUeWMac1;1G2^>2cD6`Ee2
+R2
+R0
+w1667271607
+8E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v|
+!i113 1
+R5
+R6
+R7
+vskeleton
+R8
+!i10b 1
+!s100 8b4Q7HWWK]^UK;963IWA=1
+IN`Eg]dAO_Yg[QbS2>`1EF0
+R2
+R0
+w1667539624
+8E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v
+L0 12
+R3
+r1
+!s85 0
+31
+R10
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v|
+!i113 1
+R5
+R6
+R7
+vskeleton_tb
+R8
+!i10b 1
+!s100 j>@6m;68ALz:A^34mN;Cj3
+IRY3HkK8[fk0oG<=]5e=h?3
+R2
+R0
+w1667539392
+8E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v
+FE:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Duke_Materials/22fall/550/Labs/Project4|E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v|
+!i113 1
+R5
+R6
+R7
