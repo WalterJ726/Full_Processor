@@ -25,7 +25,7 @@ skeleton skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, re
 initial
     begin
         $display($time, " << Starting the Simulation >>");
-        clock = 1'b0;    // at time 0
+        clock = 1'b1;    // at time 0
         errors = 0;
 
         reset = 1'b1;    // assert reset
@@ -42,9 +42,10 @@ initial
             $display("The simulation failed with %d errors", errors);
         end
 
-        
+        #4000 $stop;
 end
-			
+
+	
 always
 	#10     clock = ~clock;
 	

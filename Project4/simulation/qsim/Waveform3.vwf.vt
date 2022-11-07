@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/02/2022 16:48:25"
+// Generated on "11/04/2022 13:42:30"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          skeleton
 // 
@@ -80,15 +80,11 @@ begin
 end 
 
 // clock
-initial
+always
 begin
-	repeat(62)
-	begin
-		clock = 1'b0;
-		clock = #8000 1'b1;
-		# 8000;
-	end
 	clock = 1'b0;
+	clock = #10000 1'b1;
+	#10000;
 end 
 
 // reset

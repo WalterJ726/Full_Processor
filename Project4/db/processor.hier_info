@@ -238,6 +238,262 @@ data_readRegB[28] <= data_readRegB[28].DB_MAX_OUTPUT_PORT_TYPE
 data_readRegB[29] <= data_readRegB[29].DB_MAX_OUTPUT_PORT_TYPE
 data_readRegB[30] <= data_readRegB[30].DB_MAX_OUTPUT_PORT_TYPE
 data_readRegB[31] <= data_readRegB[31].DB_MAX_OUTPUT_PORT_TYPE
+reg4[0] <= regfile:my_regfile.port9
+reg4[1] <= regfile:my_regfile.port9
+reg4[2] <= regfile:my_regfile.port9
+reg4[3] <= regfile:my_regfile.port9
+reg4[4] <= regfile:my_regfile.port9
+reg4[5] <= regfile:my_regfile.port9
+reg4[6] <= regfile:my_regfile.port9
+reg4[7] <= regfile:my_regfile.port9
+reg4[8] <= regfile:my_regfile.port9
+reg4[9] <= regfile:my_regfile.port9
+reg4[10] <= regfile:my_regfile.port9
+reg4[11] <= regfile:my_regfile.port9
+reg4[12] <= regfile:my_regfile.port9
+reg4[13] <= regfile:my_regfile.port9
+reg4[14] <= regfile:my_regfile.port9
+reg4[15] <= regfile:my_regfile.port9
+reg4[16] <= regfile:my_regfile.port9
+reg4[17] <= regfile:my_regfile.port9
+reg4[18] <= regfile:my_regfile.port9
+reg4[19] <= regfile:my_regfile.port9
+reg4[20] <= regfile:my_regfile.port9
+reg4[21] <= regfile:my_regfile.port9
+reg4[22] <= regfile:my_regfile.port9
+reg4[23] <= regfile:my_regfile.port9
+reg4[24] <= regfile:my_regfile.port9
+reg4[25] <= regfile:my_regfile.port9
+reg4[26] <= regfile:my_regfile.port9
+reg4[27] <= regfile:my_regfile.port9
+reg4[28] <= regfile:my_regfile.port9
+reg4[29] <= regfile:my_regfile.port9
+reg4[30] <= regfile:my_regfile.port9
+reg4[31] <= regfile:my_regfile.port9
+reg5[0] <= regfile:my_regfile.port10
+reg5[1] <= regfile:my_regfile.port10
+reg5[2] <= regfile:my_regfile.port10
+reg5[3] <= regfile:my_regfile.port10
+reg5[4] <= regfile:my_regfile.port10
+reg5[5] <= regfile:my_regfile.port10
+reg5[6] <= regfile:my_regfile.port10
+reg5[7] <= regfile:my_regfile.port10
+reg5[8] <= regfile:my_regfile.port10
+reg5[9] <= regfile:my_regfile.port10
+reg5[10] <= regfile:my_regfile.port10
+reg5[11] <= regfile:my_regfile.port10
+reg5[12] <= regfile:my_regfile.port10
+reg5[13] <= regfile:my_regfile.port10
+reg5[14] <= regfile:my_regfile.port10
+reg5[15] <= regfile:my_regfile.port10
+reg5[16] <= regfile:my_regfile.port10
+reg5[17] <= regfile:my_regfile.port10
+reg5[18] <= regfile:my_regfile.port10
+reg5[19] <= regfile:my_regfile.port10
+reg5[20] <= regfile:my_regfile.port10
+reg5[21] <= regfile:my_regfile.port10
+reg5[22] <= regfile:my_regfile.port10
+reg5[23] <= regfile:my_regfile.port10
+reg5[24] <= regfile:my_regfile.port10
+reg5[25] <= regfile:my_regfile.port10
+reg5[26] <= regfile:my_regfile.port10
+reg5[27] <= regfile:my_regfile.port10
+reg5[28] <= regfile:my_regfile.port10
+reg5[29] <= regfile:my_regfile.port10
+reg5[30] <= regfile:my_regfile.port10
+reg5[31] <= regfile:my_regfile.port10
+reg6[0] <= regfile:my_regfile.port11
+reg6[1] <= regfile:my_regfile.port11
+reg6[2] <= regfile:my_regfile.port11
+reg6[3] <= regfile:my_regfile.port11
+reg6[4] <= regfile:my_regfile.port11
+reg6[5] <= regfile:my_regfile.port11
+reg6[6] <= regfile:my_regfile.port11
+reg6[7] <= regfile:my_regfile.port11
+reg6[8] <= regfile:my_regfile.port11
+reg6[9] <= regfile:my_regfile.port11
+reg6[10] <= regfile:my_regfile.port11
+reg6[11] <= regfile:my_regfile.port11
+reg6[12] <= regfile:my_regfile.port11
+reg6[13] <= regfile:my_regfile.port11
+reg6[14] <= regfile:my_regfile.port11
+reg6[15] <= regfile:my_regfile.port11
+reg6[16] <= regfile:my_regfile.port11
+reg6[17] <= regfile:my_regfile.port11
+reg6[18] <= regfile:my_regfile.port11
+reg6[19] <= regfile:my_regfile.port11
+reg6[20] <= regfile:my_regfile.port11
+reg6[21] <= regfile:my_regfile.port11
+reg6[22] <= regfile:my_regfile.port11
+reg6[23] <= regfile:my_regfile.port11
+reg6[24] <= regfile:my_regfile.port11
+reg6[25] <= regfile:my_regfile.port11
+reg6[26] <= regfile:my_regfile.port11
+reg6[27] <= regfile:my_regfile.port11
+reg6[28] <= regfile:my_regfile.port11
+reg6[29] <= regfile:my_regfile.port11
+reg6[30] <= regfile:my_regfile.port11
+reg6[31] <= regfile:my_regfile.port11
+reg7[0] <= regfile:my_regfile.port12
+reg7[1] <= regfile:my_regfile.port12
+reg7[2] <= regfile:my_regfile.port12
+reg7[3] <= regfile:my_regfile.port12
+reg7[4] <= regfile:my_regfile.port12
+reg7[5] <= regfile:my_regfile.port12
+reg7[6] <= regfile:my_regfile.port12
+reg7[7] <= regfile:my_regfile.port12
+reg7[8] <= regfile:my_regfile.port12
+reg7[9] <= regfile:my_regfile.port12
+reg7[10] <= regfile:my_regfile.port12
+reg7[11] <= regfile:my_regfile.port12
+reg7[12] <= regfile:my_regfile.port12
+reg7[13] <= regfile:my_regfile.port12
+reg7[14] <= regfile:my_regfile.port12
+reg7[15] <= regfile:my_regfile.port12
+reg7[16] <= regfile:my_regfile.port12
+reg7[17] <= regfile:my_regfile.port12
+reg7[18] <= regfile:my_regfile.port12
+reg7[19] <= regfile:my_regfile.port12
+reg7[20] <= regfile:my_regfile.port12
+reg7[21] <= regfile:my_regfile.port12
+reg7[22] <= regfile:my_regfile.port12
+reg7[23] <= regfile:my_regfile.port12
+reg7[24] <= regfile:my_regfile.port12
+reg7[25] <= regfile:my_regfile.port12
+reg7[26] <= regfile:my_regfile.port12
+reg7[27] <= regfile:my_regfile.port12
+reg7[28] <= regfile:my_regfile.port12
+reg7[29] <= regfile:my_regfile.port12
+reg7[30] <= regfile:my_regfile.port12
+reg7[31] <= regfile:my_regfile.port12
+reg8[0] <= regfile:my_regfile.port13
+reg8[1] <= regfile:my_regfile.port13
+reg8[2] <= regfile:my_regfile.port13
+reg8[3] <= regfile:my_regfile.port13
+reg8[4] <= regfile:my_regfile.port13
+reg8[5] <= regfile:my_regfile.port13
+reg8[6] <= regfile:my_regfile.port13
+reg8[7] <= regfile:my_regfile.port13
+reg8[8] <= regfile:my_regfile.port13
+reg8[9] <= regfile:my_regfile.port13
+reg8[10] <= regfile:my_regfile.port13
+reg8[11] <= regfile:my_regfile.port13
+reg8[12] <= regfile:my_regfile.port13
+reg8[13] <= regfile:my_regfile.port13
+reg8[14] <= regfile:my_regfile.port13
+reg8[15] <= regfile:my_regfile.port13
+reg8[16] <= regfile:my_regfile.port13
+reg8[17] <= regfile:my_regfile.port13
+reg8[18] <= regfile:my_regfile.port13
+reg8[19] <= regfile:my_regfile.port13
+reg8[20] <= regfile:my_regfile.port13
+reg8[21] <= regfile:my_regfile.port13
+reg8[22] <= regfile:my_regfile.port13
+reg8[23] <= regfile:my_regfile.port13
+reg8[24] <= regfile:my_regfile.port13
+reg8[25] <= regfile:my_regfile.port13
+reg8[26] <= regfile:my_regfile.port13
+reg8[27] <= regfile:my_regfile.port13
+reg8[28] <= regfile:my_regfile.port13
+reg8[29] <= regfile:my_regfile.port13
+reg8[30] <= regfile:my_regfile.port13
+reg8[31] <= regfile:my_regfile.port13
+reg9[0] <= regfile:my_regfile.port14
+reg9[1] <= regfile:my_regfile.port14
+reg9[2] <= regfile:my_regfile.port14
+reg9[3] <= regfile:my_regfile.port14
+reg9[4] <= regfile:my_regfile.port14
+reg9[5] <= regfile:my_regfile.port14
+reg9[6] <= regfile:my_regfile.port14
+reg9[7] <= regfile:my_regfile.port14
+reg9[8] <= regfile:my_regfile.port14
+reg9[9] <= regfile:my_regfile.port14
+reg9[10] <= regfile:my_regfile.port14
+reg9[11] <= regfile:my_regfile.port14
+reg9[12] <= regfile:my_regfile.port14
+reg9[13] <= regfile:my_regfile.port14
+reg9[14] <= regfile:my_regfile.port14
+reg9[15] <= regfile:my_regfile.port14
+reg9[16] <= regfile:my_regfile.port14
+reg9[17] <= regfile:my_regfile.port14
+reg9[18] <= regfile:my_regfile.port14
+reg9[19] <= regfile:my_regfile.port14
+reg9[20] <= regfile:my_regfile.port14
+reg9[21] <= regfile:my_regfile.port14
+reg9[22] <= regfile:my_regfile.port14
+reg9[23] <= regfile:my_regfile.port14
+reg9[24] <= regfile:my_regfile.port14
+reg9[25] <= regfile:my_regfile.port14
+reg9[26] <= regfile:my_regfile.port14
+reg9[27] <= regfile:my_regfile.port14
+reg9[28] <= regfile:my_regfile.port14
+reg9[29] <= regfile:my_regfile.port14
+reg9[30] <= regfile:my_regfile.port14
+reg9[31] <= regfile:my_regfile.port14
+reg12[0] <= regfile:my_regfile.port15
+reg12[1] <= regfile:my_regfile.port15
+reg12[2] <= regfile:my_regfile.port15
+reg12[3] <= regfile:my_regfile.port15
+reg12[4] <= regfile:my_regfile.port15
+reg12[5] <= regfile:my_regfile.port15
+reg12[6] <= regfile:my_regfile.port15
+reg12[7] <= regfile:my_regfile.port15
+reg12[8] <= regfile:my_regfile.port15
+reg12[9] <= regfile:my_regfile.port15
+reg12[10] <= regfile:my_regfile.port15
+reg12[11] <= regfile:my_regfile.port15
+reg12[12] <= regfile:my_regfile.port15
+reg12[13] <= regfile:my_regfile.port15
+reg12[14] <= regfile:my_regfile.port15
+reg12[15] <= regfile:my_regfile.port15
+reg12[16] <= regfile:my_regfile.port15
+reg12[17] <= regfile:my_regfile.port15
+reg12[18] <= regfile:my_regfile.port15
+reg12[19] <= regfile:my_regfile.port15
+reg12[20] <= regfile:my_regfile.port15
+reg12[21] <= regfile:my_regfile.port15
+reg12[22] <= regfile:my_regfile.port15
+reg12[23] <= regfile:my_regfile.port15
+reg12[24] <= regfile:my_regfile.port15
+reg12[25] <= regfile:my_regfile.port15
+reg12[26] <= regfile:my_regfile.port15
+reg12[27] <= regfile:my_regfile.port15
+reg12[28] <= regfile:my_regfile.port15
+reg12[29] <= regfile:my_regfile.port15
+reg12[30] <= regfile:my_regfile.port15
+reg12[31] <= regfile:my_regfile.port15
+reg13[0] <= regfile:my_regfile.port16
+reg13[1] <= regfile:my_regfile.port16
+reg13[2] <= regfile:my_regfile.port16
+reg13[3] <= regfile:my_regfile.port16
+reg13[4] <= regfile:my_regfile.port16
+reg13[5] <= regfile:my_regfile.port16
+reg13[6] <= regfile:my_regfile.port16
+reg13[7] <= regfile:my_regfile.port16
+reg13[8] <= regfile:my_regfile.port16
+reg13[9] <= regfile:my_regfile.port16
+reg13[10] <= regfile:my_regfile.port16
+reg13[11] <= regfile:my_regfile.port16
+reg13[12] <= regfile:my_regfile.port16
+reg13[13] <= regfile:my_regfile.port16
+reg13[14] <= regfile:my_regfile.port16
+reg13[15] <= regfile:my_regfile.port16
+reg13[16] <= regfile:my_regfile.port16
+reg13[17] <= regfile:my_regfile.port16
+reg13[18] <= regfile:my_regfile.port16
+reg13[19] <= regfile:my_regfile.port16
+reg13[20] <= regfile:my_regfile.port16
+reg13[21] <= regfile:my_regfile.port16
+reg13[22] <= regfile:my_regfile.port16
+reg13[23] <= regfile:my_regfile.port16
+reg13[24] <= regfile:my_regfile.port16
+reg13[25] <= regfile:my_regfile.port16
+reg13[26] <= regfile:my_regfile.port16
+reg13[27] <= regfile:my_regfile.port16
+reg13[28] <= regfile:my_regfile.port16
+reg13[29] <= regfile:my_regfile.port16
+reg13[30] <= regfile:my_regfile.port16
+reg13[31] <= regfile:my_regfile.port16
 
 
 |skeleton|frequency_divider:frediv_1
@@ -338,22 +594,22 @@ data_a[29] => ~NO_FANOUT~
 data_a[30] => ~NO_FANOUT~
 data_a[31] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_ji91:auto_generated.address_a[0]
-address_a[1] => altsyncram_ji91:auto_generated.address_a[1]
-address_a[2] => altsyncram_ji91:auto_generated.address_a[2]
-address_a[3] => altsyncram_ji91:auto_generated.address_a[3]
-address_a[4] => altsyncram_ji91:auto_generated.address_a[4]
-address_a[5] => altsyncram_ji91:auto_generated.address_a[5]
-address_a[6] => altsyncram_ji91:auto_generated.address_a[6]
-address_a[7] => altsyncram_ji91:auto_generated.address_a[7]
-address_a[8] => altsyncram_ji91:auto_generated.address_a[8]
-address_a[9] => altsyncram_ji91:auto_generated.address_a[9]
-address_a[10] => altsyncram_ji91:auto_generated.address_a[10]
-address_a[11] => altsyncram_ji91:auto_generated.address_a[11]
+address_a[0] => altsyncram_fp91:auto_generated.address_a[0]
+address_a[1] => altsyncram_fp91:auto_generated.address_a[1]
+address_a[2] => altsyncram_fp91:auto_generated.address_a[2]
+address_a[3] => altsyncram_fp91:auto_generated.address_a[3]
+address_a[4] => altsyncram_fp91:auto_generated.address_a[4]
+address_a[5] => altsyncram_fp91:auto_generated.address_a[5]
+address_a[6] => altsyncram_fp91:auto_generated.address_a[6]
+address_a[7] => altsyncram_fp91:auto_generated.address_a[7]
+address_a[8] => altsyncram_fp91:auto_generated.address_a[8]
+address_a[9] => altsyncram_fp91:auto_generated.address_a[9]
+address_a[10] => altsyncram_fp91:auto_generated.address_a[10]
+address_a[11] => altsyncram_fp91:auto_generated.address_a[11]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_ji91:auto_generated.clock0
+clock0 => altsyncram_fp91:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -363,45 +619,45 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_ji91:auto_generated.q_a[0]
-q_a[1] <= altsyncram_ji91:auto_generated.q_a[1]
-q_a[2] <= altsyncram_ji91:auto_generated.q_a[2]
-q_a[3] <= altsyncram_ji91:auto_generated.q_a[3]
-q_a[4] <= altsyncram_ji91:auto_generated.q_a[4]
-q_a[5] <= altsyncram_ji91:auto_generated.q_a[5]
-q_a[6] <= altsyncram_ji91:auto_generated.q_a[6]
-q_a[7] <= altsyncram_ji91:auto_generated.q_a[7]
-q_a[8] <= altsyncram_ji91:auto_generated.q_a[8]
-q_a[9] <= altsyncram_ji91:auto_generated.q_a[9]
-q_a[10] <= altsyncram_ji91:auto_generated.q_a[10]
-q_a[11] <= altsyncram_ji91:auto_generated.q_a[11]
-q_a[12] <= altsyncram_ji91:auto_generated.q_a[12]
-q_a[13] <= altsyncram_ji91:auto_generated.q_a[13]
-q_a[14] <= altsyncram_ji91:auto_generated.q_a[14]
-q_a[15] <= altsyncram_ji91:auto_generated.q_a[15]
-q_a[16] <= altsyncram_ji91:auto_generated.q_a[16]
-q_a[17] <= altsyncram_ji91:auto_generated.q_a[17]
-q_a[18] <= altsyncram_ji91:auto_generated.q_a[18]
-q_a[19] <= altsyncram_ji91:auto_generated.q_a[19]
-q_a[20] <= altsyncram_ji91:auto_generated.q_a[20]
-q_a[21] <= altsyncram_ji91:auto_generated.q_a[21]
-q_a[22] <= altsyncram_ji91:auto_generated.q_a[22]
-q_a[23] <= altsyncram_ji91:auto_generated.q_a[23]
-q_a[24] <= altsyncram_ji91:auto_generated.q_a[24]
-q_a[25] <= altsyncram_ji91:auto_generated.q_a[25]
-q_a[26] <= altsyncram_ji91:auto_generated.q_a[26]
-q_a[27] <= altsyncram_ji91:auto_generated.q_a[27]
-q_a[28] <= altsyncram_ji91:auto_generated.q_a[28]
-q_a[29] <= altsyncram_ji91:auto_generated.q_a[29]
-q_a[30] <= altsyncram_ji91:auto_generated.q_a[30]
-q_a[31] <= altsyncram_ji91:auto_generated.q_a[31]
+q_a[0] <= altsyncram_fp91:auto_generated.q_a[0]
+q_a[1] <= altsyncram_fp91:auto_generated.q_a[1]
+q_a[2] <= altsyncram_fp91:auto_generated.q_a[2]
+q_a[3] <= altsyncram_fp91:auto_generated.q_a[3]
+q_a[4] <= altsyncram_fp91:auto_generated.q_a[4]
+q_a[5] <= altsyncram_fp91:auto_generated.q_a[5]
+q_a[6] <= altsyncram_fp91:auto_generated.q_a[6]
+q_a[7] <= altsyncram_fp91:auto_generated.q_a[7]
+q_a[8] <= altsyncram_fp91:auto_generated.q_a[8]
+q_a[9] <= altsyncram_fp91:auto_generated.q_a[9]
+q_a[10] <= altsyncram_fp91:auto_generated.q_a[10]
+q_a[11] <= altsyncram_fp91:auto_generated.q_a[11]
+q_a[12] <= altsyncram_fp91:auto_generated.q_a[12]
+q_a[13] <= altsyncram_fp91:auto_generated.q_a[13]
+q_a[14] <= altsyncram_fp91:auto_generated.q_a[14]
+q_a[15] <= altsyncram_fp91:auto_generated.q_a[15]
+q_a[16] <= altsyncram_fp91:auto_generated.q_a[16]
+q_a[17] <= altsyncram_fp91:auto_generated.q_a[17]
+q_a[18] <= altsyncram_fp91:auto_generated.q_a[18]
+q_a[19] <= altsyncram_fp91:auto_generated.q_a[19]
+q_a[20] <= altsyncram_fp91:auto_generated.q_a[20]
+q_a[21] <= altsyncram_fp91:auto_generated.q_a[21]
+q_a[22] <= altsyncram_fp91:auto_generated.q_a[22]
+q_a[23] <= altsyncram_fp91:auto_generated.q_a[23]
+q_a[24] <= altsyncram_fp91:auto_generated.q_a[24]
+q_a[25] <= altsyncram_fp91:auto_generated.q_a[25]
+q_a[26] <= altsyncram_fp91:auto_generated.q_a[26]
+q_a[27] <= altsyncram_fp91:auto_generated.q_a[27]
+q_a[28] <= altsyncram_fp91:auto_generated.q_a[28]
+q_a[29] <= altsyncram_fp91:auto_generated.q_a[29]
+q_a[30] <= altsyncram_fp91:auto_generated.q_a[30]
+q_a[31] <= altsyncram_fp91:auto_generated.q_a[31]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_ji91:auto_generated
+|skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5039,6 +5295,262 @@ data_readRegB[28] <= data_readRegB[28].DB_MAX_OUTPUT_PORT_TYPE
 data_readRegB[29] <= data_readRegB[29].DB_MAX_OUTPUT_PORT_TYPE
 data_readRegB[30] <= data_readRegB[30].DB_MAX_OUTPUT_PORT_TYPE
 data_readRegB[31] <= data_readRegB[31].DB_MAX_OUTPUT_PORT_TYPE
+reg4[0] <= registers[4][0].DB_MAX_OUTPUT_PORT_TYPE
+reg4[1] <= registers[4][1].DB_MAX_OUTPUT_PORT_TYPE
+reg4[2] <= registers[4][2].DB_MAX_OUTPUT_PORT_TYPE
+reg4[3] <= registers[4][3].DB_MAX_OUTPUT_PORT_TYPE
+reg4[4] <= registers[4][4].DB_MAX_OUTPUT_PORT_TYPE
+reg4[5] <= registers[4][5].DB_MAX_OUTPUT_PORT_TYPE
+reg4[6] <= registers[4][6].DB_MAX_OUTPUT_PORT_TYPE
+reg4[7] <= registers[4][7].DB_MAX_OUTPUT_PORT_TYPE
+reg4[8] <= registers[4][8].DB_MAX_OUTPUT_PORT_TYPE
+reg4[9] <= registers[4][9].DB_MAX_OUTPUT_PORT_TYPE
+reg4[10] <= registers[4][10].DB_MAX_OUTPUT_PORT_TYPE
+reg4[11] <= registers[4][11].DB_MAX_OUTPUT_PORT_TYPE
+reg4[12] <= registers[4][12].DB_MAX_OUTPUT_PORT_TYPE
+reg4[13] <= registers[4][13].DB_MAX_OUTPUT_PORT_TYPE
+reg4[14] <= registers[4][14].DB_MAX_OUTPUT_PORT_TYPE
+reg4[15] <= registers[4][15].DB_MAX_OUTPUT_PORT_TYPE
+reg4[16] <= registers[4][16].DB_MAX_OUTPUT_PORT_TYPE
+reg4[17] <= registers[4][17].DB_MAX_OUTPUT_PORT_TYPE
+reg4[18] <= registers[4][18].DB_MAX_OUTPUT_PORT_TYPE
+reg4[19] <= registers[4][19].DB_MAX_OUTPUT_PORT_TYPE
+reg4[20] <= registers[4][20].DB_MAX_OUTPUT_PORT_TYPE
+reg4[21] <= registers[4][21].DB_MAX_OUTPUT_PORT_TYPE
+reg4[22] <= registers[4][22].DB_MAX_OUTPUT_PORT_TYPE
+reg4[23] <= registers[4][23].DB_MAX_OUTPUT_PORT_TYPE
+reg4[24] <= registers[4][24].DB_MAX_OUTPUT_PORT_TYPE
+reg4[25] <= registers[4][25].DB_MAX_OUTPUT_PORT_TYPE
+reg4[26] <= registers[4][26].DB_MAX_OUTPUT_PORT_TYPE
+reg4[27] <= registers[4][27].DB_MAX_OUTPUT_PORT_TYPE
+reg4[28] <= registers[4][28].DB_MAX_OUTPUT_PORT_TYPE
+reg4[29] <= registers[4][29].DB_MAX_OUTPUT_PORT_TYPE
+reg4[30] <= registers[4][30].DB_MAX_OUTPUT_PORT_TYPE
+reg4[31] <= registers[4][31].DB_MAX_OUTPUT_PORT_TYPE
+reg5[0] <= registers[5][0].DB_MAX_OUTPUT_PORT_TYPE
+reg5[1] <= registers[5][1].DB_MAX_OUTPUT_PORT_TYPE
+reg5[2] <= registers[5][2].DB_MAX_OUTPUT_PORT_TYPE
+reg5[3] <= registers[5][3].DB_MAX_OUTPUT_PORT_TYPE
+reg5[4] <= registers[5][4].DB_MAX_OUTPUT_PORT_TYPE
+reg5[5] <= registers[5][5].DB_MAX_OUTPUT_PORT_TYPE
+reg5[6] <= registers[5][6].DB_MAX_OUTPUT_PORT_TYPE
+reg5[7] <= registers[5][7].DB_MAX_OUTPUT_PORT_TYPE
+reg5[8] <= registers[5][8].DB_MAX_OUTPUT_PORT_TYPE
+reg5[9] <= registers[5][9].DB_MAX_OUTPUT_PORT_TYPE
+reg5[10] <= registers[5][10].DB_MAX_OUTPUT_PORT_TYPE
+reg5[11] <= registers[5][11].DB_MAX_OUTPUT_PORT_TYPE
+reg5[12] <= registers[5][12].DB_MAX_OUTPUT_PORT_TYPE
+reg5[13] <= registers[5][13].DB_MAX_OUTPUT_PORT_TYPE
+reg5[14] <= registers[5][14].DB_MAX_OUTPUT_PORT_TYPE
+reg5[15] <= registers[5][15].DB_MAX_OUTPUT_PORT_TYPE
+reg5[16] <= registers[5][16].DB_MAX_OUTPUT_PORT_TYPE
+reg5[17] <= registers[5][17].DB_MAX_OUTPUT_PORT_TYPE
+reg5[18] <= registers[5][18].DB_MAX_OUTPUT_PORT_TYPE
+reg5[19] <= registers[5][19].DB_MAX_OUTPUT_PORT_TYPE
+reg5[20] <= registers[5][20].DB_MAX_OUTPUT_PORT_TYPE
+reg5[21] <= registers[5][21].DB_MAX_OUTPUT_PORT_TYPE
+reg5[22] <= registers[5][22].DB_MAX_OUTPUT_PORT_TYPE
+reg5[23] <= registers[5][23].DB_MAX_OUTPUT_PORT_TYPE
+reg5[24] <= registers[5][24].DB_MAX_OUTPUT_PORT_TYPE
+reg5[25] <= registers[5][25].DB_MAX_OUTPUT_PORT_TYPE
+reg5[26] <= registers[5][26].DB_MAX_OUTPUT_PORT_TYPE
+reg5[27] <= registers[5][27].DB_MAX_OUTPUT_PORT_TYPE
+reg5[28] <= registers[5][28].DB_MAX_OUTPUT_PORT_TYPE
+reg5[29] <= registers[5][29].DB_MAX_OUTPUT_PORT_TYPE
+reg5[30] <= registers[5][30].DB_MAX_OUTPUT_PORT_TYPE
+reg5[31] <= registers[5][31].DB_MAX_OUTPUT_PORT_TYPE
+reg6[0] <= registers[6][0].DB_MAX_OUTPUT_PORT_TYPE
+reg6[1] <= registers[6][1].DB_MAX_OUTPUT_PORT_TYPE
+reg6[2] <= registers[6][2].DB_MAX_OUTPUT_PORT_TYPE
+reg6[3] <= registers[6][3].DB_MAX_OUTPUT_PORT_TYPE
+reg6[4] <= registers[6][4].DB_MAX_OUTPUT_PORT_TYPE
+reg6[5] <= registers[6][5].DB_MAX_OUTPUT_PORT_TYPE
+reg6[6] <= registers[6][6].DB_MAX_OUTPUT_PORT_TYPE
+reg6[7] <= registers[6][7].DB_MAX_OUTPUT_PORT_TYPE
+reg6[8] <= registers[6][8].DB_MAX_OUTPUT_PORT_TYPE
+reg6[9] <= registers[6][9].DB_MAX_OUTPUT_PORT_TYPE
+reg6[10] <= registers[6][10].DB_MAX_OUTPUT_PORT_TYPE
+reg6[11] <= registers[6][11].DB_MAX_OUTPUT_PORT_TYPE
+reg6[12] <= registers[6][12].DB_MAX_OUTPUT_PORT_TYPE
+reg6[13] <= registers[6][13].DB_MAX_OUTPUT_PORT_TYPE
+reg6[14] <= registers[6][14].DB_MAX_OUTPUT_PORT_TYPE
+reg6[15] <= registers[6][15].DB_MAX_OUTPUT_PORT_TYPE
+reg6[16] <= registers[6][16].DB_MAX_OUTPUT_PORT_TYPE
+reg6[17] <= registers[6][17].DB_MAX_OUTPUT_PORT_TYPE
+reg6[18] <= registers[6][18].DB_MAX_OUTPUT_PORT_TYPE
+reg6[19] <= registers[6][19].DB_MAX_OUTPUT_PORT_TYPE
+reg6[20] <= registers[6][20].DB_MAX_OUTPUT_PORT_TYPE
+reg6[21] <= registers[6][21].DB_MAX_OUTPUT_PORT_TYPE
+reg6[22] <= registers[6][22].DB_MAX_OUTPUT_PORT_TYPE
+reg6[23] <= registers[6][23].DB_MAX_OUTPUT_PORT_TYPE
+reg6[24] <= registers[6][24].DB_MAX_OUTPUT_PORT_TYPE
+reg6[25] <= registers[6][25].DB_MAX_OUTPUT_PORT_TYPE
+reg6[26] <= registers[6][26].DB_MAX_OUTPUT_PORT_TYPE
+reg6[27] <= registers[6][27].DB_MAX_OUTPUT_PORT_TYPE
+reg6[28] <= registers[6][28].DB_MAX_OUTPUT_PORT_TYPE
+reg6[29] <= registers[6][29].DB_MAX_OUTPUT_PORT_TYPE
+reg6[30] <= registers[6][30].DB_MAX_OUTPUT_PORT_TYPE
+reg6[31] <= registers[6][31].DB_MAX_OUTPUT_PORT_TYPE
+reg7[0] <= registers[7][0].DB_MAX_OUTPUT_PORT_TYPE
+reg7[1] <= registers[7][1].DB_MAX_OUTPUT_PORT_TYPE
+reg7[2] <= registers[7][2].DB_MAX_OUTPUT_PORT_TYPE
+reg7[3] <= registers[7][3].DB_MAX_OUTPUT_PORT_TYPE
+reg7[4] <= registers[7][4].DB_MAX_OUTPUT_PORT_TYPE
+reg7[5] <= registers[7][5].DB_MAX_OUTPUT_PORT_TYPE
+reg7[6] <= registers[7][6].DB_MAX_OUTPUT_PORT_TYPE
+reg7[7] <= registers[7][7].DB_MAX_OUTPUT_PORT_TYPE
+reg7[8] <= registers[7][8].DB_MAX_OUTPUT_PORT_TYPE
+reg7[9] <= registers[7][9].DB_MAX_OUTPUT_PORT_TYPE
+reg7[10] <= registers[7][10].DB_MAX_OUTPUT_PORT_TYPE
+reg7[11] <= registers[7][11].DB_MAX_OUTPUT_PORT_TYPE
+reg7[12] <= registers[7][12].DB_MAX_OUTPUT_PORT_TYPE
+reg7[13] <= registers[7][13].DB_MAX_OUTPUT_PORT_TYPE
+reg7[14] <= registers[7][14].DB_MAX_OUTPUT_PORT_TYPE
+reg7[15] <= registers[7][15].DB_MAX_OUTPUT_PORT_TYPE
+reg7[16] <= registers[7][16].DB_MAX_OUTPUT_PORT_TYPE
+reg7[17] <= registers[7][17].DB_MAX_OUTPUT_PORT_TYPE
+reg7[18] <= registers[7][18].DB_MAX_OUTPUT_PORT_TYPE
+reg7[19] <= registers[7][19].DB_MAX_OUTPUT_PORT_TYPE
+reg7[20] <= registers[7][20].DB_MAX_OUTPUT_PORT_TYPE
+reg7[21] <= registers[7][21].DB_MAX_OUTPUT_PORT_TYPE
+reg7[22] <= registers[7][22].DB_MAX_OUTPUT_PORT_TYPE
+reg7[23] <= registers[7][23].DB_MAX_OUTPUT_PORT_TYPE
+reg7[24] <= registers[7][24].DB_MAX_OUTPUT_PORT_TYPE
+reg7[25] <= registers[7][25].DB_MAX_OUTPUT_PORT_TYPE
+reg7[26] <= registers[7][26].DB_MAX_OUTPUT_PORT_TYPE
+reg7[27] <= registers[7][27].DB_MAX_OUTPUT_PORT_TYPE
+reg7[28] <= registers[7][28].DB_MAX_OUTPUT_PORT_TYPE
+reg7[29] <= registers[7][29].DB_MAX_OUTPUT_PORT_TYPE
+reg7[30] <= registers[7][30].DB_MAX_OUTPUT_PORT_TYPE
+reg7[31] <= registers[7][31].DB_MAX_OUTPUT_PORT_TYPE
+reg8[0] <= registers[8][0].DB_MAX_OUTPUT_PORT_TYPE
+reg8[1] <= registers[8][1].DB_MAX_OUTPUT_PORT_TYPE
+reg8[2] <= registers[8][2].DB_MAX_OUTPUT_PORT_TYPE
+reg8[3] <= registers[8][3].DB_MAX_OUTPUT_PORT_TYPE
+reg8[4] <= registers[8][4].DB_MAX_OUTPUT_PORT_TYPE
+reg8[5] <= registers[8][5].DB_MAX_OUTPUT_PORT_TYPE
+reg8[6] <= registers[8][6].DB_MAX_OUTPUT_PORT_TYPE
+reg8[7] <= registers[8][7].DB_MAX_OUTPUT_PORT_TYPE
+reg8[8] <= registers[8][8].DB_MAX_OUTPUT_PORT_TYPE
+reg8[9] <= registers[8][9].DB_MAX_OUTPUT_PORT_TYPE
+reg8[10] <= registers[8][10].DB_MAX_OUTPUT_PORT_TYPE
+reg8[11] <= registers[8][11].DB_MAX_OUTPUT_PORT_TYPE
+reg8[12] <= registers[8][12].DB_MAX_OUTPUT_PORT_TYPE
+reg8[13] <= registers[8][13].DB_MAX_OUTPUT_PORT_TYPE
+reg8[14] <= registers[8][14].DB_MAX_OUTPUT_PORT_TYPE
+reg8[15] <= registers[8][15].DB_MAX_OUTPUT_PORT_TYPE
+reg8[16] <= registers[8][16].DB_MAX_OUTPUT_PORT_TYPE
+reg8[17] <= registers[8][17].DB_MAX_OUTPUT_PORT_TYPE
+reg8[18] <= registers[8][18].DB_MAX_OUTPUT_PORT_TYPE
+reg8[19] <= registers[8][19].DB_MAX_OUTPUT_PORT_TYPE
+reg8[20] <= registers[8][20].DB_MAX_OUTPUT_PORT_TYPE
+reg8[21] <= registers[8][21].DB_MAX_OUTPUT_PORT_TYPE
+reg8[22] <= registers[8][22].DB_MAX_OUTPUT_PORT_TYPE
+reg8[23] <= registers[8][23].DB_MAX_OUTPUT_PORT_TYPE
+reg8[24] <= registers[8][24].DB_MAX_OUTPUT_PORT_TYPE
+reg8[25] <= registers[8][25].DB_MAX_OUTPUT_PORT_TYPE
+reg8[26] <= registers[8][26].DB_MAX_OUTPUT_PORT_TYPE
+reg8[27] <= registers[8][27].DB_MAX_OUTPUT_PORT_TYPE
+reg8[28] <= registers[8][28].DB_MAX_OUTPUT_PORT_TYPE
+reg8[29] <= registers[8][29].DB_MAX_OUTPUT_PORT_TYPE
+reg8[30] <= registers[8][30].DB_MAX_OUTPUT_PORT_TYPE
+reg8[31] <= registers[8][31].DB_MAX_OUTPUT_PORT_TYPE
+reg9[0] <= registers[9][0].DB_MAX_OUTPUT_PORT_TYPE
+reg9[1] <= registers[9][1].DB_MAX_OUTPUT_PORT_TYPE
+reg9[2] <= registers[9][2].DB_MAX_OUTPUT_PORT_TYPE
+reg9[3] <= registers[9][3].DB_MAX_OUTPUT_PORT_TYPE
+reg9[4] <= registers[9][4].DB_MAX_OUTPUT_PORT_TYPE
+reg9[5] <= registers[9][5].DB_MAX_OUTPUT_PORT_TYPE
+reg9[6] <= registers[9][6].DB_MAX_OUTPUT_PORT_TYPE
+reg9[7] <= registers[9][7].DB_MAX_OUTPUT_PORT_TYPE
+reg9[8] <= registers[9][8].DB_MAX_OUTPUT_PORT_TYPE
+reg9[9] <= registers[9][9].DB_MAX_OUTPUT_PORT_TYPE
+reg9[10] <= registers[9][10].DB_MAX_OUTPUT_PORT_TYPE
+reg9[11] <= registers[9][11].DB_MAX_OUTPUT_PORT_TYPE
+reg9[12] <= registers[9][12].DB_MAX_OUTPUT_PORT_TYPE
+reg9[13] <= registers[9][13].DB_MAX_OUTPUT_PORT_TYPE
+reg9[14] <= registers[9][14].DB_MAX_OUTPUT_PORT_TYPE
+reg9[15] <= registers[9][15].DB_MAX_OUTPUT_PORT_TYPE
+reg9[16] <= registers[9][16].DB_MAX_OUTPUT_PORT_TYPE
+reg9[17] <= registers[9][17].DB_MAX_OUTPUT_PORT_TYPE
+reg9[18] <= registers[9][18].DB_MAX_OUTPUT_PORT_TYPE
+reg9[19] <= registers[9][19].DB_MAX_OUTPUT_PORT_TYPE
+reg9[20] <= registers[9][20].DB_MAX_OUTPUT_PORT_TYPE
+reg9[21] <= registers[9][21].DB_MAX_OUTPUT_PORT_TYPE
+reg9[22] <= registers[9][22].DB_MAX_OUTPUT_PORT_TYPE
+reg9[23] <= registers[9][23].DB_MAX_OUTPUT_PORT_TYPE
+reg9[24] <= registers[9][24].DB_MAX_OUTPUT_PORT_TYPE
+reg9[25] <= registers[9][25].DB_MAX_OUTPUT_PORT_TYPE
+reg9[26] <= registers[9][26].DB_MAX_OUTPUT_PORT_TYPE
+reg9[27] <= registers[9][27].DB_MAX_OUTPUT_PORT_TYPE
+reg9[28] <= registers[9][28].DB_MAX_OUTPUT_PORT_TYPE
+reg9[29] <= registers[9][29].DB_MAX_OUTPUT_PORT_TYPE
+reg9[30] <= registers[9][30].DB_MAX_OUTPUT_PORT_TYPE
+reg9[31] <= registers[9][31].DB_MAX_OUTPUT_PORT_TYPE
+reg12[0] <= registers[12][0].DB_MAX_OUTPUT_PORT_TYPE
+reg12[1] <= registers[12][1].DB_MAX_OUTPUT_PORT_TYPE
+reg12[2] <= registers[12][2].DB_MAX_OUTPUT_PORT_TYPE
+reg12[3] <= registers[12][3].DB_MAX_OUTPUT_PORT_TYPE
+reg12[4] <= registers[12][4].DB_MAX_OUTPUT_PORT_TYPE
+reg12[5] <= registers[12][5].DB_MAX_OUTPUT_PORT_TYPE
+reg12[6] <= registers[12][6].DB_MAX_OUTPUT_PORT_TYPE
+reg12[7] <= registers[12][7].DB_MAX_OUTPUT_PORT_TYPE
+reg12[8] <= registers[12][8].DB_MAX_OUTPUT_PORT_TYPE
+reg12[9] <= registers[12][9].DB_MAX_OUTPUT_PORT_TYPE
+reg12[10] <= registers[12][10].DB_MAX_OUTPUT_PORT_TYPE
+reg12[11] <= registers[12][11].DB_MAX_OUTPUT_PORT_TYPE
+reg12[12] <= registers[12][12].DB_MAX_OUTPUT_PORT_TYPE
+reg12[13] <= registers[12][13].DB_MAX_OUTPUT_PORT_TYPE
+reg12[14] <= registers[12][14].DB_MAX_OUTPUT_PORT_TYPE
+reg12[15] <= registers[12][15].DB_MAX_OUTPUT_PORT_TYPE
+reg12[16] <= registers[12][16].DB_MAX_OUTPUT_PORT_TYPE
+reg12[17] <= registers[12][17].DB_MAX_OUTPUT_PORT_TYPE
+reg12[18] <= registers[12][18].DB_MAX_OUTPUT_PORT_TYPE
+reg12[19] <= registers[12][19].DB_MAX_OUTPUT_PORT_TYPE
+reg12[20] <= registers[12][20].DB_MAX_OUTPUT_PORT_TYPE
+reg12[21] <= registers[12][21].DB_MAX_OUTPUT_PORT_TYPE
+reg12[22] <= registers[12][22].DB_MAX_OUTPUT_PORT_TYPE
+reg12[23] <= registers[12][23].DB_MAX_OUTPUT_PORT_TYPE
+reg12[24] <= registers[12][24].DB_MAX_OUTPUT_PORT_TYPE
+reg12[25] <= registers[12][25].DB_MAX_OUTPUT_PORT_TYPE
+reg12[26] <= registers[12][26].DB_MAX_OUTPUT_PORT_TYPE
+reg12[27] <= registers[12][27].DB_MAX_OUTPUT_PORT_TYPE
+reg12[28] <= registers[12][28].DB_MAX_OUTPUT_PORT_TYPE
+reg12[29] <= registers[12][29].DB_MAX_OUTPUT_PORT_TYPE
+reg12[30] <= registers[12][30].DB_MAX_OUTPUT_PORT_TYPE
+reg12[31] <= registers[12][31].DB_MAX_OUTPUT_PORT_TYPE
+reg13[0] <= registers[13][0].DB_MAX_OUTPUT_PORT_TYPE
+reg13[1] <= registers[13][1].DB_MAX_OUTPUT_PORT_TYPE
+reg13[2] <= registers[13][2].DB_MAX_OUTPUT_PORT_TYPE
+reg13[3] <= registers[13][3].DB_MAX_OUTPUT_PORT_TYPE
+reg13[4] <= registers[13][4].DB_MAX_OUTPUT_PORT_TYPE
+reg13[5] <= registers[13][5].DB_MAX_OUTPUT_PORT_TYPE
+reg13[6] <= registers[13][6].DB_MAX_OUTPUT_PORT_TYPE
+reg13[7] <= registers[13][7].DB_MAX_OUTPUT_PORT_TYPE
+reg13[8] <= registers[13][8].DB_MAX_OUTPUT_PORT_TYPE
+reg13[9] <= registers[13][9].DB_MAX_OUTPUT_PORT_TYPE
+reg13[10] <= registers[13][10].DB_MAX_OUTPUT_PORT_TYPE
+reg13[11] <= registers[13][11].DB_MAX_OUTPUT_PORT_TYPE
+reg13[12] <= registers[13][12].DB_MAX_OUTPUT_PORT_TYPE
+reg13[13] <= registers[13][13].DB_MAX_OUTPUT_PORT_TYPE
+reg13[14] <= registers[13][14].DB_MAX_OUTPUT_PORT_TYPE
+reg13[15] <= registers[13][15].DB_MAX_OUTPUT_PORT_TYPE
+reg13[16] <= registers[13][16].DB_MAX_OUTPUT_PORT_TYPE
+reg13[17] <= registers[13][17].DB_MAX_OUTPUT_PORT_TYPE
+reg13[18] <= registers[13][18].DB_MAX_OUTPUT_PORT_TYPE
+reg13[19] <= registers[13][19].DB_MAX_OUTPUT_PORT_TYPE
+reg13[20] <= registers[13][20].DB_MAX_OUTPUT_PORT_TYPE
+reg13[21] <= registers[13][21].DB_MAX_OUTPUT_PORT_TYPE
+reg13[22] <= registers[13][22].DB_MAX_OUTPUT_PORT_TYPE
+reg13[23] <= registers[13][23].DB_MAX_OUTPUT_PORT_TYPE
+reg13[24] <= registers[13][24].DB_MAX_OUTPUT_PORT_TYPE
+reg13[25] <= registers[13][25].DB_MAX_OUTPUT_PORT_TYPE
+reg13[26] <= registers[13][26].DB_MAX_OUTPUT_PORT_TYPE
+reg13[27] <= registers[13][27].DB_MAX_OUTPUT_PORT_TYPE
+reg13[28] <= registers[13][28].DB_MAX_OUTPUT_PORT_TYPE
+reg13[29] <= registers[13][29].DB_MAX_OUTPUT_PORT_TYPE
+reg13[30] <= registers[13][30].DB_MAX_OUTPUT_PORT_TYPE
+reg13[31] <= registers[13][31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |skeleton|processor:my_processor
@@ -5642,7 +6154,109 @@ en => q~reg0.ENA
 clr => q~reg0.ACLR
 
 
-|skeleton|processor:my_processor|RCA:my_RCA
+|skeleton|processor:my_processor|CSA:my_CSA
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in1[16] => in1[16].IN2
+in1[17] => in1[17].IN2
+in1[18] => in1[18].IN2
+in1[19] => in1[19].IN2
+in1[20] => in1[20].IN2
+in1[21] => in1[21].IN2
+in1[22] => in1[22].IN2
+in1[23] => in1[23].IN2
+in1[24] => in1[24].IN2
+in1[25] => in1[25].IN2
+in1[26] => in1[26].IN2
+in1[27] => in1[27].IN2
+in1[28] => in1[28].IN2
+in1[29] => in1[29].IN2
+in1[30] => in1[30].IN2
+in1[31] => in1[31].IN2
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+in2[16] => in2[16].IN2
+in2[17] => in2[17].IN2
+in2[18] => in2[18].IN2
+in2[19] => in2[19].IN2
+in2[20] => in2[20].IN2
+in2[21] => in2[21].IN2
+in2[22] => in2[22].IN2
+in2[23] => in2[23].IN2
+in2[24] => in2[24].IN2
+in2[25] => in2[25].IN2
+in2[26] => in2[26].IN2
+in2[27] => in2[27].IN2
+in2[28] => in2[28].IN2
+in2[29] => in2[29].IN2
+in2[30] => in2[30].IN2
+in2[31] => in2[31].IN2
+sum[0] <= RCA:RCA_low.port3
+sum[1] <= RCA:RCA_low.port3
+sum[2] <= RCA:RCA_low.port3
+sum[3] <= RCA:RCA_low.port3
+sum[4] <= RCA:RCA_low.port3
+sum[5] <= RCA:RCA_low.port3
+sum[6] <= RCA:RCA_low.port3
+sum[7] <= RCA:RCA_low.port3
+sum[8] <= RCA:RCA_low.port3
+sum[9] <= RCA:RCA_low.port3
+sum[10] <= RCA:RCA_low.port3
+sum[11] <= RCA:RCA_low.port3
+sum[12] <= RCA:RCA_low.port3
+sum[13] <= RCA:RCA_low.port3
+sum[14] <= RCA:RCA_low.port3
+sum[15] <= RCA:RCA_low.port3
+sum[16] <= Mux_16:mux1.port3
+sum[17] <= Mux_16:mux1.port3
+sum[18] <= Mux_16:mux1.port3
+sum[19] <= Mux_16:mux1.port3
+sum[20] <= Mux_16:mux1.port3
+sum[21] <= Mux_16:mux1.port3
+sum[22] <= Mux_16:mux1.port3
+sum[23] <= Mux_16:mux1.port3
+sum[24] <= Mux_16:mux1.port3
+sum[25] <= Mux_16:mux1.port3
+sum[26] <= Mux_16:mux1.port3
+sum[27] <= Mux_16:mux1.port3
+sum[28] <= Mux_16:mux1.port3
+sum[29] <= Mux_16:mux1.port3
+sum[30] <= Mux_16:mux1.port3
+sum[31] <= Mux_16:mux1.port3
+cin => cin.IN1
+cout <= Mux_1:mux2.port3
+overflow <= Mux_1:mux3.port3
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low
 in1[0] => in1[0].IN1
 in1[1] => in1[1].IN1
 in1[2] => in1[2].IN1
@@ -5696,7 +6310,7 @@ c_out <= ripple_carry_adder_4b:RCA_4b_4.port4
 overflow <= ripple_carry_adder_4b:RCA_4b_4.port5
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -5714,7 +6328,7 @@ c_out <= full_adder:u4.port4
 overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1|full_adder:u1
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1|full_adder:u1
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5725,7 +6339,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1|full_adder:u2
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1|full_adder:u2
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5736,7 +6350,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1|full_adder:u3
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1|full_adder:u3
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5747,7 +6361,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1|full_adder:u4
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1|full_adder:u4
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5758,7 +6372,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -5776,7 +6390,7 @@ c_out <= full_adder:u4.port4
 overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2|full_adder:u1
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2|full_adder:u1
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5787,7 +6401,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2|full_adder:u2
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2|full_adder:u2
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5798,7 +6412,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2|full_adder:u3
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2|full_adder:u3
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5809,7 +6423,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2|full_adder:u4
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2|full_adder:u4
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5820,7 +6434,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -5838,7 +6452,7 @@ c_out <= full_adder:u4.port4
 overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3|full_adder:u1
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3|full_adder:u1
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5849,7 +6463,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3|full_adder:u2
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3|full_adder:u2
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5860,7 +6474,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3|full_adder:u3
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3|full_adder:u3
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5871,7 +6485,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3|full_adder:u4
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3|full_adder:u4
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5882,7 +6496,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_4
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_4
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -5900,7 +6514,7 @@ c_out <= full_adder:u4.port4
 overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_4|full_adder:u1
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_4|full_adder:u1
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5911,7 +6525,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_4|full_adder:u2
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_4|full_adder:u2
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5922,7 +6536,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_4|full_adder:u3
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_4|full_adder:u3
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5933,7 +6547,7 @@ s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_4|full_adder:u4
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_4|full_adder:u4
 IN_a => u1.IN0
 IN_a => u2.IN0
 IN_b => u1.IN1
@@ -5942,6 +6556,709 @@ IN_Ci => u3.IN1
 IN_Ci => u4.IN1
 s <= u4.DB_MAX_OUTPUT_PORT_TYPE
 C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+c_in => c_in.IN1
+sum[0] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[1] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[2] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[3] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[4] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[5] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[6] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[7] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[8] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[9] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[10] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[11] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[12] <= ripple_carry_adder_4b:RCA_4b_4.port3
+sum[13] <= ripple_carry_adder_4b:RCA_4b_4.port3
+sum[14] <= ripple_carry_adder_4b:RCA_4b_4.port3
+sum[15] <= ripple_carry_adder_4b:RCA_4b_4.port3
+c_out <= ripple_carry_adder_4b:RCA_4b_4.port4
+overflow <= ripple_carry_adder_4b:RCA_4b_4.port5
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_1|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_1|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_1|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_1|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_2|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_2|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_2|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_2|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_3|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_3|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_3|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_3|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_4
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_4|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_4|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_4|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high1|ripple_carry_adder_4b:RCA_4b_4|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+c_in => c_in.IN1
+sum[0] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[1] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[2] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[3] <= ripple_carry_adder_4b:RCA_4b_1.port3
+sum[4] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[5] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[6] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[7] <= ripple_carry_adder_4b:RCA_4b_2.port3
+sum[8] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[9] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[10] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[11] <= ripple_carry_adder_4b:RCA_4b_3.port3
+sum[12] <= ripple_carry_adder_4b:RCA_4b_4.port3
+sum[13] <= ripple_carry_adder_4b:RCA_4b_4.port3
+sum[14] <= ripple_carry_adder_4b:RCA_4b_4.port3
+sum[15] <= ripple_carry_adder_4b:RCA_4b_4.port3
+c_out <= ripple_carry_adder_4b:RCA_4b_4.port4
+overflow <= ripple_carry_adder_4b:RCA_4b_4.port5
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_1|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_1|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_1|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_1|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_2|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_2|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_2|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_2|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_3|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_3|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_3|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_3|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_4
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+sum[0] <= full_adder:u1.port3
+sum[1] <= full_adder:u2.port3
+sum[2] <= full_adder:u3.port3
+sum[3] <= full_adder:u4.port3
+c_out <= full_adder:u4.port4
+overflow <= overflow_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_4|full_adder:u1
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_4|full_adder:u2
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_4|full_adder:u3
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_high2|ripple_carry_adder_4b:RCA_4b_4|full_adder:u4
+IN_a => u1.IN0
+IN_a => u2.IN0
+IN_b => u1.IN1
+IN_b => u2.IN1
+IN_Ci => u3.IN1
+IN_Ci => u4.IN1
+s <= u4.DB_MAX_OUTPUT_PORT_TYPE
+C_o <= u5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|Mux_16:mux1
+in1[0] => and0.IN0
+in1[1] => and1.IN0
+in1[2] => and2.IN0
+in1[3] => and3.IN0
+in1[4] => and4.IN0
+in1[5] => and5.IN0
+in1[6] => and6.IN0
+in1[7] => and7.IN0
+in1[8] => and8.IN0
+in1[9] => and9.IN0
+in1[10] => and10.IN0
+in1[11] => and11.IN0
+in1[12] => and12.IN0
+in1[13] => and13.IN0
+in1[14] => and14.IN0
+in1[15] => and15.IN0
+in2[0] => and_0.IN0
+in2[1] => and_1.IN0
+in2[2] => and_2.IN0
+in2[3] => and_3.IN0
+in2[4] => and_4.IN0
+in2[5] => and_5.IN0
+in2[6] => and_6.IN0
+in2[7] => and_7.IN0
+in2[8] => and_8.IN0
+in2[9] => and_9.IN0
+in2[10] => and_10.IN0
+in2[11] => and_11.IN0
+in2[12] => and_12.IN0
+in2[13] => and_13.IN0
+in2[14] => and_14.IN0
+in2[15] => and_15.IN0
+S => and_0.IN1
+S => and_1.IN1
+S => and_2.IN1
+S => and_3.IN1
+S => and_4.IN1
+S => and_5.IN1
+S => and_6.IN1
+S => and_7.IN1
+S => and_8.IN1
+S => and_9.IN1
+S => and_10.IN1
+S => and_11.IN1
+S => and_12.IN1
+S => and_13.IN1
+S => and_14.IN1
+S => and_15.IN1
+S => and0.IN1
+S => and1.IN1
+S => and2.IN1
+S => and3.IN1
+S => and4.IN1
+S => and5.IN1
+S => and6.IN1
+S => and7.IN1
+S => and8.IN1
+S => and9.IN1
+S => and10.IN1
+S => and11.IN1
+S => and12.IN1
+S => and13.IN1
+S => and14.IN1
+S => and15.IN1
+out[0] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= or5.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= or6.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= or7.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= or8.DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= or9.DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= or10.DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= or11.DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= or12.DB_MAX_OUTPUT_PORT_TYPE
+out[13] <= or13.DB_MAX_OUTPUT_PORT_TYPE
+out[14] <= or14.DB_MAX_OUTPUT_PORT_TYPE
+out[15] <= or15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|Mux_1:mux2
+in1 => and1.IN0
+in2 => and2.IN0
+S => and2.IN1
+S => and1.IN1
+out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|processor:my_processor|CSA:my_CSA|Mux_1:mux3
+in1 => and1.IN0
+in2 => and2.IN0
+S => and2.IN1
+S => and1.IN1
+out <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |skeleton|processor:my_processor|extend:extend1

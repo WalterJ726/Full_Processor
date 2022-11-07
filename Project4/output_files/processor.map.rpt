@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Fri Nov 04 01:27:41 2022
+Sun Nov 06 21:36:20 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -19,22 +19,25 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_ji91:auto_generated
+ 14. Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated
  15. Source assignments for dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated
  16. Parameter Settings for User Entity Instance: imem:my_imem|altsyncram:altsyncram_component
  17. Parameter Settings for User Entity Instance: dmem:my_dmem|altsyncram:altsyncram_component
  18. altsyncram Parameter Settings by Entity Instance
  19. Port Connectivity Checks: "processor:my_processor|alu:alu1"
  20. Port Connectivity Checks: "processor:my_processor|insn_decoder:my_decoder"
- 21. Port Connectivity Checks: "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3"
- 22. Port Connectivity Checks: "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2"
- 23. Port Connectivity Checks: "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1"
- 24. Port Connectivity Checks: "processor:my_processor|RCA:my_RCA"
- 25. Port Connectivity Checks: "processor:my_processor|pc:my_pc"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
- 29. Analysis & Synthesis Suppressed Messages
+ 21. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_high2"
+ 22. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_high1"
+ 23. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3"
+ 24. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2"
+ 25. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1"
+ 26. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low"
+ 27. Port Connectivity Checks: "processor:my_processor|CSA:my_CSA"
+ 28. Port Connectivity Checks: "processor:my_processor|pc:my_pc"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,16 +64,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 04 01:27:41 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 06 21:36:20 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; processor                                   ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,032                                       ;
-;     Total combinational functions  ; 2,072                                       ;
+; Total logic elements               ; 3,035                                       ;
+;     Total combinational functions  ; 2,075                                       ;
 ;     Dedicated logic registers      ; 1,006                                       ;
 ; Total registers                    ; 1006                                        ;
-; Total pins                         ; 239                                         ;
+; Total pins                         ; 495                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 262,144                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -172,14 +175,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.3%      ;
-;     Processor 4            ;   0.3%      ;
+;     Processor 2            ;   0.7%      ;
+;     Processor 3            ;   0.5%      ;
+;     Processor 4            ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -191,9 +194,12 @@ agreement for further details.
 ; processor.v                      ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/processor.v                       ;         ;
 ; pc.v                             ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/pc.v                              ;         ;
 ; extend.v                         ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/extend.v                          ;         ;
+; Mux_1.v                          ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/Mux_1.v                           ;         ;
+; Mux_16.v                         ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/Mux_16.v                          ;         ;
 ; RCA.v                            ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v                             ;         ;
 ; ripple_carry_adder_4b.v          ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v           ;         ;
 ; regfile.v                        ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v                         ;         ;
+; CSA.v                            ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v                             ;         ;
 ; alu.v                            ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/alu.v                             ;         ;
 ; insn_decoder.v                   ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v                    ;         ;
 ; dffe_ref.v                       ; yes             ; User Verilog HDL File                  ; E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v                        ;         ;
@@ -211,8 +217,8 @@ agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                           ; d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_ji91.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/Duke_Materials/22fall/550/Labs/Project4/db/altsyncram_ji91.tdf            ;         ;
-; owntest1.mif                     ; yes             ; Auto-Found Memory Initialization File  ; E:/Duke_Materials/22fall/550/Labs/Project4/owntest1.mif                      ;         ;
+; db/altsyncram_fp91.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/Duke_Materials/22fall/550/Labs/Project4/db/altsyncram_fp91.tdf            ;         ;
+; basic_test.mif                   ; yes             ; Auto-Found Memory Initialization File  ; E:/Duke_Materials/22fall/550/Labs/Project4/basic_test.mif                    ;         ;
 ; db/altsyncram_0jf1.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/Duke_Materials/22fall/550/Labs/Project4/db/altsyncram_0jf1.tdf            ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
@@ -222,82 +228,83 @@ agreement for further details.
 +---------------------------------------------+------------------------------------+
 ; Resource                                    ; Usage                              ;
 +---------------------------------------------+------------------------------------+
-; Estimated Total logic elements              ; 3,032                              ;
+; Estimated Total logic elements              ; 3,035                              ;
 ;                                             ;                                    ;
-; Total combinational functions               ; 2072                               ;
+; Total combinational functions               ; 2075                               ;
 ; Logic element usage by number of LUT inputs ;                                    ;
-;     -- 4 input functions                    ; 1703                               ;
-;     -- 3 input functions                    ; 341                                ;
+;     -- 4 input functions                    ; 1704                               ;
+;     -- 3 input functions                    ; 343                                ;
 ;     -- <=2 input functions                  ; 28                                 ;
 ;                                             ;                                    ;
 ; Logic elements by mode                      ;                                    ;
-;     -- normal mode                          ; 2008                               ;
+;     -- normal mode                          ; 2011                               ;
 ;     -- arithmetic mode                      ; 64                                 ;
 ;                                             ;                                    ;
 ; Total registers                             ; 1006                               ;
 ;     -- Dedicated logic registers            ; 1006                               ;
 ;     -- I/O registers                        ; 0                                  ;
 ;                                             ;                                    ;
-; I/O pins                                    ; 239                                ;
+; I/O pins                                    ; 495                                ;
 ; Total memory bits                           ; 262144                             ;
 ;                                             ;                                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                                  ;
 ;                                             ;                                    ;
 ; Maximum fan-out node                        ; frequency_divider:frediv_2|out_clk ;
 ; Maximum fan-out                             ; 1007                               ;
-; Total fan-out                               ; 13366                              ;
-; Average fan-out                             ; 3.69                               ;
+; Total fan-out                               ; 13888                              ;
+; Average fan-out                             ; 3.36                               ;
 +---------------------------------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                    ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name           ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |skeleton                                 ; 2072 (0)            ; 1006 (0)                  ; 262144      ; 0            ; 0       ; 0         ; 239  ; 0            ; |skeleton                                                                                ; skeleton              ; work         ;
-;    |dmem:my_dmem|                         ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem                                                                   ; dmem                  ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem|altsyncram:altsyncram_component                                   ; altsyncram            ; work         ;
-;          |altsyncram_0jf1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated    ; altsyncram_0jf1       ; work         ;
-;    |frequency_divider:frediv_1|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider:frediv_1                                                     ; frequency_divider     ; work         ;
-;    |frequency_divider:frediv_2|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider:frediv_2                                                     ; frequency_divider     ; work         ;
-;    |imem:my_imem|                         ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem                                                                   ; imem                  ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component                                   ; altsyncram            ; work         ;
-;          |altsyncram_ji91:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_ji91:auto_generated    ; altsyncram_ji91       ; work         ;
-;    |processor:my_processor|               ; 614 (217)           ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor                                                         ; processor             ; work         ;
-;       |RCA:my_RCA|                        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|RCA:my_RCA                                              ; RCA                   ; work         ;
-;          |ripple_carry_adder_4b:RCA_4b_1| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1               ; ripple_carry_adder_4b ; work         ;
-;             |full_adder:u4|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1|full_adder:u4 ; full_adder            ; work         ;
-;          |ripple_carry_adder_4b:RCA_4b_2| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2               ; ripple_carry_adder_4b ; work         ;
-;             |full_adder:u3|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2|full_adder:u3 ; full_adder            ; work         ;
-;       |alu:alu1|                          ; 378 (378)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|alu:alu1                                                ; alu                   ; work         ;
-;       |insn_decoder:my_decoder|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|insn_decoder:my_decoder                                 ; insn_decoder          ; work         ;
-;       |pc:my_pc|                          ; 14 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc                                                ; pc                    ; work         ;
-;          |dffe_ref:dffe_loop[0].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[0].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[10].my_dffe| ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[10].my_dffe                 ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[11].my_dffe| ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[11].my_dffe                 ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[1].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[1].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[2].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[2].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[3].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[3].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[4].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[4].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[5].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[5].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[6].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[6].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[7].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[7].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[8].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[8].my_dffe                  ; dffe_ref              ; work         ;
-;          |dffe_ref:dffe_loop[9].my_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[9].my_dffe                  ; dffe_ref              ; work         ;
-;    |regfile:my_regfile|                   ; 1456 (1456)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|regfile:my_regfile                                                             ; regfile               ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+-----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Entity Name           ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |skeleton                                    ; 2075 (0)            ; 1006 (0)                  ; 262144      ; 0            ; 0       ; 0         ; 495  ; 0            ; |skeleton                                                                                            ; skeleton              ; work         ;
+;    |dmem:my_dmem|                            ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem                                                                               ; dmem                  ; work         ;
+;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem|altsyncram:altsyncram_component                                               ; altsyncram            ; work         ;
+;          |altsyncram_0jf1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated                ; altsyncram_0jf1       ; work         ;
+;    |frequency_divider:frediv_1|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider:frediv_1                                                                 ; frequency_divider     ; work         ;
+;    |frequency_divider:frediv_2|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider:frediv_2                                                                 ; frequency_divider     ; work         ;
+;    |imem:my_imem|                            ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem                                                                               ; imem                  ; work         ;
+;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component                                               ; altsyncram            ; work         ;
+;          |altsyncram_fp91:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated                ; altsyncram_fp91       ; work         ;
+;    |processor:my_processor|                  ; 614 (217)           ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor                                                                     ; processor             ; work         ;
+;       |CSA:my_CSA|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|CSA:my_CSA                                                          ; CSA                   ; work         ;
+;          |RCA:RCA_low|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low                                              ; RCA                   ; work         ;
+;             |ripple_carry_adder_4b:RCA_4b_1| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1               ; ripple_carry_adder_4b ; work         ;
+;                |full_adder:u4|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1|full_adder:u4 ; full_adder            ; work         ;
+;             |ripple_carry_adder_4b:RCA_4b_2| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2               ; ripple_carry_adder_4b ; work         ;
+;                |full_adder:u3|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2|full_adder:u3 ; full_adder            ; work         ;
+;       |alu:alu1|                             ; 378 (378)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|alu:alu1                                                            ; alu                   ; work         ;
+;       |insn_decoder:my_decoder|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|insn_decoder:my_decoder                                             ; insn_decoder          ; work         ;
+;       |pc:my_pc|                             ; 14 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc                                                            ; pc                    ; work         ;
+;          |dffe_ref:dffe_loop[0].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[0].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[10].my_dffe|    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[10].my_dffe                             ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[11].my_dffe|    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[11].my_dffe                             ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[1].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[1].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[2].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[2].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[3].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[3].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[4].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[4].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[5].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[5].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[6].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[6].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[7].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[7].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[8].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[8].my_dffe                              ; dffe_ref              ; work         ;
+;          |dffe_ref:dffe_loop[9].my_dffe|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[9].my_dffe                              ; dffe_ref              ; work         ;
+;    |regfile:my_regfile|                      ; 1459 (1459)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|regfile:my_regfile                                                                         ; regfile               ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+--------------+
-; Name                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF          ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+--------------+
-; dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 4096         ; 32           ; --           ; --           ; 131072 ; None         ;
-; imem:my_imem|altsyncram:altsyncram_component|altsyncram_ji91:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 4096         ; 32           ; --           ; --           ; 131072 ; owntest1.mif ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                  ;
++----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+----------------+
+; Name                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF            ;
++----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+----------------+
+; dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 4096         ; 32           ; --           ; --           ; 131072 ; None           ;
+; imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 4096         ; 32           ; --           ; --           ; 131072 ; basic_test.mif ;
++----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -401,7 +408,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_ji91:auto_generated ;
+; Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -461,7 +468,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; INIT_FILE                          ; owntest1.mif         ; Untyped                       ;
+; INIT_FILE                          ; basic_test.mif       ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                       ;
@@ -474,7 +481,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_ji91      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_fp91      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -591,8 +598,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_high2" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; c_in ; Input ; Info     ; Stuck at VCC                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_high1" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; c_in ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_3"                       ;
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_3"           ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -601,7 +626,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_2"                       ;
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_2"           ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -610,7 +635,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1"                       ;
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1"           ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -618,31 +643,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|RCA:my_RCA"                                                                                                                                                        ;
-+------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                                                                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; in1        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; in2        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; in2[15..1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; in2[0]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; c_in       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
-; c_in[-1]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; sum        ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND.            ;
-; c_out      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                            ;
-; overflow   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                            ;
-+------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA|RCA:RCA_low"                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|pc:my_pc"                                                         ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; q[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; en        ; Input  ; Info     ; Stuck at VCC                                                                        ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:my_processor|CSA:my_CSA"                                                                                                                                                       ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                                                                            ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2[31..1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; in2[0]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; cin        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; cout       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "processor:my_processor|pc:my_pc" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
 
 
 +-----------------------------------------------------+
@@ -650,24 +680,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 239                         ;
+; boundary_port         ; 495                         ;
 ; cycloneiii_ff         ; 1006                        ;
 ;     CLR               ; 12                          ;
 ;     ENA CLR           ; 992                         ;
 ;     plain             ; 2                           ;
 ; cycloneiii_io_obuf    ; 96                          ;
-; cycloneiii_lcell_comb ; 2074                        ;
+; cycloneiii_lcell_comb ; 2077                        ;
 ;     arith             ; 64                          ;
 ;         3 data inputs ; 64                          ;
-;     normal            ; 2010                        ;
+;     normal            ; 2013                        ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 27                          ;
-;         3 data inputs ; 277                         ;
-;         4 data inputs ; 1703                        ;
+;         3 data inputs ; 279                         ;
+;         4 data inputs ; 1704                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 17.00                       ;
-; Average LUT depth     ; 13.44                       ;
+; Average LUT depth     ; 13.43                       ;
 +-----------------------+-----------------------------+
 
 
@@ -676,7 +706,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -686,7 +716,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 04 01:27:10 2022
+    Info: Processing started: Sun Nov 06 21:36:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -727,15 +757,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file imem.v
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
     Info (12023): Found entity 1: dmem File: E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v Line: 40
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:frediv_1" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 20
-Info (12128): Elaborating entity "imem" for hierarchy "imem:my_imem" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 46
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:frediv_1" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 23
+Info (12128): Elaborating entity "imem" for hierarchy "imem:my_imem" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 49
 Info (12128): Elaborating entity "altsyncram" for hierarchy "imem:my_imem|altsyncram:altsyncram_component" File: E:/Duke_Materials/22fall/550/Labs/Project4/imem.v Line: 82
 Info (12130): Elaborated megafunction instantiation "imem:my_imem|altsyncram:altsyncram_component" File: E:/Duke_Materials/22fall/550/Labs/Project4/imem.v Line: 82
 Info (12133): Instantiated megafunction "imem:my_imem|altsyncram:altsyncram_component" with the following parameter: File: E:/Duke_Materials/22fall/550/Labs/Project4/imem.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "owntest1.mif"
+    Info (12134): Parameter "init_file" = "basic_test.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -746,10 +776,10 @@ Info (12133): Instantiated megafunction "imem:my_imem|altsyncram:altsyncram_comp
     Info (12134): Parameter "widthad_a" = "12"
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ji91.tdf
-    Info (12023): Found entity 1: altsyncram_ji91 File: E:/Duke_Materials/22fall/550/Labs/Project4/db/altsyncram_ji91.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ji91" for hierarchy "imem:my_imem|altsyncram:altsyncram_component|altsyncram_ji91:auto_generated" File: d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 65
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fp91.tdf
+    Info (12023): Found entity 1: altsyncram_fp91 File: E:/Duke_Materials/22fall/550/Labs/Project4/db/altsyncram_fp91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_fp91" for hierarchy "imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated" File: d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 68
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component" File: E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "dmem:my_dmem|altsyncram:altsyncram_component" File: E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v Line: 86
 Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_component" with the following parameter: File: E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v Line: 86
@@ -770,134 +800,102 @@ Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0jf1.tdf
     Info (12023): Found entity 1: altsyncram_0jf1 File: E:/Duke_Materials/22fall/550/Labs/Project4/db/altsyncram_0jf1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_0jf1" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated" File: d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 89
-Warning (10240): Verilog HDL Always Construct warning at regfile.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 15
-Info (12128): Elaborating entity "processor" for hierarchy "processor:my_processor" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 115
-Warning (10036): Verilog HDL or VHDL warning at processor.v(107): object "swenable" assigned a value but never read File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 107
-Warning (10230): Verilog HDL assignment warning at processor.v(126): truncated value with size 32 to match size of target (5) File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 126
-Warning (10739): Verilog HDL warning at processor.v(133): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 133
-Warning (10739): Verilog HDL warning at processor.v(134): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 134
-Warning (10739): Verilog HDL warning at processor.v(135): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 135
-Warning (10739): Verilog HDL warning at processor.v(136): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 136
-Warning (10739): Verilog HDL warning at processor.v(137): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 137
-Warning (10739): Verilog HDL warning at processor.v(138): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 138
-Warning (10739): Verilog HDL warning at processor.v(139): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 139
-Warning (10739): Verilog HDL warning at processor.v(140): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 140
-Warning (10230): Verilog HDL assignment warning at processor.v(151): truncated value with size 32 to match size of target (1) File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 151
-Info (12128): Elaborating entity "pc" for hierarchy "processor:my_processor|pc:my_pc" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 112
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 96
+Warning (10240): Verilog HDL Always Construct warning at regfile.v(18): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 18
+Info (12128): Elaborating entity "processor" for hierarchy "processor:my_processor" File: E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v Line: 122
+Warning (10230): Verilog HDL assignment warning at processor.v(152): truncated value with size 32 to match size of target (1) File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 152
+Info (12128): Elaborating entity "pc" for hierarchy "processor:my_processor|pc:my_pc" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 111
 Info (12128): Elaborating entity "dffe_ref" for hierarchy "processor:my_processor|pc:my_pc|dffe_ref:dffe_loop[0].my_dffe" File: E:/Duke_Materials/22fall/550/Labs/Project4/pc.v Line: 10
-Info (12128): Elaborating entity "RCA" for hierarchy "processor:my_processor|RCA:my_RCA" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 115
-Info (12128): Elaborating entity "ripple_carry_adder_4b" for hierarchy "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1" File: E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v Line: 12
-Info (12128): Elaborating entity "full_adder" for hierarchy "processor:my_processor|RCA:my_RCA|ripple_carry_adder_4b:RCA_4b_1|full_adder:u1" File: E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v Line: 9
-Info (12128): Elaborating entity "extend" for hierarchy "processor:my_processor|extend:extend1" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 128
-Info (12128): Elaborating entity "insn_decoder" for hierarchy "processor:my_processor|insn_decoder:my_decoder" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 131
-Warning (10739): Verilog HDL warning at insn_decoder.v(42): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 42
-Warning (10739): Verilog HDL warning at insn_decoder.v(43): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 43
-Warning (10739): Verilog HDL warning at insn_decoder.v(44): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 44
-Warning (10739): Verilog HDL warning at insn_decoder.v(45): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 45
-Warning (10739): Verilog HDL warning at insn_decoder.v(46): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 46
-Warning (10739): Verilog HDL warning at insn_decoder.v(47): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 47
-Warning (10739): Verilog HDL warning at insn_decoder.v(48): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 48
-Warning (10739): Verilog HDL warning at insn_decoder.v(49): actual bit length 32 differs from formal bit length 1 File: E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v Line: 49
-Info (12128): Elaborating entity "alu" for hierarchy "processor:my_processor|alu:alu1" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 150
+Info (12128): Elaborating entity "CSA" for hierarchy "processor:my_processor|CSA:my_CSA" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 115
+Info (12128): Elaborating entity "RCA" for hierarchy "processor:my_processor|CSA:my_CSA|RCA:RCA_low" File: E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v Line: 13
+Info (12128): Elaborating entity "ripple_carry_adder_4b" for hierarchy "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1" File: E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v Line: 12
+Info (12128): Elaborating entity "full_adder" for hierarchy "processor:my_processor|CSA:my_CSA|RCA:RCA_low|ripple_carry_adder_4b:RCA_4b_1|full_adder:u1" File: E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v Line: 9
+Info (12128): Elaborating entity "Mux_16" for hierarchy "processor:my_processor|CSA:my_CSA|Mux_16:mux1" File: E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v Line: 17
+Info (12128): Elaborating entity "Mux_1" for hierarchy "processor:my_processor|CSA:my_CSA|Mux_1:mux2" File: E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v Line: 18
+Info (12128): Elaborating entity "extend" for hierarchy "processor:my_processor|extend:extend1" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 130
+Info (12128): Elaborating entity "insn_decoder" for hierarchy "processor:my_processor|insn_decoder:my_decoder" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 132
+Info (12128): Elaborating entity "alu" for hierarchy "processor:my_processor|alu:alu1" File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 151
 Warning (10270): Verilog HDL Case Statement warning at alu.v(25): incomplete case statement has no default case item File: E:/Duke_Materials/22fall/550/Labs/Project4/alu.v Line: 25
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "processor:my_processor|pc_in[31]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[30]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[29]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[28]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[27]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[26]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[25]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[24]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[23]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[22]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[21]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[20]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[19]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[18]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[17]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
-    Warning (12110): Net "processor:my_processor|pc_in[16]" is missing source, defaulting to GND File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 95
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[1]" to the node "processor:my_processor|alu:alu1|ShiftLeft0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[2]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[3]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[0]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[4]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[5]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[6]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[7]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[8]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[9]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[10]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[11]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[12]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[13]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[14]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[15]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[16]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[17]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[18]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[19]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[20]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[21]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[22]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[23]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[24]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[25]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[26]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[27]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[28]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[29]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[30]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[31]" to the node "processor:my_processor|data_writeReg[23]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[0]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[0]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[1]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[1]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[2]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[2]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[3]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[3]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[4]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[4]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[5]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[5]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[6]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[6]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[7]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[7]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[8]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[8]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[9]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[9]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[10]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[10]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[11]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[11]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[12]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[12]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[13]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[13]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[14]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[14]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[15]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[15]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[16]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[16]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[17]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[17]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[18]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[18]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[19]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[19]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[20]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[20]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[21]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[21]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[22]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[22]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[23]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[23]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[24]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[24]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[25]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[25]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[26]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[26]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[27]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[27]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[28]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[28]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[29]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[29]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[30]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[30]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[31]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[31]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[1]" to the node "processor:my_processor|alu:alu1|ShiftLeft0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[2]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[3]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[0]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[4]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[5]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[6]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[7]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[8]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[9]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[10]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[11]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[12]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[13]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[14]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[15]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[16]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[17]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[18]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[19]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[20]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[21]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[22]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[23]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[24]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[25]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[26]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[27]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[28]" to the node "processor:my_processor|alu:alu1|inner_result" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[29]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[30]" to the node "processor:my_processor|alu:alu1|ShiftRight0" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[31]" to the node "processor:my_processor|data_writeReg[23]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[0]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[0]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[1]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[1]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[2]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[2]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[3]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[3]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[4]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[4]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[5]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[5]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[6]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[6]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[7]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[7]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[8]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[8]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[9]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[9]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[10]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[10]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[11]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[11]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[12]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[12]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[13]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[13]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[14]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[14]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[15]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[15]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[16]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[16]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[17]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[17]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[18]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[18]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[19]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[19]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[20]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[20]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[21]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[21]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[22]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[22]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[23]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[23]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[24]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[24]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[25]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[25]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[26]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[26]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[27]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[27]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[28]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[28]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[29]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[29]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[30]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[30]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[31]" to the node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_0jf1:auto_generated|q_a[31]" into an OR gate File: E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file E:/Duke_Materials/22fall/550/Labs/Project4/output_files/processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3367 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3626 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 237 output pins
-    Info (21061): Implemented 3064 logic cells
+    Info (21059): Implemented 493 output pins
+    Info (21061): Implemented 3067 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Fri Nov 04 01:27:41 2022
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Sun Nov 06 21:36:20 2022
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:30
 
 
 +------------------------------------------+

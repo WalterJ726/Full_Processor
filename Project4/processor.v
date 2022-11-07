@@ -104,7 +104,6 @@ module processor(
 	 wire [31:0] ALUINB;
 	 wire [16:0] immediate;
 	 wire [31:0] ext_immediate;
-	 wire [4:0] swenable;
 	 
 	 wire [31:0] Res_ALU;
 	 wire inNotEqual,isLessThan,overflow,temp;
@@ -112,9 +111,10 @@ module processor(
 	 pc my_pc(pc_out, pc_in, clock, 1'b1, reset);
 	 // next instruction, pc plus + 1
 	 wire [31:0] pc_next;
-	 //wire temp1;
-	 //wire temp2;
-	CSA my_CSA(pc_out,32'd1,pc_next,0);//change to 32bit CSA;
+	 wire pc_cout, pc_overflow;
+	CSA my_CSA(pc_out,32'd1,pc_next,0,pc_cout, pc_overflow);//change to 32bit CSA;
+	
+	
 	assign pc_in = pc_next;
 	 assign address_imem = pc_out[11:0];
 	 
@@ -125,21 +125,20 @@ module processor(
 	 assign rs = q_imem[21:17];
 	 assign rt = q_imem[16:12];
 	 assign shamt = q_imem[11:7];
-	 assign ALUOP = isR? q_imem[6:2]:0;
+	 assign ALUOP = isR? q_imem[6:2]:5'd0;
 	 assign immediate = q_imem[16:0];
 	 extend extend1(ext_immediate,immediate);
-	 assign swenable=5'b00111;  //???
 	 
 	 insn_decoder my_decoder(control, opcode, isR);
 	 
-	 and (BR, control[7], 1);
-	and (JP, control[6], 1);
-	and (ALUinB, control[5], 1);
-	and (ALUop, control[4], 1);
-	and (DMwe, control[3], 1);
-	and (Rwe, control[2], 1);
-	and (Rdst, control[1], 1);
-	and (Rwd, control[0], 1);
+	 and (BR, control[7], 1'b1);
+	and (JP, control[6], 1'b1);
+	and (ALUinB, control[5], 1'b1);
+	and (ALUop, control[4], 1'b1);
+	and (DMwe, control[3], 1'b1);
+	and (Rwe, control[2], 1'b1);
+	and (Rdst, control[1], 1'b1);
+	and (Rwd, control[0], 1'b1);
 	
 	 // operand fetch
 	 //assign ctrl_writeEnable =Rwe; 

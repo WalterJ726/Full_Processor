@@ -39,13 +39,13 @@ module insn_decoder(control, opcode, isR);
 	or (Rwd, lw[7], lw[7]);	
 	
 	// assign signal to control
-	and (control[7],BR, 1);
-	and (control[6],JP, 1);
-	and (control[5],ALUinB, 1);
-	and (control[4],ALUop, 1);
-	and (control[3],DMwe, 1);
-	and (control[2],Rwe, 1);
-	and (control[1],Rdst, 1);
-	and (control[0],Rwd, 1);
+	and (control[7],BR, 1'b1);
+	and (control[6],JP, 1'b1);
+	and (control[5],ALUinB, 1'b1);
+	and (control[4],ALUop, 1'b1);
+	and (control[3],DMwe, 1'b1);
+	and (control[2],Rwe, 1'b1);
+	and (control[1],Rdst, 1'b1);
+	and (control[0],Rwd, 1'b1);
 	
 endmodule

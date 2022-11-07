@@ -8,9 +8,12 @@ vmap work rtl_work
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/processor.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/pc.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/extend.v}
+vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/Mux_1.v}
+vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/Mux_16.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v}
+vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/alu.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v}
