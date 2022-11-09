@@ -22,6 +22,7 @@ vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/imem.v}
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v}
+vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/clk_div4.v}
 
 vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v}
 

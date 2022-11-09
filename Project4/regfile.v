@@ -2,7 +2,7 @@ module regfile(
 	clock, ctrl_writeEnable, ctrl_reset, ctrl_writeReg,
 	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
 	data_readRegB
-	, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
+	, reg4, reg6, reg7, reg8, reg9, reg12, reg13
 	//, reg20, reg21, reg22, reg23, reg24, reg25, reg26
 	//, reg27, reg28, reg29
 );
@@ -32,14 +32,14 @@ module regfile(
 	assign data_readRegA = ctrl_writeEnable && (ctrl_writeReg == ctrl_readRegA) ? 32'bz : registers[ctrl_readRegA];
 	assign data_readRegB = ctrl_writeEnable && (ctrl_writeReg == ctrl_readRegB) ? 32'bz : registers[ctrl_readRegB];
 	
-	output [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;
+	output [31:0] reg4, reg6, reg7, reg8, reg9, reg12, reg13;
 	//output [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26
 	//output [31:0] reg27, reg28, reg29;
 //	assign reg1 = registers[1];
 //	assign reg2 = registers[2];
 //	assign reg3 = registers[3];
 	assign reg4 = registers[4];
-	assign reg5 = registers[5];
+//	assign reg5 = registers[5];
 	assign reg6 = registers[6];
 	assign reg7 = registers[7];
 	assign reg8 = registers[8];

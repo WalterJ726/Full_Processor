@@ -14,12 +14,17 @@ wire ctrl_writeEnable;
 wire [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
 wire [31:0] data_writeReg;
 wire [31:0] data_readRegA, data_readRegB;
-//wire [31:0] alu_data_result;
+//wire [31:0] alu_data_result; 
 
+wire [31:0] reg4, reg6, reg7, reg8, reg9, reg12, reg13;
+
+wire [31:0] pc_in;
 
 skeleton skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
 					 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,
-					 ctrl_writeReg, ctrl_readRegA, ctrl_readRegB,data_writeReg,data_readRegA, data_readRegB);
+					 ctrl_writeReg, ctrl_readRegA, ctrl_readRegB,data_writeReg,data_readRegA, data_readRegB
+					 , pc_in
+					 , reg4, reg6, reg7, reg8, reg9, reg12, reg13);
 					 
 			
 initial

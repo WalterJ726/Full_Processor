@@ -70,7 +70,8 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB                   // I: Data from port B of regfile
-);
+	, pc_in
+	 );
     // Control signals
     input clock, reset;
 
@@ -92,7 +93,9 @@ module processor(
 
     /* YOUR CODE STARTS HERE */
 	 
-	 wire [31:0] pc_in, pc_out; 
+	 output [31:0] pc_in;
+	 
+	 wire [31:0] pc_out; 
 	 wire [4:0] opcode;
 	 wire [7:0] control;
 	 wire isR, BR, JP, ALUinB, ALUop, DMwe, Rwe, Rdst,Rwd;
@@ -112,7 +115,7 @@ module processor(
 	 // next instruction, pc plus + 1
 	 wire [31:0] pc_next;
 	 wire pc_cout, pc_overflow;
-	CSA my_CSA(pc_out,32'd1,pc_next,0,pc_cout, pc_overflow);//change to 32bit CSA;
+	CSA my_CSA(pc_out,32'd1,pc_next,1'b0,pc_cout, pc_overflow);//change to 32bit CSA;
 	
 	
 	assign pc_in = pc_next;
