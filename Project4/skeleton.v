@@ -12,8 +12,7 @@
 module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock
 ,address_imem, q_imem, address_dmem, data, wren, q_dmem, ctrl_writeEnable, ctrl_writeReg,
 ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
-	, pc_in
-	, reg4, reg6, reg7, reg8, reg9, reg12, reg13
+	, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
 	//, reg20, reg21, reg22, reg23, reg24, reg25, reg26
 	//, reg27, reg28, reg29
 );
@@ -79,7 +78,7 @@ ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
     output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
     output [31:0] data_writeReg;
     output [31:0] data_readRegA, data_readRegB;
-		output [31:0] reg4, reg6, reg7, reg8, reg9, reg12, reg13;
+		output [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;
 		// output [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26
 		//output [31:0] reg27, reg28, reg29;
     regfile my_regfile(
@@ -92,12 +91,11 @@ ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
         data_writeReg,
         data_readRegA,
         data_readRegB
-	, reg4, reg6, reg7, reg8, reg9, reg12, reg13
+	, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
 	//, reg20, reg21, reg22, reg23, reg24, reg25, reg26
 	//, reg27, reg28, reg29
     );
 
-	 output [31:0] pc_in;
     /** PROCESSOR **/
     processor my_processor(
         // Control signals
@@ -122,7 +120,6 @@ ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
         data_writeReg,                  // O: Data to write to for regfile
         data_readRegA,                  // I: Data from port A of regfile
         data_readRegB                   // I: Data from port B of regfile
-		,pc_in
 	 );
 
 endmodule
