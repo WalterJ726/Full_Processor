@@ -70,7 +70,6 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB                   // I: Data from port B of regfile
-	, pc_in
 	 );
     // Control signals
     input clock, reset;
@@ -93,9 +92,8 @@ module processor(
 
     /* YOUR CODE STARTS HERE */
 	 
-	 output [31:0] pc_in;
 	 
-	 wire [31:0] pc_out; 
+	 wire [31:0] pc_in, pc_out; 
 	 wire [4:0] opcode;
 	 wire [7:0] control;
 	 wire isR, BR, JP, ALUinB, ALUop, DMwe, Rwe, Rdst,Rwd;
@@ -109,7 +107,8 @@ module processor(
 	 wire [31:0] ext_immediate;
 	 
 	 wire [31:0] Res_ALU;
-	 wire inNotEqual,isLessThan,overflow,temp;
+	 wire inNotEqual,isLessThan,overflow;
+	 wire temp;
 	 // PC fetch
 	 pc my_pc(pc_out, pc_in, clock, 1'b1, reset);
 	 // next instruction, pc plus + 1
@@ -145,18 +144,25 @@ module processor(
 	
 	 // operand fetch
 	 //assign ctrl_writeEnable =Rwe; 
-	 assign ctrl_writeEnable = opcode==0 ||opcode==5 || opcode==8;
+	 assign ctrl_writeEnable = Rwe;
 	 assign ctrl_readRegA = rs;
-	 assign ctrl_readRegB = (opcode==5'b00111) ? rd : rt;
+	 assign ctrl_readRegB = (DMwe) ? rd : rt;
 	 // execute
 	 assign ALUINB = isR ? data_readRegB : ext_immediate;
 	 
 	 alu alu1(data_readRegA,ALUINB,ALUOP,shamt,Res_ALU,inNotEqual,isLessThan,temp);
-	 assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==3)? temp:0;
-	 
+	 wire isaddOrsub;
+	 and and1(isaddOrsub,~ALUOP[4],~ALUOP[3],~ALUOP[2],~ALUOP[1],isR);
+	 wire isaddi;
+	 xor xor1(isaddi,opcode[0],opcode[1]);
+	 wire isOverflow;
+	 or or1(isOverflow,isaddOrsub,isaddi);
+	 //assign overflow=isOverflow? temp:0;
+	 //assign overflow = (isaddOrsub||opcode==5'b00011)? temp:0;
+	 assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==5)? temp:0;
 	 // result store
 	 wire [31:0] rstatus_value;
-	 assign rstatus_value = opcode == 5'b00101 ? 2 : (ALUOP == 5'b00000 ? 1 : 3);
+	 assign rstatus_value = isaddi ? 2 : (ALUOP[0] ? 3 : 1);
 	 assign address_dmem = Res_ALU[11:0];
     assign data = data_readRegB;
 	 assign wren = DMwe;
