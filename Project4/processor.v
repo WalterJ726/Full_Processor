@@ -157,9 +157,9 @@ module processor(
 	 xor xor1(isaddi,opcode[0],opcode[1]);
 	 wire isOverflow;
 	 or or1(isOverflow,isaddOrsub,isaddi);
-	 //assign overflow=isOverflow? temp:0;
+	 assign overflow=isOverflow? temp:0;
 	 //assign overflow = (isaddOrsub||opcode==5'b00011)? temp:0;
-	 assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==5)? temp:0;
+	 //assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==5)? temp:0;
 	 // result store
 	 wire [31:0] rstatus_value;
 	 assign rstatus_value = isaddi ? 2 : (ALUOP[0] ? 3 : 1);
