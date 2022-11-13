@@ -12,9 +12,10 @@
 module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock
 ,address_imem, q_imem, address_dmem, data, wren, q_dmem, ctrl_writeEnable, ctrl_writeReg,
 ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
-	, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
-	//, reg20, reg21, reg22, reg23, reg24, reg25, reg26
-	//, reg27, reg28, reg29
+	//, reg1, reg2, reg3, reg10, reg11, reg19
+	//, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
+	, reg20, reg21, reg22, reg23, reg24, reg25, reg26
+//	, reg27, reg28, reg29
 );
     input clock, reset;
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
@@ -26,7 +27,7 @@ ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
 	 assign imem_clock = clock;
 	 assign regfile_clock = ~clk_div4;
 	 assign processor_clock = ~clk_div4;
-	 assign dmem_clock = ~clk_div2;
+	 assign dmem_clock = ~clock;
 	 
 //	 	wire clk_div2, clk_div4, clk_div8;
 //	 frequency_divider frediv_1(clock,reset,clk_div2);
@@ -78,9 +79,10 @@ ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
     output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
     output [31:0] data_writeReg;
     output [31:0] data_readRegA, data_readRegB;
-		output [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;
-		// output [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26
-		//output [31:0] reg27, reg28, reg29;
+	//output [31:0] reg1, reg2, reg3, reg10, reg11, reg19;
+	//output [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;
+		output [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26;
+//		output [31:0] reg27, reg28, reg29;
     regfile my_regfile(
         regfile_clock,
         ctrl_writeEnable,
@@ -91,9 +93,10 @@ ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB
         data_writeReg,
         data_readRegA,
         data_readRegB
-	, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
-	//, reg20, reg21, reg22, reg23, reg24, reg25, reg26
-	//, reg27, reg28, reg29
+		  //, reg1, reg2, reg3, reg10, reg11, reg19
+	//, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
+	, reg20, reg21, reg22, reg23, reg24, reg25, reg26
+//	, reg27, reg28, reg29
     );
 
     /** PROCESSOR **/

@@ -1,76 +1,58 @@
-
-// set the timescale
-`timescale 1 ns / 100 ps
-
+`timescale 1 ns / 1 ps
 module skeleton_tb();
 
-	//input 
-	reg clock, reset;
 
-	//output 
-	wire  imem_clock, dmem_clock, processor_clock, regfile_clock;
-	wire [31:0]q_imem, data_writeReg;
-	wire [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
-	wire [31:0] data_readRegA, data_readRegB,outputRegister;
-	wire [16:0] immed;
-	wire [31:0] signed_immed, data_operandB,alu_output, alu_final_output;
-	wire [11:0] address_imem, address_dmem;
-	wire [4:0] rs,rt,rd;
-	wire [31:0] insn, pc_address_out, pc_address_in;
-	wire temp_overflow;
-	
-	integer index;
+reg clock, reset, errors;
+wire imem_clock, dmem_clock, processor_clock, regfile_clock;
+wire [11:0] address_imem;
+wire [31:0] q_imem;
+wire [11:0] address_dmem;
+wire [31:0] data;
+wire wren;
+wire [31:0] q_dmem;
+wire ctrl_writeEnable;
+wire [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
+wire [31:0] data_writeReg;
+wire [31:0] data_readRegA, data_readRegB;
+//wire [31:0] alu_data_result; 
 
-	//INSTANTIATE a skeleton module 
- skeleton kjk(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,q_imem
-,ctrl_writeReg, ctrl_readRegA, ctrl_readRegB
-,data_writeReg,data_readRegA, data_readRegB, outputRegister
-,immed, signed_immed, data_operandB,alu_output, alu_final_output,
- pc_address_out, pc_address_in,insn,rs,rt,rd,temp_overflow, address_imem, address_dmem);
-
-	//initial
-//	initial
-//
-//    begin
-//        $display($time, " << Starting the skeleton simulation: >>");
-//        clock = 1'b1;    // at time 0
-//        reset = 1;
-//	
-//		  
-//		   @(posedge clock);
-//			@(posedge clock);
-//			reset = 0;
-//			
-//			
-//			@(posedge clock);
-//			
-//			for (index = 1; index < 50; index = index + 1) 
-//			begin 
-//				@(posedge clock);
-//			end
-//		  
-//		$stop;
-//	end
-	
-	initial begin
-		$display($time, " << Starting the skeleton simulation: >>");
+		//wire [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;		
+		//wire [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;
+		// wire [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26
+		wire [31:0] reg27, reg28, reg29;
+skeleton skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
+					 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,
+					 ctrl_writeReg, ctrl_readRegA, ctrl_readRegB,data_writeReg,data_readRegA, data_readRegB
+					 	//, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
+						//, reg20, reg21, reg22, reg23, reg24, reg25, reg26
+						, reg27, reg28, reg29);
+					 
+			
+initial
+    begin
+        $display($time, " << Starting the Simulation >>");
         clock = 1'b1;    // at time 0
-        reset = 1'b1;
-		  
-		  #100 
-		  
-		  reset = 1'b0;
-		  
-	end
-	
-	
-	
-	initial begin
-	#4000 $stop;
-	end
+        errors = 0;
 
-	always
-       	#10 clock = ~clock; // toggle clock every 10 timescale units
-	
+        reset = 1'b1;    // assert reset
+        @(negedge clock);    // wait until next negative edge of clock
+        @(negedge clock);    // wait until next negative edge of clock
 
-endmodule
+        reset = 1'b0;    // de-assert reset
+        @(negedge clock);    // wait until next negative edge of clock
+
+        if (errors == 0) begin
+            $display("The simulation completed without errors");
+        end
+        else begin
+            $display("The simulation failed with %d errors", errors);
+        end
+
+        #4000 $stop;
+end
+
+	
+always
+	#10     clock = ~clock;
+	
+endmodule 

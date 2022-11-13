@@ -70,485 +70,485 @@ CHIP  "processor"  ASSIGNED TO AN: EP4CE115F29C7
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-data[2]                      : A3        : output : 2.5 V             :         : 8         : N              
-reg8[29]                     : A4        : output : 2.5 V             :         : 8         : N              
+data_readRegB[1]             : A3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-reg12[18]                    : A6        : output : 2.5 V             :         : 8         : N              
-reg12[12]                    : A7        : output : 2.5 V             :         : 8         : N              
-reg4[17]                     : A8        : output : 2.5 V             :         : 8         : N              
+reg23[9]                     : A6        : output : 2.5 V             :         : 8         : N              
+data_readRegB[4]             : A7        : output : 2.5 V             :         : 8         : N              
+q_dmem[26]                   : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-pc_in[26]                    : A10       : output : 2.5 V             :         : 8         : N              
-pc_in[7]                     : A11       : output : 2.5 V             :         : 8         : N              
-data_readRegA[12]            : A12       : output : 2.5 V             :         : 8         : N              
+q_imem[23]                   : A10       : output : 2.5 V             :         : 8         : N              
+reg23[10]                    : A11       : output : 2.5 V             :         : 8         : N              
+q_dmem[10]                   : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-reg7[4]                      : A17       : output : 2.5 V             :         : 7         : N              
-data_writeReg[8]             : A18       : output : 2.5 V             :         : 7         : N              
-reg9[11]                     : A19       : output : 2.5 V             :         : 7         : N              
+reg23[4]                     : A17       : output : 2.5 V             :         : 7         : N              
+ctrl_readRegA[0]             : A18       : output : 2.5 V             :         : 7         : N              
+q_imem[17]                   : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-data[29]                     : A21       : output : 2.5 V             :         : 7         : N              
-reg4[7]                      : A22       : output : 2.5 V             :         : 7         : N              
-reg8[12]                     : A23       : output : 2.5 V             :         : 7         : N              
+q_dmem[17]                   : A21       : output : 2.5 V             :         : 7         : N              
+reg25[21]                    : A22       : output : 2.5 V             :         : 7         : N              
+q_imem[6]                    : A23       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-data[20]                     : A25       : output : 2.5 V             :         : 7         : N              
-data_readRegB[20]            : A26       : output : 2.5 V             :         : 7         : N              
+reg22[30]                    : A25       : output : 2.5 V             :         : 7         : N              
+data_readRegB[27]            : A26       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-reg7[20]                     : AA3       : output : 2.5 V             :         : 2         : N              
-pc_in[15]                    : AA4       : output : 2.5 V             :         : 2         : N              
-reg4[29]                     : AA5       : output : 2.5 V             :         : 2         : N              
-reg12[21]                    : AA6       : output : 2.5 V             :         : 2         : N              
-q_dmem[1]                    : AA7       : output : 2.5 V             :         : 2         : N              
-pc_in[8]                     : AA8       : output : 2.5 V             :         : 3         : N              
+reg26[29]                    : AA3       : output : 2.5 V             :         : 2         : N              
+q_dmem[18]                   : AA4       : output : 2.5 V             :         : 2         : N              
+data[12]                     : AA5       : output : 2.5 V             :         : 2         : N              
+data_readRegB[12]            : AA6       : output : 2.5 V             :         : 2         : N              
+q_dmem[21]                   : AA7       : output : 2.5 V             :         : 2         : N              
+q_imem[21]                   : AA8       : output : 2.5 V             :         : 3         : N              
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-reg6[23]                     : AA10      : output : 2.5 V             :         : 3         : N              
+data_readRegA[29]            : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-q_imem[7]                    : AA12      : output : 2.5 V             :         : 3         : N              
-reg13[24]                    : AA13      : output : 2.5 V             :         : 3         : N              
-q_dmem[31]                   : AA14      : output : 2.5 V             :         : 3         : N              
-ctrl_readRegB[1]             : AA15      : output : 2.5 V             :         : 4         : N              
-address_dmem[9]              : AA16      : output : 2.5 V             :         : 4         : N              
-q_dmem[23]                   : AA17      : output : 2.5 V             :         : 4         : N              
+reg22[8]                     : AA12      : output : 2.5 V             :         : 3         : N              
+reg20[13]                    : AA13      : output : 2.5 V             :         : 3         : N              
+reg22[3]                     : AA14      : output : 2.5 V             :         : 3         : N              
+reg24[21]                    : AA15      : output : 2.5 V             :         : 4         : N              
+reg20[23]                    : AA16      : output : 2.5 V             :         : 4         : N              
+reg25[31]                    : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
-reg8[25]                     : AA19      : output : 2.5 V             :         : 4         : N              
+reg21[29]                    : AA19      : output : 2.5 V             :         : 4         : N              
 GNDA4                        : AA20      : gnd    :                   :         :           :                
-reg9[23]                     : AA21      : output : 2.5 V             :         : 4         : N              
+data[16]                     : AA21      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
-data_readRegA[24]            : AA23      : output : 2.5 V             :         : 5         : N              
-reg4[18]                     : AA24      : output : 2.5 V             :         : 5         : N              
-reg6[5]                      : AA25      : output : 2.5 V             :         : 5         : N              
-address_dmem[10]             : AA26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
+ctrl_writeReg[0]             : AA24      : output : 2.5 V             :         : 5         : N              
+ctrl_readRegA[3]             : AA25      : output : 2.5 V             :         : 5         : N              
+reg22[28]                    : AA26      : output : 2.5 V             :         : 5         : N              
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
-address_imem[3]              : AB1       : output : 2.5 V             :         : 2         : N              
-reg13[6]                     : AB2       : output : 2.5 V             :         : 2         : N              
-pc_in[23]                    : AB3       : output : 2.5 V             :         : 2         : N              
-reg8[8]                      : AB4       : output : 2.5 V             :         : 2         : N              
-data_readRegB[1]             : AB5       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
-pc_in[14]                    : AB7       : output : 2.5 V             :         : 3         : N              
-reg8[16]                     : AB8       : output : 2.5 V             :         : 3         : N              
-pc_in[20]                    : AB9       : output : 2.5 V             :         : 3         : N              
-address_imem[2]              : AB10      : output : 2.5 V             :         : 3         : N              
-q_imem[6]                    : AB11      : output : 2.5 V             :         : 3         : N              
-pc_in[24]                    : AB12      : output : 2.5 V             :         : 3         : N              
-reg7[18]                     : AB13      : output : 2.5 V             :         : 3         : N              
-q_imem[10]                   : AB14      : output : 2.5 V             :         : 3         : N              
-reg12[7]                     : AB15      : output : 2.5 V             :         : 4         : N              
-q_dmem[21]                   : AB16      : output : 2.5 V             :         : 4         : N              
-reg12[10]                    : AB17      : output : 2.5 V             :         : 4         : N              
-reg4[30]                     : AB18      : output : 2.5 V             :         : 4         : N              
-address_dmem[11]             : AB19      : output : 2.5 V             :         : 4         : N              
-data_readRegA[16]            : AB20      : output : 2.5 V             :         : 4         : N              
-reg6[12]                     : AB21      : output : 2.5 V             :         : 4         : N              
-data_readRegA[26]            : AB22      : output : 2.5 V             :         : 4         : N              
-reg7[30]                     : AB23      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
-reg9[5]                      : AB25      : output : 2.5 V             :         : 5         : N              
-reg4[22]                     : AB26      : output : 2.5 V             :         : 5         : N              
-reg7[7]                      : AB27      : output : 2.5 V             :         : 5         : N              
-q_dmem[17]                   : AB28      : output : 2.5 V             :         : 5         : N              
-reg7[29]                     : AC1       : output : 2.5 V             :         : 2         : N              
-data_writeReg[22]            : AC2       : output : 2.5 V             :         : 2         : N              
-reg13[30]                    : AC3       : output : 2.5 V             :         : 2         : N              
-reg6[21]                     : AC4       : output : 2.5 V             :         : 2         : N              
-reg13[2]                     : AC5       : output : 2.5 V             :         : 2         : N              
+q_dmem[13]                   : AB1       : output : 2.5 V             :         : 2         : N              
+data_readRegA[17]            : AB2       : output : 2.5 V             :         : 2         : N              
+address_dmem[4]              : AB3       : output : 2.5 V             :         : 2         : N              
+reg21[27]                    : AB4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
+reg24[14]                    : AB6       : output : 2.5 V             :         : 2         : N              
+reg24[13]                    : AB7       : output : 2.5 V             :         : 3         : N              
+reg24[26]                    : AB8       : output : 2.5 V             :         : 3         : N              
+reg26[6]                     : AB9       : output : 2.5 V             :         : 3         : N              
+wren                         : AB10      : output : 2.5 V             :         : 3         : N              
+q_imem[18]                   : AB11      : output : 2.5 V             :         : 3         : N              
+ctrl_readRegB[0]             : AB12      : output : 2.5 V             :         : 3         : N              
+q_imem[26]                   : AB13      : output : 2.5 V             :         : 3         : N              
+reg26[11]                    : AB14      : output : 2.5 V             :         : 3         : N              
+ctrl_readRegB[1]             : AB15      : output : 2.5 V             :         : 4         : N              
+reg24[27]                    : AB16      : output : 2.5 V             :         : 4         : N              
+data_writeReg[9]             : AB17      : output : 2.5 V             :         : 4         : N              
+reg20[31]                    : AB18      : output : 2.5 V             :         : 4         : N              
+q_imem[5]                    : AB19      : output : 2.5 V             :         : 4         : N              
+q_imem[0]                    : AB20      : output : 2.5 V             :         : 4         : N              
+reg21[23]                    : AB21      : output : 2.5 V             :         : 4         : N              
+reg26[28]                    : AB22      : output : 2.5 V             :         : 4         : N              
+reg26[22]                    : AB23      : output : 2.5 V             :         : 5         : N              
+reg26[27]                    : AB24      : output : 2.5 V             :         : 5         : N              
+reg22[22]                    : AB25      : output : 2.5 V             :         : 5         : N              
+q_imem[8]                    : AB26      : output : 2.5 V             :         : 5         : N              
+data[20]                     : AB27      : output : 2.5 V             :         : 5         : N              
+reg22[17]                    : AB28      : output : 2.5 V             :         : 5         : N              
+reg26[4]                     : AC1       : output : 2.5 V             :         : 2         : N              
+q_dmem[6]                    : AC2       : output : 2.5 V             :         : 2         : N              
+reg22[6]                     : AC3       : output : 2.5 V             :         : 2         : N              
+reg20[16]                    : AC4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
-reg6[30]                     : AC7       : output : 2.5 V             :         : 3         : N              
-reg12[19]                    : AC8       : output : 2.5 V             :         : 3         : N              
+reg21[26]                    : AC7       : output : 2.5 V             :         : 3         : N              
+ctrl_readRegA[4]             : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-q_imem[4]                    : AC10      : output : 2.5 V             :         : 3         : N              
-reg12[20]                    : AC11      : output : 2.5 V             :         : 3         : N              
-pc_in[6]                     : AC12      : output : 2.5 V             :         : 3         : N              
+q_imem[7]                    : AC10      : output : 2.5 V             :         : 3         : N              
+q_imem[22]                   : AC11      : output : 2.5 V             :         : 3         : N              
+ctrl_readRegB[3]             : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-reg12[28]                    : AC14      : output : 2.5 V             :         : 3         : N              
-q_dmem[19]                   : AC15      : output : 2.5 V             :         : 4         : N              
+reg22[4]                     : AC14      : output : 2.5 V             :         : 3         : N              
+reg22[26]                    : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
-data_writeReg[2]             : AC17      : output : 2.5 V             :         : 4         : N              
-address_dmem[3]              : AC18      : output : 2.5 V             :         : 4         : N              
-q_dmem[24]                   : AC19      : output : 2.5 V             :         : 4         : N              
+address_imem[3]              : AC17      : output : 2.5 V             :         : 4         : N              
+data_writeReg[22]            : AC18      : output : 2.5 V             :         : 4         : N              
+reg25[16]                    : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-reg13[29]                    : AC21      : output : 2.5 V             :         : 4         : N              
-reg12[27]                    : AC22      : output : 2.5 V             :         : 4         : N              
+q_imem[29]                   : AC21      : output : 2.5 V             :         : 4         : N              
+ctrl_writeReg[4]             : AC22      : output : 2.5 V             :         : 4         : N              
 GND                          : AC23      : gnd    :                   :         :           :                
-data[7]                      : AC24      : output : 2.5 V             :         : 5         : N              
-reg9[25]                     : AC25      : output : 2.5 V             :         : 5         : N              
-data_readRegA[15]            : AC26      : output : 2.5 V             :         : 5         : N              
-q_imem[24]                   : AC27      : output : 2.5 V             :         : 5         : N              
-data_readRegA[28]            : AC28      : output : 2.5 V             :         : 5         : N              
-pc_in[12]                    : AD1       : output : 2.5 V             :         : 2         : N              
-pc_in[22]                    : AD2       : output : 2.5 V             :         : 2         : N              
-reg12[22]                    : AD3       : output : 2.5 V             :         : 2         : N              
-reg12[3]                     : AD4       : output : 2.5 V             :         : 3         : N              
-data_readRegA[21]            : AD5       : output : 2.5 V             :         : 3         : N              
+reg22[24]                    : AC24      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
+reg26[10]                    : AC26      : output : 2.5 V             :         : 5         : N              
+data_writeReg[31]            : AC27      : output : 2.5 V             :         : 5         : N              
+data_writeReg[28]            : AC28      : output : 2.5 V             :         : 5         : N              
+q_dmem[30]                   : AD1       : output : 2.5 V             :         : 2         : N              
+address_dmem[11]             : AD2       : output : 2.5 V             :         : 2         : N              
+address_dmem[1]              : AD3       : output : 2.5 V             :         : 2         : N              
+q_dmem[16]                   : AD4       : output : 2.5 V             :         : 3         : N              
+reg20[29]                    : AD5       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
-data[5]                      : AD7       : output : 2.5 V             :         : 3         : N              
-data[30]                     : AD8       : output : 2.5 V             :         : 3         : N              
+reg20[14]                    : AD7       : output : 2.5 V             :         : 3         : N              
+reg26[13]                    : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-pc_in[18]                    : AD10      : output : 2.5 V             :         : 3         : N              
-address_imem[8]              : AD11      : output : 2.5 V             :         : 3         : N              
-pc_in[2]                     : AD12      : output : 2.5 V             :         : 3         : N              
+data_readRegA[12]            : AD10      : output : 2.5 V             :         : 3         : N              
+reg22[25]                    : AD11      : output : 2.5 V             :         : 3         : N              
+address_dmem[10]             : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-data_readRegA[2]             : AD14      : output : 2.5 V             :         : 3         : N              
-q_imem[9]                    : AD15      : output : 2.5 V             :         : 4         : N              
+reg26[7]                     : AD14      : output : 2.5 V             :         : 3         : N              
+reg22[16]                    : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-data_writeReg[3]             : AD17      : output : 2.5 V             :         : 4         : N              
-reg12[0]                     : AD18      : output : 2.5 V             :         : 4         : N              
-reg9[4]                      : AD19      : output : 2.5 V             :         : 4         : N              
+address_imem[8]              : AD17      : output : 2.5 V             :         : 4         : N              
+reg25[23]                    : AD18      : output : 2.5 V             :         : 4         : N              
+reg25[4]                     : AD19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-reg9[13]                     : AD21      : output : 2.5 V             :         : 4         : N              
-data_readRegB[7]             : AD22      : output : 2.5 V             :         : 4         : N              
+reg21[19]                    : AD21      : output : 2.5 V             :         : 4         : N              
+data[31]                     : AD22      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
-reg7[28]                     : AD24      : output : 2.5 V             :         : 4         : N              
-reg9[24]                     : AD25      : output : 2.5 V             :         : 4         : N              
-data_readRegA[18]            : AD26      : output : 2.5 V             :         : 5         : N              
-data_readRegA[19]            : AD27      : output : 2.5 V             :         : 5         : N              
-data_readRegB[24]            : AD28      : output : 2.5 V             :         : 5         : N              
-reg7[23]                     : AE1       : output : 2.5 V             :         : 2         : N              
-ctrl_writeReg[4]             : AE2       : output : 2.5 V             :         : 2         : N              
-reg12[2]                     : AE3       : output : 2.5 V             :         : 2         : N              
-reg4[26]                     : AE4       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
-data_readRegB[5]             : AE6       : output : 2.5 V             :         : 3         : N              
-q_imem[5]                    : AE7       : output : 2.5 V             :         : 3         : N              
-data_writeReg[28]            : AE8       : output : 2.5 V             :         : 3         : N              
-reg13[25]                    : AE9       : output : 2.5 V             :         : 3         : N              
-data_readRegA[30]            : AE10      : output : 2.5 V             :         : 3         : N              
-address_imem[7]              : AE11      : output : 2.5 V             :         : 3         : N              
-address_imem[1]              : AE12      : output : 2.5 V             :         : 3         : N              
-data_writeReg[18]            : AE13      : output : 2.5 V             :         : 3         : N              
-reg13[19]                    : AE14      : output : 2.5 V             :         : 3         : N              
-q_dmem[20]                   : AE15      : output : 2.5 V             :         : 4         : N              
-q_dmem[28]                   : AE16      : output : 2.5 V             :         : 4         : N              
-address_dmem[2]              : AE17      : output : 2.5 V             :         : 4         : N              
-data_writeReg[0]             : AE18      : output : 2.5 V             :         : 4         : N              
-data_writeReg[6]             : AE19      : output : 2.5 V             :         : 4         : N              
-data_writeReg[13]            : AE20      : output : 2.5 V             :         : 4         : N              
-q_dmem[22]                   : AE21      : output : 2.5 V             :         : 4         : N              
-q_dmem[14]                   : AE22      : output : 2.5 V             :         : 4         : N              
-reg12[31]                    : AE23      : output : 2.5 V             :         : 4         : N              
-reg13[21]                    : AE24      : output : 2.5 V             :         : 4         : N              
-q_dmem[4]                    : AE25      : output : 2.5 V             :         : 4         : N              
-reg13[5]                     : AE26      : output : 2.5 V             :         : 5         : N              
-data[24]                     : AE27      : output : 2.5 V             :         : 5         : N              
-data_readRegA[14]            : AE28      : output : 2.5 V             :         : 5         : N              
+reg25[5]                     : AD24      : output : 2.5 V             :         : 4         : N              
+data_readRegB[18]            : AD25      : output : 2.5 V             :         : 4         : N              
+reg22[31]                    : AD26      : output : 2.5 V             :         : 5         : N              
+reg26[23]                    : AD27      : output : 2.5 V             :         : 5         : N              
+q_imem[27]                   : AD28      : output : 2.5 V             :         : 5         : N              
+reg26[18]                    : AE1       : output : 2.5 V             :         : 2         : N              
+reg25[20]                    : AE2       : output : 2.5 V             :         : 2         : N              
+reg22[5]                     : AE3       : output : 2.5 V             :         : 2         : N              
+reg21[6]                     : AE4       : output : 2.5 V             :         : 3         : N              
+reg26[21]                    : AE5       : output : 2.5 V             :         : 3         : N              
+reg25[29]                    : AE6       : output : 2.5 V             :         : 3         : N              
+data_readRegA[10]            : AE7       : output : 2.5 V             :         : 3         : N              
+data_readRegA[22]            : AE8       : output : 2.5 V             :         : 3         : N              
+data_readRegA[28]            : AE9       : output : 2.5 V             :         : 3         : N              
+ctrl_readRegA[1]             : AE10      : output : 2.5 V             :         : 3         : N              
+q_imem[10]                   : AE11      : output : 2.5 V             :         : 3         : N              
+data_writeReg[25]            : AE12      : output : 2.5 V             :         : 3         : N              
+q_imem[30]                   : AE13      : output : 2.5 V             :         : 3         : N              
+reg22[7]                     : AE14      : output : 2.5 V             :         : 3         : N              
+reg26[26]                    : AE15      : output : 2.5 V             :         : 4         : N              
+reg26[20]                    : AE16      : output : 2.5 V             :         : 4         : N              
+data_readRegA[24]            : AE17      : output : 2.5 V             :         : 4         : N              
+address_imem[1]              : AE18      : output : 2.5 V             :         : 4         : N              
+data_writeReg[4]             : AE19      : output : 2.5 V             :         : 4         : N              
+data_writeReg[21]            : AE20      : output : 2.5 V             :         : 4         : N              
+data_writeReg[29]            : AE21      : output : 2.5 V             :         : 4         : N              
+data[18]                     : AE22      : output : 2.5 V             :         : 4         : N              
+reg20[26]                    : AE23      : output : 2.5 V             :         : 4         : N              
+reg22[19]                    : AE24      : output : 2.5 V             :         : 4         : N              
+reg25[15]                    : AE25      : output : 2.5 V             :         : 4         : N              
+reg24[31]                    : AE26      : output : 2.5 V             :         : 5         : N              
+reg26[31]                    : AE27      : output : 2.5 V             :         : 5         : N              
+reg25[27]                    : AE28      : output : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
-reg12[1]                     : AF2       : output : 2.5 V             :         : 2         : N              
-reg12[23]                    : AF3       : output : 2.5 V             :         : 3         : N              
-data_readRegB[11]            : AF4       : output : 2.5 V             :         : 3         : N              
-data[1]                      : AF5       : output : 2.5 V             :         : 3         : N              
-reg12[17]                    : AF6       : output : 2.5 V             :         : 3         : N              
-pc_in[0]                     : AF7       : output : 2.5 V             :         : 3         : N              
-reg13[20]                    : AF8       : output : 2.5 V             :         : 3         : N              
-address_imem[0]              : AF9       : output : 2.5 V             :         : 3         : N              
-data_writeReg[7]             : AF10      : output : 2.5 V             :         : 3         : N              
-address_imem[10]             : AF11      : output : 2.5 V             :         : 3         : N              
-data_writeReg[16]            : AF12      : output : 2.5 V             :         : 3         : N              
-pc_in[30]                    : AF13      : output : 2.5 V             :         : 3         : N              
-reg13[3]                     : AF14      : output : 2.5 V             :         : 3         : N              
-q_dmem[29]                   : AF15      : output : 2.5 V             :         : 4         : N              
-q_imem[11]                   : AF16      : output : 2.5 V             :         : 4         : N              
-q_imem[25]                   : AF17      : output : 2.5 V             :         : 4         : N              
-address_dmem[0]              : AF18      : output : 2.5 V             :         : 4         : N              
-data_writeReg[12]            : AF19      : output : 2.5 V             :         : 4         : N              
-reg13[16]                    : AF20      : output : 2.5 V             :         : 4         : N              
-address_dmem[6]              : AF21      : output : 2.5 V             :         : 4         : N              
-reg4[23]                     : AF22      : output : 2.5 V             :         : 4         : N              
-q_dmem[12]                   : AF23      : output : 2.5 V             :         : 4         : N              
-address_dmem[1]              : AF24      : output : 2.5 V             :         : 4         : N              
-reg12[6]                     : AF25      : output : 2.5 V             :         : 4         : N              
-reg6[31]                     : AF26      : output : 2.5 V             :         : 4         : N              
-reg8[3]                      : AF27      : output : 2.5 V             :         : 5         : N              
+reg25[19]                    : AF2       : output : 2.5 V             :         : 2         : N              
+reg22[9]                     : AF3       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3         :                
+reg26[8]                     : AF5       : output : 2.5 V             :         : 3         : N              
+reg20[27]                    : AF6       : output : 2.5 V             :         : 3         : N              
+data_readRegA[25]            : AF7       : output : 2.5 V             :         : 3         : N              
+data_readRegA[15]            : AF8       : output : 2.5 V             :         : 3         : N              
+data_readRegA[5]             : AF9       : output : 2.5 V             :         : 3         : N              
+data_readRegA[23]            : AF10      : output : 2.5 V             :         : 3         : N              
+address_dmem[0]              : AF11      : output : 2.5 V             :         : 3         : N              
+data_readRegA[30]            : AF12      : output : 2.5 V             :         : 3         : N              
+data_writeReg[13]            : AF13      : output : 2.5 V             :         : 3         : N              
+address_dmem[5]              : AF14      : output : 2.5 V             :         : 3         : N              
+reg22[15]                    : AF15      : output : 2.5 V             :         : 4         : N              
+reg22[20]                    : AF16      : output : 2.5 V             :         : 4         : N              
+address_imem[4]              : AF17      : output : 2.5 V             :         : 4         : N              
+address_imem[9]              : AF18      : output : 2.5 V             :         : 4         : N              
+address_imem[11]             : AF19      : output : 2.5 V             :         : 4         : N              
+q_imem[19]                   : AF20      : output : 2.5 V             :         : 4         : N              
+data_writeReg[24]            : AF21      : output : 2.5 V             :         : 4         : N              
+reg21[13]                    : AF22      : output : 2.5 V             :         : 4         : N              
+q_imem[1]                    : AF23      : output : 2.5 V             :         : 4         : N              
+data_writeReg[14]            : AF24      : output : 2.5 V             :         : 4         : N              
+ctrl_readRegA[2]             : AF25      : output : 2.5 V             :         : 4         : N              
+q_imem[16]                   : AF26      : output : 2.5 V             :         : 4         : N              
+reg25[10]                    : AF27      : output : 2.5 V             :         : 5         : N              
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-data[11]                     : AG3       : output : 2.5 V             :         : 3         : N              
-reg9[17]                     : AG4       : output : 2.5 V             :         : 3         : N              
+reg20[19]                    : AG3       : output : 2.5 V             :         : 3         : N              
+reg26[25]                    : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-pc_in[10]                    : AG6       : output : 2.5 V             :         : 3         : N              
-pc_in[13]                    : AG7       : output : 2.5 V             :         : 3         : N              
-pc_in[21]                    : AG8       : output : 2.5 V             :         : 3         : N              
+reg26[24]                    : AG6       : output : 2.5 V             :         : 3         : N              
+reg26[9]                     : AG7       : output : 2.5 V             :         : 3         : N              
+q_dmem[27]                   : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-data_writeReg[29]            : AG10      : output : 2.5 V             :         : 3         : N              
-address_imem[11]             : AG11      : output : 2.5 V             :         : 3         : N              
-data_writeReg[30]            : AG12      : output : 2.5 V             :         : 3         : N              
+address_dmem[9]              : AG10      : output : 2.5 V             :         : 3         : N              
+ctrl_readRegB[4]             : AG11      : output : 2.5 V             :         : 3         : N              
+reg24[24]                    : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-q_imem[8]                    : AG17      : output : 2.5 V             :         : 4         : N              
-ctrl_readRegB[3]             : AG18      : output : 2.5 V             :         : 4         : N              
-address_dmem[7]              : AG19      : output : 2.5 V             :         : 4         : N              
+reg22[23]                    : AG17      : output : 2.5 V             :         : 4         : N              
+data_writeReg[11]            : AG18      : output : 2.5 V             :         : 4         : N              
+ctrl_readRegB[2]             : AG19      : output : 2.5 V             :         : 4         : N              
 GND                          : AG20      : gnd    :                   :         :           :                
-ctrl_readRegB[0]             : AG21      : output : 2.5 V             :         : 4         : N              
-address_dmem[4]              : AG22      : output : 2.5 V             :         : 4         : N              
-address_dmem[5]              : AG23      : output : 2.5 V             :         : 4         : N              
+address_imem[0]              : AG21      : output : 2.5 V             :         : 4         : N              
+address_imem[2]              : AG22      : output : 2.5 V             :         : 4         : N              
+address_imem[10]             : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-data_writeReg[27]            : AG25      : output : 2.5 V             :         : 4         : N              
-reg7[5]                      : AG26      : output : 2.5 V             :         : 4         : N              
+reg25[22]                    : AG25      : output : 2.5 V             :         : 4         : N              
+data_readRegB[16]            : AG26      : output : 2.5 V             :         : 4         : N              
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
-reg6[29]                     : AH3       : output : 2.5 V             :         : 3         : N              
-data_readRegB[30]            : AH4       : output : 2.5 V             :         : 3         : N              
+q_dmem[23]                   : AH3       : output : 2.5 V             :         : 3         : N              
+reg22[14]                    : AH4       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-reg4[31]                     : AH6       : output : 2.5 V             :         : 3         : N              
-pc_in[3]                     : AH7       : output : 2.5 V             :         : 3         : N              
-data_writeReg[20]            : AH8       : output : 2.5 V             :         : 3         : N              
+q_imem[28]                   : AH6       : output : 2.5 V             :         : 3         : N              
+reg26[15]                    : AH7       : output : 2.5 V             :         : 3         : N              
+reg26[3]                     : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-q_imem[2]                    : AH10      : output : 2.5 V             :         : 3         : N              
-data_writeReg[31]            : AH11      : output : 2.5 V             :         : 3         : N              
-data_writeReg[23]            : AH12      : output : 2.5 V             :         : 3         : N              
+data_readRegA[27]            : AH10      : output : 2.5 V             :         : 3         : N              
+data_writeReg[6]             : AH11      : output : 2.5 V             :         : 3         : N              
+reg20[24]                    : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-q_dmem[25]                   : AH17      : output : 2.5 V             :         : 4         : N              
-ctrl_readRegB[2]             : AH18      : output : 2.5 V             :         : 4         : N              
-address_dmem[8]              : AH19      : output : 2.5 V             :         : 4         : N              
+reg24[19]                    : AH17      : output : 2.5 V             :         : 4         : N              
+q_imem[4]                    : AH18      : output : 2.5 V             :         : 4         : N              
+address_imem[5]              : AH19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
-data_writeReg[1]             : AH21      : output : 2.5 V             :         : 4         : N              
-data_writeReg[24]            : AH22      : output : 2.5 V             :         : 4         : N              
-data_writeReg[4]             : AH23      : output : 2.5 V             :         : 4         : N              
+address_imem[6]              : AH21      : output : 2.5 V             :         : 4         : N              
+address_imem[7]              : AH22      : output : 2.5 V             :         : 4         : N              
+data_writeReg[15]            : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-data_readRegA[11]            : AH25      : output : 2.5 V             :         : 4         : N              
-q_dmem[18]                   : AH26      : output : 2.5 V             :         : 4         : N              
+reg25[9]                     : AH25      : output : 2.5 V             :         : 4         : N              
+data_readRegB[31]            : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-data_readRegB[26]            : B3        : output : 2.5 V             :         : 8         : N              
-reg12[14]                    : B4        : output : 2.5 V             :         : 8         : N              
+data_readRegB[2]             : B3        : output : 2.5 V             :         : 8         : N              
+data[2]                      : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-reg8[26]                     : B6        : output : 2.5 V             :         : 8         : N              
-reg7[14]                     : B7        : output : 2.5 V             :         : 8         : N              
-pc_in[25]                    : B8        : output : 2.5 V             :         : 8         : N              
+reg24[7]                     : B6        : output : 2.5 V             :         : 8         : N              
+reg23[11]                    : B7        : output : 2.5 V             :         : 8         : N              
+reg24[18]                    : B8        : output : 2.5 V             :         : 8         : N              
 GND                          : B9        : gnd    :                   :         :           :                
-reg9[9]                      : B10       : output : 2.5 V             :         : 8         : N              
-pc_in[17]                    : B11       : output : 2.5 V             :         : 8         : N              
+data_readRegA[11]            : B10       : output : 2.5 V             :         : 8         : N              
+data_readRegA[9]             : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-reg7[11]                     : B17       : output : 2.5 V             :         : 7         : N              
-reg13[13]                    : B18       : output : 2.5 V             :         : 7         : N              
-data_readRegA[4]             : B19       : output : 2.5 V             :         : 7         : N              
+reg23[3]                     : B17       : output : 2.5 V             :         : 7         : N              
+data_readRegA[1]             : B18       : output : 2.5 V             :         : 7         : N              
+reg21[30]                    : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-data_readRegB[21]            : B21       : output : 2.5 V             :         : 7         : N              
-data_readRegB[29]            : B22       : output : 2.5 V             :         : 7         : N              
-reg7[21]                     : B23       : output : 2.5 V             :         : 7         : N              
+reg25[0]                     : B21       : output : 2.5 V             :         : 7         : N              
+data_readRegB[9]             : B22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B23       :        :                   :         : 7         :                
 GND                          : B24       : gnd    :                   :         :           :                
-data[31]                     : B25       : output : 2.5 V             :         : 7         : N              
-data[16]                     : B26       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
+data[27]                     : B26       : output : 2.5 V             :         : 7         : N              
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
-data_readRegB[10]            : C3        : output : 2.5 V             :         : 8         : N              
-pc_in[28]                    : C4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
-data[27]                     : C6        : output : 2.5 V             :         : 8         : N              
-data_readRegA[27]            : C7        : output : 2.5 V             :         : 8         : N              
-data_readRegA[6]             : C8        : output : 2.5 V             :         : 8         : N              
-q_imem[20]                   : C9        : output : 2.5 V             :         : 8         : N              
-q_imem[19]                   : C10       : output : 2.5 V             :         : 8         : N              
-q_imem[1]                    : C11       : output : 2.5 V             :         : 8         : N              
-reg9[30]                     : C12       : output : 2.5 V             :         : 8         : N              
-reg6[9]                      : C13       : output : 2.5 V             :         : 8         : N              
-reg13[27]                    : C14       : output : 2.5 V             :         : 8         : N              
-reg4[4]                      : C15       : output : 2.5 V             :         : 7         : N              
-reg4[15]                     : C16       : output : 2.5 V             :         : 7         : N              
-data_readRegA[13]            : C17       : output : 2.5 V             :         : 7         : N              
-reg9[28]                     : C18       : output : 2.5 V             :         : 7         : N              
-reg8[27]                     : C19       : output : 2.5 V             :         : 7         : N              
-reg7[6]                      : C20       : output : 2.5 V             :         : 7         : N              
-reg6[16]                     : C21       : output : 2.5 V             :         : 7         : N              
-data_readRegB[14]            : C22       : output : 2.5 V             :         : 7         : N              
-data_readRegB[12]            : C23       : output : 2.5 V             :         : 7         : N              
-data_readRegB[0]             : C24       : output : 2.5 V             :         : 7         : N              
-data[23]                     : C25       : output : 2.5 V             :         : 7         : N              
-data_readRegB[28]            : C26       : output : 2.5 V             :         : 7         : N              
-data[8]                      : C27       : output : 2.5 V             :         : 6         : N              
+data[1]                      : C6        : output : 2.5 V             :         : 8         : N              
+data[24]                     : C7        : output : 2.5 V             :         : 8         : N              
+data_readRegB[24]            : C8        : output : 2.5 V             :         : 8         : N              
+q_dmem[3]                    : C9        : output : 2.5 V             :         : 8         : N              
+address_dmem[8]              : C10       : output : 2.5 V             :         : 8         : N              
+data_readRegB[0]             : C11       : output : 2.5 V             :         : 8         : N              
+data_readRegB[5]             : C12       : output : 2.5 V             :         : 8         : N              
+regfile_clock                : C13       : output : 2.5 V             :         : 8         : N              
+reg23[7]                     : C14       : output : 2.5 V             :         : 8         : N              
+reg20[6]                     : C15       : output : 2.5 V             :         : 7         : N              
+reg23[17]                    : C16       : output : 2.5 V             :         : 7         : N              
+data_writeReg[18]            : C17       : output : 2.5 V             :         : 7         : N              
+q_dmem[20]                   : C18       : output : 2.5 V             :         : 7         : N              
+q_imem[9]                    : C19       : output : 2.5 V             :         : 7         : N              
+reg21[8]                     : C20       : output : 2.5 V             :         : 7         : N              
+reg20[30]                    : C21       : output : 2.5 V             :         : 7         : N              
+data_readRegB[23]            : C22       : output : 2.5 V             :         : 7         : N              
+reg23[19]                    : C23       : output : 2.5 V             :         : 7         : N              
+q_dmem[28]                   : C24       : output : 2.5 V             :         : 7         : N              
+reg25[8]                     : C25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
+reg20[8]                     : C27       : output : 2.5 V             :         : 6         : N              
 GND                          : C28       : gnd    :                   :         :           :                
-reg9[31]                     : D1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
-reg9[12]                     : D6        : output : 2.5 V             :         : 8         : N              
-reg4[25]                     : D7        : output : 2.5 V             :         : 8         : N              
-reg6[18]                     : D8        : output : 2.5 V             :         : 8         : N              
-q_imem[28]                   : D9        : output : 2.5 V             :         : 8         : N              
-ctrl_readRegA[2]             : D10       : output : 2.5 V             :         : 8         : N              
-ctrl_readRegA[3]             : D11       : output : 2.5 V             :         : 8         : N              
-reg6[17]                     : D12       : output : 2.5 V             :         : 8         : N              
-reg4[0]                      : D13       : output : 2.5 V             :         : 8         : N              
-reg8[21]                     : D14       : output : 2.5 V             :         : 8         : N              
-reg12[8]                     : D15       : output : 2.5 V             :         : 7         : N              
-reg7[8]                      : D16       : output : 2.5 V             :         : 7         : N              
-reg8[15]                     : D17       : output : 2.5 V             :         : 7         : N              
-reg8[13]                     : D18       : output : 2.5 V             :         : 7         : N              
-reg13[7]                     : D19       : output : 2.5 V             :         : 7         : N              
-reg6[6]                      : D20       : output : 2.5 V             :         : 7         : N              
-data[12]                     : D21       : output : 2.5 V             :         : 7         : N              
-data[28]                     : D22       : output : 2.5 V             :         : 7         : N              
-data[0]                      : D23       : output : 2.5 V             :         : 7         : N              
-data[14]                     : D24       : output : 2.5 V             :         : 7         : N              
-data_readRegB[23]            : D25       : output : 2.5 V             :         : 7         : N              
-data_readRegB[4]             : D26       : output : 2.5 V             :         : 6         : N              
-data[17]                     : D27       : output : 2.5 V             :         : 6         : N              
-data[3]                      : D28       : output : 2.5 V             :         : 6         : N              
-pc_in[27]                    : E1        : output : 2.5 V             :         : 1         : N              
+data[14]                     : D5        : output : 2.5 V             :         : 8         : N              
+data[26]                     : D6        : output : 2.5 V             :         : 8         : N              
+reg22[10]                    : D7        : output : 2.5 V             :         : 8         : N              
+data_readRegB[19]            : D8        : output : 2.5 V             :         : 8         : N              
+reg20[11]                    : D9        : output : 2.5 V             :         : 8         : N              
+data[4]                      : D10       : output : 2.5 V             :         : 8         : N              
+data_readRegA[2]             : D11       : output : 2.5 V             :         : 8         : N              
+data[5]                      : D12       : output : 2.5 V             :         : 8         : N              
+processor_clock              : D13       : output : 2.5 V             :         : 8         : N              
+reg23[5]                     : D14       : output : 2.5 V             :         : 8         : N              
+reg23[27]                    : D15       : output : 2.5 V             :         : 7         : N              
+reg23[13]                    : D16       : output : 2.5 V             :         : 7         : N              
+reg21[25]                    : D17       : output : 2.5 V             :         : 7         : N              
+reg24[3]                     : D18       : output : 2.5 V             :         : 7         : N              
+data_writeReg[7]             : D19       : output : 2.5 V             :         : 7         : N              
+reg23[24]                    : D20       : output : 2.5 V             :         : 7         : N              
+reg23[26]                    : D21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
+reg22[21]                    : D23       : output : 2.5 V             :         : 7         : N              
+reg25[6]                     : D24       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
+reg21[16]                    : D27       : output : 2.5 V             :         : 6         : N              
+q_dmem[11]                   : D28       : output : 2.5 V             :         : 6         : N              
+reg23[16]                    : E1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
-data_readRegB[27]            : E4        : output : 2.5 V             :         : 8         : N              
-data[10]                     : E5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-reg4[6]                      : E7        : output : 2.5 V             :         : 8         : N              
-data_readRegB[2]             : E8        : output : 2.5 V             :         : 8         : N              
+data_readRegB[29]            : E7        : output : 2.5 V             :         : 8         : N              
+q_dmem[24]                   : E8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-reg9[14]                     : E10       : output : 2.5 V             :         : 8         : N              
-reg8[14]                     : E11       : output : 2.5 V             :         : 8         : N              
-data_writeReg[25]            : E12       : output : 2.5 V             :         : 8         : N              
+data[19]                     : E10       : output : 2.5 V             :         : 8         : N              
+reg23[6]                     : E11       : output : 2.5 V             :         : 8         : N              
+reg20[15]                    : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-pc_in[31]                    : E14       : output : 2.5 V             :         : 8         : N              
-reg7[2]                      : E15       : output : 2.5 V             :         : 7         : N              
+ctrl_writeEnable             : E14       : output : 2.5 V             :         : 8         : N              
+reg22[12]                    : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-reg8[10]                     : E17       : output : 2.5 V             :         : 7         : N              
-q_dmem[11]                   : E18       : output : 2.5 V             :         : 7         : N              
-data[21]                     : E19       : output : 2.5 V             :         : 7         : N              
+reg26[2]                     : E17       : output : 2.5 V             :         : 7         : N              
+data[23]                     : E18       : output : 2.5 V             :         : 7         : N              
+reg25[13]                    : E19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-data_readRegB[15]            : E21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-reg4[11]                     : E24       : output : 2.5 V             :         : 7         : N              
-reg12[5]                     : E25       : output : 2.5 V             :         : 7         : N              
-data_readRegB[3]             : E26       : output : 2.5 V             :         : 6         : N              
-data_readRegB[8]             : E27       : output : 2.5 V             :         : 6         : N              
-reg6[14]                     : E28       : output : 2.5 V             :         : 6         : N              
-reg7[9]                      : F1        : output : 2.5 V             :         : 1         : N              
-reg9[22]                     : F2        : output : 2.5 V             :         : 1         : N              
-data_readRegB[18]            : F3        : output : 2.5 V             :         : 1         : N              
+reg21[10]                    : E24       : output : 2.5 V             :         : 7         : N              
+reg24[6]                     : E25       : output : 2.5 V             :         : 7         : N              
+data[15]                     : E26       : output : 2.5 V             :         : 6         : N              
+reg23[18]                    : E27       : output : 2.5 V             :         : 6         : N              
+data_readRegB[15]            : E28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
-reg13[11]                    : F5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
 GND                          : F6        : gnd    :                   :         :           :                
-reg6[22]                     : F7        : output : 2.5 V             :         : 8         : N              
-data[19]                     : F8        : output : 2.5 V             :         : 8         : N              
+data_readRegB[14]            : F7        : output : 2.5 V             :         : 8         : N              
+data_readRegB[7]             : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
-reg8[31]                     : F10       : output : 2.5 V             :         : 8         : N              
-reg6[25]                     : F11       : output : 2.5 V             :         : 8         : N              
-q_imem[13]                   : F12       : output : 2.5 V             :         : 8         : N              
+data_readRegB[6]             : F10       : output : 2.5 V             :         : 8         : N              
+reg24[5]                     : F11       : output : 2.5 V             :         : 8         : N              
+reg20[7]                     : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-reg7[17]                     : F14       : output : 2.5 V             :         : 8         : N              
-reg6[4]                      : F15       : output : 2.5 V             :         : 7         : N              
+reg24[4]                     : F14       : output : 2.5 V             :         : 8         : N              
+reg26[1]                     : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-reg9[16]                     : F17       : output : 2.5 V             :         : 7         : N              
-q_dmem[27]                   : F18       : output : 2.5 V             :         : 7         : N              
-reg13[0]                     : F19       : output : 2.5 V             :         : 7         : N              
+reg26[0]                     : F17       : output : 2.5 V             :         : 7         : N              
+reg25[17]                    : F18       : output : 2.5 V             :         : 7         : N              
+data[9]                      : F19       : output : 2.5 V             :         : 7         : N              
 GND                          : F20       : gnd    :                   :         :           :                
-data[15]                     : F21       : output : 2.5 V             :         : 7         : N              
-data_readRegB[31]            : F22       : output : 2.5 V             :         : 7         : N              
+data_readRegB[17]            : F21       : output : 2.5 V             :         : 7         : N              
+data[17]                     : F22       : output : 2.5 V             :         : 7         : N              
 GND                          : F23       : gnd    :                   :         :           :                
-data_readRegB[16]            : F24       : output : 2.5 V             :         : 6         : N              
-data_readRegA[1]             : F25       : output : 2.5 V             :         : 6         : N              
-reg8[9]                      : F26       : output : 2.5 V             :         : 6         : N              
-reg6[7]                      : F27       : output : 2.5 V             :         : 6         : N              
-data_readRegA[25]            : F28       : output : 2.5 V             :         : 6         : N              
-reg8[7]                      : G1        : output : 2.5 V             :         : 1         : N              
-reg6[0]                      : G2        : output : 2.5 V             :         : 1         : N              
-data_readRegB[22]            : G3        : output : 2.5 V             :         : 1         : N              
-reg13[10]                    : G4        : output : 2.5 V             :         : 1         : N              
-data[22]                     : G5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
+reg26[30]                    : F25       : output : 2.5 V             :         : 6         : N              
+reg21[12]                    : F26       : output : 2.5 V             :         : 6         : N              
+reg20[2]                     : F27       : output : 2.5 V             :         : 6         : N              
+reg25[24]                    : F28       : output : 2.5 V             :         : 6         : N              
+reg23[30]                    : G1        : output : 2.5 V             :         : 1         : N              
+reg23[25]                    : G2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
+data_readRegB[25]            : G4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
-reg12[25]                    : G7        : output : 2.5 V             :         : 8         : N              
-data_readRegB[19]            : G8        : output : 2.5 V             :         : 8         : N              
-reg7[22]                     : G9        : output : 2.5 V             :         : 8         : N              
-reg13[1]                     : G10       : output : 2.5 V             :         : 8         : N              
-reg13[17]                    : G11       : output : 2.5 V             :         : 8         : N              
-reg7[12]                     : G12       : output : 2.5 V             :         : 8         : N              
-q_imem[14]                   : G13       : output : 2.5 V             :         : 8         : N              
-data_readRegA[17]            : G14       : output : 2.5 V             :         : 8         : N              
-reg4[8]                      : G15       : output : 2.5 V             :         : 7         : N              
-reg8[1]                      : G16       : output : 2.5 V             :         : 7         : N              
-reg8[11]                     : G17       : output : 2.5 V             :         : 7         : N              
-q_dmem[6]                    : G18       : output : 2.5 V             :         : 7         : N              
-data_readRegA[8]             : G19       : output : 2.5 V             :         : 7         : N              
-ctrl_writeReg[0]             : G20       : output : 2.5 V             :         : 7         : N              
-reg4[9]                      : G21       : output : 2.5 V             :         : 7         : N              
-reg7[1]                      : G22       : output : 2.5 V             :         : 7         : N              
+data[7]                      : G7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+data[29]                     : G9        : output : 2.5 V             :         : 8         : N              
+data[6]                      : G10       : output : 2.5 V             :         : 8         : N              
+reg24[29]                    : G11       : output : 2.5 V             :         : 8         : N              
+q_dmem[15]                   : G12       : output : 2.5 V             :         : 8         : N              
+reg24[17]                    : G13       : output : 2.5 V             :         : 8         : N              
+address_dmem[7]              : G14       : output : 2.5 V             :         : 8         : N              
+reg23[0]                     : G15       : output : 2.5 V             :         : 7         : N              
+reg23[21]                    : G16       : output : 2.5 V             :         : 7         : N              
+reg25[7]                     : G17       : output : 2.5 V             :         : 7         : N              
+reg21[28]                    : G18       : output : 2.5 V             :         : 7         : N              
+reg21[11]                    : G19       : output : 2.5 V             :         : 7         : N              
+reg25[30]                    : G20       : output : 2.5 V             :         : 7         : N              
+reg25[2]                     : G21       : output : 2.5 V             :         : 7         : N              
+reg25[26]                    : G22       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
-reg8[18]                     : G24       : output : 2.5 V             :         : 6         : N              
-data_readRegA[9]             : G25       : output : 2.5 V             :         : 6         : N              
-reg13[22]                    : G26       : output : 2.5 V             :         : 6         : N              
-reg9[2]                      : G27       : output : 2.5 V             :         : 6         : N              
-ctrl_writeReg[3]             : G28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+q_dmem[22]                   : G27       : output : 2.5 V             :         : 6         : N              
+reg23[22]                    : G28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
-reg13[8]                     : H3        : output : 2.5 V             :         : 1         : N              
-data[18]                     : H4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
+reg24[15]                    : H4        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
-reg7[13]                     : H6        : output : 2.5 V             :         : 1         : N              
-reg8[28]                     : H7        : output : 2.5 V             :         : 1         : N              
-data[26]                     : H8        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
 GNDA3                        : H9        : gnd    :                   :         :           :                
-reg13[9]                     : H10       : output : 2.5 V             :         : 8         : N              
+data_readRegB[26]            : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-reg6[28]                     : H12       : output : 2.5 V             :         : 8         : N              
-pc_in[19]                    : H13       : output : 2.5 V             :         : 8         : N              
-reg12[15]                    : H14       : output : 2.5 V             :         : 8         : N              
-reg9[7]                      : H15       : output : 2.5 V             :         : 7         : N              
-q_imem[22]                   : H16       : output : 2.5 V             :         : 7         : N              
-reg9[15]                     : H17       : output : 2.5 V             :         : 7         : N              
+data[0]                      : H12       : output : 2.5 V             :         : 8         : N              
+data_readRegA[0]             : H13       : output : 2.5 V             :         : 8         : N              
+reg20[4]                     : H14       : output : 2.5 V             :         : 8         : N              
+reg26[12]                    : H15       : output : 2.5 V             :         : 7         : N              
+reg23[1]                     : H16       : output : 2.5 V             :         : 7         : N              
+reg25[3]                     : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-q_imem[16]                   : H19       : output : 2.5 V             :         : 7         : N              
+reg25[14]                    : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-reg9[27]                     : H21       : output : 2.5 V             :         : 7         : N              
-reg4[20]                     : H22       : output : 2.5 V             :         : 6         : N              
-reg6[26]                     : H23       : output : 2.5 V             :         : 6         : N              
-reg13[15]                    : H24       : output : 2.5 V             :         : 6         : N              
-data[9]                      : H25       : output : 2.5 V             :         : 6         : N              
-data[25]                     : H26       : output : 2.5 V             :         : 6         : N              
+reg25[11]                    : H21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+data[13]                     : H23       : output : 2.5 V             :         : 6         : N              
+data_readRegB[13]            : H24       : output : 2.5 V             :         : 6         : N              
+data_readRegB[8]             : H25       : output : 2.5 V             :         : 6         : N              
+data[8]                      : H26       : output : 2.5 V             :         : 6         : N              
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 clock                        : J1        : input  : 2.5 V             :         : 1         : N              
 GND                          : J2        : gnd    :                   :         :           :                
-reg7[3]                      : J3        : output : 2.5 V             :         : 1         : N              
-reg8[23]                     : J4        : output : 2.5 V             :         : 1         : N              
-reg6[19]                     : J5        : output : 2.5 V             :         : 1         : N              
-reg13[23]                    : J6        : output : 2.5 V             :         : 1         : N              
-q_imem[15]                   : J7        : output : 2.5 V             :         : 1         : N              
+data[25]                     : J3        : output : 2.5 V             :         : 1         : N              
+reg21[18]                    : J4        : output : 2.5 V             :         : 1         : N              
+reg23[14]                    : J5        : output : 2.5 V             :         : 1         : N              
+q_dmem[12]                   : J6        : output : 2.5 V             :         : 1         : N              
+q_dmem[0]                    : J7        : output : 2.5 V             :         : 1         : N              
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-reg8[24]                     : J10       : output : 2.5 V             :         : 8         : N              
+reg24[16]                    : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-pc_in[4]                     : J12       : output : 2.5 V             :         : 8         : N              
-pc_in[1]                     : J13       : output : 2.5 V             :         : 8         : N              
-reg13[26]                    : J14       : output : 2.5 V             :         : 8         : N              
-reg6[8]                      : J15       : output : 2.5 V             :         : 7         : N              
-reg4[3]                      : J16       : output : 2.5 V             :         : 7         : N              
-reg8[4]                      : J17       : output : 2.5 V             :         : 7         : N              
+data_writeReg[12]            : J12       : output : 2.5 V             :         : 8         : N              
+data_readRegA[26]            : J13       : output : 2.5 V             :         : 8         : N              
+data_readRegA[4]             : J14       : output : 2.5 V             :         : 8         : N              
+reg22[0]                     : J15       : output : 2.5 V             :         : 7         : N              
+reg23[29]                    : J16       : output : 2.5 V             :         : 7         : N              
+reg25[1]                     : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-q_dmem[2]                    : J19       : output : 2.5 V             :         : 7         : N              
+reg25[28]                    : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
-data_readRegB[17]            : J24       : output : 2.5 V             :         : 6         : N              
-reg4[10]                     : J25       : output : 2.5 V             :         : 6         : N              
-ctrl_readRegA[4]             : J26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 6         :                
+reg21[24]                    : J25       : output : 2.5 V             :         : 6         : N              
+reg20[1]                     : J26       : output : 2.5 V             :         : 6         : N              
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
-reg4[2]                      : K1        : output : 2.5 V             :         : 1         : N              
-reg12[11]                    : K2        : output : 2.5 V             :         : 1         : N              
-reg9[29]                     : K3        : output : 2.5 V             :         : 1         : N              
-reg7[24]                     : K4        : output : 2.5 V             :         : 1         : N              
+data_readRegB[28]            : K1        : output : 2.5 V             :         : 1         : N              
+q_dmem[5]                    : K2        : output : 2.5 V             :         : 1         : N              
+q_dmem[4]                    : K3        : output : 2.5 V             :         : 1         : N              
+reg21[3]                     : K4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-reg4[28]                     : K7        : output : 2.5 V             :         : 1         : N              
-reg9[20]                     : K8        : output : 2.5 V             :         : 1         : N              
+reg21[7]                     : K7        : output : 2.5 V             :         : 1         : N              
+data[3]                      : K8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
@@ -561,22 +561,22 @@ VCCINT                       : K17       : power  :                   : 1.2V    
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-data[6]                      : K21       : output : 2.5 V             :         : 6         : N              
-data_readRegB[6]             : K22       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :         : 6         :                
+reg20[9]                     : K22       : output : 2.5 V             :         : 6         : N              
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
-reg7[0]                      : K25       : output : 2.5 V             :         : 6         : N              
-reg12[9]                     : K26       : output : 2.5 V             :         : 6         : N              
-reg8[20]                     : K27       : output : 2.5 V             :         : 6         : N              
-reg4[13]                     : K28       : output : 2.5 V             :         : 6         : N              
-ctrl_readRegA[1]             : L1        : output : 2.5 V             :         : 1         : N              
-q_imem[18]                   : L2        : output : 2.5 V             :         : 1         : N              
-reg6[2]                      : L3        : output : 2.5 V             :         : 1         : N              
-ctrl_writeReg[1]             : L4        : output : 2.5 V             :         : 1         : N              
-reg8[5]                      : L5        : output : 2.5 V             :         : 1         : N              
-reg4[1]                      : L6        : output : 2.5 V             :         : 1         : N              
-q_imem[17]                   : L7        : output : 2.5 V             :         : 1         : N              
-reg9[21]                     : L8        : output : 2.5 V             :         : 1         : N              
+reg20[12]                    : K25       : output : 2.5 V             :         : 6         : N              
+reg23[31]                    : K26       : output : 2.5 V             :         : 6         : N              
+q_dmem[14]                   : K27       : output : 2.5 V             :         : 6         : N              
+reg23[15]                    : K28       : output : 2.5 V             :         : 6         : N              
+data_writeReg[27]            : L1        : output : 2.5 V             :         : 1         : N              
+data_writeReg[5]             : L2        : output : 2.5 V             :         : 1         : N              
+data[22]                     : L3        : output : 2.5 V             :         : 1         : N              
+data_readRegB[22]            : L4        : output : 2.5 V             :         : 1         : N              
+data[28]                     : L5        : output : 2.5 V             :         : 1         : N              
+q_imem[13]                   : L6        : output : 2.5 V             :         : 1         : N              
+reg20[5]                     : L7        : output : 2.5 V             :         : 1         : N              
+data_readRegB[3]             : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -589,22 +589,22 @@ GND                          : L17       : gnd    :                   :         
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND                          : L19       : gnd    :                   :         :           :                
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
-data_readRegB[9]             : L21       : output : 2.5 V             :         : 6         : N              
-data[4]                      : L22       : output : 2.5 V             :         : 6         : N              
-data_readRegB[25]            : L23       : output : 2.5 V             :         : 6         : N              
-reg12[26]                    : L24       : output : 2.5 V             :         : 6         : N              
-reg4[24]                     : L25       : output : 2.5 V             :         : 6         : N              
-q_imem[21]                   : L26       : output : 2.5 V             :         : 6         : N              
-reg7[26]                     : L27       : output : 2.5 V             :         : 6         : N              
-reg7[25]                     : L28       : output : 2.5 V             :         : 6         : N              
-imem_clock                   : M1        : output : 2.5 V             :         : 1         : N              
-reg6[3]                      : M2        : output : 2.5 V             :         : 1         : N              
-reg4[27]                     : M3        : output : 2.5 V             :         : 1         : N              
-reg6[11]                     : M4        : output : 2.5 V             :         : 1         : N              
-reg7[19]                     : M5        : output : 2.5 V             :         : 1         : N              
+data[10]                     : L21       : output : 2.5 V             :         : 6         : N              
+data_readRegB[10]            : L22       : output : 2.5 V             :         : 6         : N              
+reg24[28]                    : L23       : output : 2.5 V             :         : 6         : N              
+reg20[17]                    : L24       : output : 2.5 V             :         : 6         : N              
+reg24[12]                    : L25       : output : 2.5 V             :         : 6         : N              
+reg24[2]                     : L26       : output : 2.5 V             :         : 6         : N              
+reg23[2]                     : L27       : output : 2.5 V             :         : 6         : N              
+reg21[1]                     : L28       : output : 2.5 V             :         : 6         : N              
+address_dmem[3]              : M1        : output : 2.5 V             :         : 1         : N              
+reg22[1]                     : M2        : output : 2.5 V             :         : 1         : N              
+reg24[0]                     : M3        : output : 2.5 V             :         : 1         : N              
+data_readRegA[31]            : M4        : output : 2.5 V             :         : 1         : N              
+data_writeReg[20]            : M5        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-reg9[0]                      : M7        : output : 2.5 V             :         : 1         : N              
-reg6[15]                     : M8        : output : 2.5 V             :         : 1         : N              
+reg24[25]                    : M7        : output : 2.5 V             :         : 1         : N              
+data_writeReg[10]            : M8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -617,22 +617,22 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-reg9[26]                     : M21       : output : 2.5 V             :         : 6         : N              
+reg26[17]                    : M21       : output : 2.5 V             :         : 6         : N              
 MSEL2                        : M22       :        :                   :         : 6         :                
-reg7[10]                     : M23       : output : 2.5 V             :         : 6         : N              
-data_writeReg[9]             : M24       : output : 2.5 V             :         : 6         : N              
-q_imem[26]                   : M25       : output : 2.5 V             :         : 6         : N              
-reg12[13]                    : M26       : output : 2.5 V             :         : 6         : N              
-reg13[12]                    : M27       : output : 2.5 V             :         : 6         : N              
-reg9[8]                      : M28       : output : 2.5 V             :         : 6         : N              
+data_readRegA[6]             : M23       : output : 2.5 V             :         : 6         : N              
+data_readRegA[20]            : M24       : output : 2.5 V             :         : 6         : N              
+data_readRegA[19]            : M25       : output : 2.5 V             :         : 6         : N              
+q_imem[14]                   : M26       : output : 2.5 V             :         : 6         : N              
+reg20[3]                     : M27       : output : 2.5 V             :         : 6         : N              
+data_writeReg[1]             : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-q_imem[12]                   : N3        : output : 2.5 V             :         : 1         : N              
-ctrl_readRegA[0]             : N4        : output : 2.5 V             :         : 1         : N              
+reg21[4]                     : N3        : output : 2.5 V             :         : 1         : N              
+data_readRegA[21]            : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-reg7[27]                     : N8        : output : 2.5 V             :         : 1         : N              
+data_readRegB[21]            : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -645,16 +645,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-data_writeReg[15]            : N21       : output : 2.5 V             :         : 6         : N              
+data_writeReg[2]             : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-q_imem[29]                   : N25       : output : 2.5 V             :         : 6         : N              
-q_imem[23]                   : N26       : output : 2.5 V             :         : 6         : N              
+reg23[20]                    : N25       : output : 2.5 V             :         : 6         : N              
+data_readRegA[8]             : N26       : output : 2.5 V             :         : 6         : N              
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-data_writeReg[19]            : P1        : output : 2.5 V             :         : 1         : N              
-data_writeReg[14]            : P2        : output : 2.5 V             :         : 1         : N              
+data[21]                     : P1        : output : 2.5 V             :         : 1         : N              
+address_dmem[6]              : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -673,21 +673,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-processor_clock              : P21       : output : 2.5 V             :         : 5         : N              
+ctrl_writeReg[1]             : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-reg7[15]                     : P25       : output : 2.5 V             :         : 6         : N              
-data_writeReg[5]             : P26       : output : 2.5 V             :         : 6         : N              
-data_writeReg[11]            : P27       : output : 2.5 V             :         : 6         : N              
+data_writeReg[3]             : P25       : output : 2.5 V             :         : 6         : N              
+data_writeReg[0]             : P26       : output : 2.5 V             :         : 6         : N              
+data_readRegA[18]            : P27       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-reg8[0]                      : R1        : output : 2.5 V             :         : 2         : N              
-q_imem[31]                   : R2        : output : 2.5 V             :         : 2         : N              
-address_imem[5]              : R3        : output : 2.5 V             :         : 2         : N              
-q_imem[30]                   : R4        : output : 2.5 V             :         : 2         : N              
-reg12[24]                    : R5        : output : 2.5 V             :         : 2         : N              
-q_imem[27]                   : R6        : output : 2.5 V             :         : 2         : N              
-reg6[10]                     : R7        : output : 2.5 V             :         : 2         : N              
+reg25[25]                    : R1        : output : 2.5 V             :         : 2         : N              
+data[30]                     : R2        : output : 2.5 V             :         : 2         : N              
+q_dmem[2]                    : R3        : output : 2.5 V             :         : 2         : N              
+address_dmem[2]              : R4        : output : 2.5 V             :         : 2         : N              
+q_dmem[9]                    : R5        : output : 2.5 V             :         : 2         : N              
+dmem_clock                   : R6        : output : 2.5 V             :         : 2         : N              
+data_readRegB[30]            : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -701,22 +701,22 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-regfile_clock                : R21       : output : 2.5 V             :         : 5         : N              
-dmem_clock                   : R22       : output : 2.5 V             :         : 5         : N              
-reg9[6]                      : R23       : output : 2.5 V             :         : 5         : N              
-reg4[5]                      : R24       : output : 2.5 V             :         : 5         : N              
-reg6[13]                     : R25       : output : 2.5 V             :         : 5         : N              
-q_dmem[13]                   : R26       : output : 2.5 V             :         : 5         : N              
-reg6[1]                      : R27       : output : 2.5 V             :         : 5         : N              
-reg8[22]                     : R28       : output : 2.5 V             :         : 5         : N              
+reg23[28]                    : R21       : output : 2.5 V             :         : 5         : N              
+reg23[12]                    : R22       : output : 2.5 V             :         : 5         : N              
+reg20[0]                     : R23       : output : 2.5 V             :         : 5         : N              
+ctrl_writeReg[3]             : R24       : output : 2.5 V             :         : 5         : N              
+reg21[0]                     : R25       : output : 2.5 V             :         : 5         : N              
+q_imem[12]                   : R26       : output : 2.5 V             :         : 5         : N              
+data_writeReg[17]            : R27       : output : 2.5 V             :         : 5         : N              
+ctrl_writeReg[2]             : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-data_writeReg[17]            : T3        : output : 2.5 V             :         : 2         : N              
-reg8[19]                     : T4        : output : 2.5 V             :         : 2         : N              
+reg23[8]                     : T3        : output : 2.5 V             :         : 2         : N              
+data_readRegA[13]            : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-reg8[2]                      : T7        : output : 2.5 V             :         : 2         : N              
-reg4[21]                     : T8        : output : 2.5 V             :         : 2         : N              
+reg24[9]                     : T7        : output : 2.5 V             :         : 2         : N              
+reg24[10]                    : T8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : T9        : power  :                   : 1.2V    :           :                
 GND                          : T10       : gnd    :                   :         :           :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
@@ -729,22 +729,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-q_dmem[8]                    : T21       : output : 2.5 V             :         : 5         : N              
-reg6[24]                     : T22       : output : 2.5 V             :         : 5         : N              
+reg23[23]                    : T21       : output : 2.5 V             :         : 5         : N              
+reg22[2]                     : T22       : output : 2.5 V             :         : 5         : N              
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-reg4[14]                     : T25       : output : 2.5 V             :         : 5         : N              
-reg9[10]                     : T26       : output : 2.5 V             :         : 5         : N              
+reg24[1]                     : T25       : output : 2.5 V             :         : 5         : N              
+q_imem[15]                   : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-reg9[19]                     : U1        : output : 2.5 V             :         : 2         : N              
-reg8[30]                     : U2        : output : 2.5 V             :         : 2         : N              
-address_imem[4]              : U3        : output : 2.5 V             :         : 2         : N              
-q_imem[0]                    : U4        : output : 2.5 V             :         : 2         : N              
-data_writeReg[21]            : U5        : output : 2.5 V             :         : 2         : N              
-pc_in[11]                    : U6        : output : 2.5 V             :         : 2         : N              
-reg9[18]                     : U7        : output : 2.5 V             :         : 2         : N              
-reg6[20]                     : U8        : output : 2.5 V             :         : 2         : N              
+data_readRegA[7]             : U1        : output : 2.5 V             :         : 2         : N              
+data_readRegA[3]             : U2        : output : 2.5 V             :         : 2         : N              
+imem_clock                   : U3        : output : 2.5 V             :         : 2         : N              
+q_dmem[8]                    : U4        : output : 2.5 V             :         : 2         : N              
+data_readRegB[11]            : U5        : output : 2.5 V             :         : 2         : N              
+data_readRegA[14]            : U6        : output : 2.5 V             :         : 2         : N              
+data_readRegA[16]            : U7        : output : 2.5 V             :         : 2         : N              
+q_dmem[31]                   : U8        : output : 2.5 V             :         : 2         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -757,22 +757,22 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-reg9[3]                      : U21       : output : 2.5 V             :         : 5         : N              
-q_dmem[15]                   : U22       : output : 2.5 V             :         : 5         : N              
-data_readRegB[13]            : U23       : output : 2.5 V             :         : 5         : N              
-reg8[6]                      : U24       : output : 2.5 V             :         : 5         : N              
-data_readRegA[3]             : U25       : output : 2.5 V             :         : 5         : N              
-q_dmem[26]                   : U26       : output : 2.5 V             :         : 5         : N              
-q_dmem[9]                    : U27       : output : 2.5 V             :         : 5         : N              
-reg9[1]                      : U28       : output : 2.5 V             :         : 5         : N              
-data_readRegA[20]            : V1        : output : 2.5 V             :         : 2         : N              
-reg6[27]                     : V2        : output : 2.5 V             :         : 2         : N              
-pc_in[9]                     : V3        : output : 2.5 V             :         : 2         : N              
-pc_in[29]                    : V4        : output : 2.5 V             :         : 2         : N              
-reg4[19]                     : V5        : output : 2.5 V             :         : 2         : N              
-q_imem[3]                    : V6        : output : 2.5 V             :         : 2         : N              
-reg13[18]                    : V7        : output : 2.5 V             :         : 2         : N              
-ctrl_writeEnable             : V8        : output : 2.5 V             :         : 2         : N              
+reg21[17]                    : U21       : output : 2.5 V             :         : 5         : N              
+reg21[15]                    : U22       : output : 2.5 V             :         : 5         : N              
+reg21[21]                    : U23       : output : 2.5 V             :         : 5         : N              
+q_imem[31]                   : U24       : output : 2.5 V             :         : 5         : N              
+reg21[14]                    : U25       : output : 2.5 V             :         : 5         : N              
+reg21[2]                     : U26       : output : 2.5 V             :         : 5         : N              
+reg21[9]                     : U27       : output : 2.5 V             :         : 5         : N              
+data_writeReg[16]            : U28       : output : 2.5 V             :         : 5         : N              
+q_dmem[1]                    : V1        : output : 2.5 V             :         : 2         : N              
+q_dmem[25]                   : V2        : output : 2.5 V             :         : 2         : N              
+q_dmem[7]                    : V3        : output : 2.5 V             :         : 2         : N              
+reg20[25]                    : V4        : output : 2.5 V             :         : 2         : N              
+data_writeReg[8]             : V5        : output : 2.5 V             :         : 2         : N              
+data_writeReg[30]            : V6        : output : 2.5 V             :         : 2         : N              
+q_imem[11]                   : V7        : output : 2.5 V             :         : 2         : N              
+reg22[18]                    : V8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
 GND                          : V10       : gnd    :                   :         :           :                
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
@@ -785,22 +785,22 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-data_readRegA[5]             : V21       : output : 2.5 V             :         : 5         : N              
-q_dmem[10]                   : V22       : output : 2.5 V             :         : 5         : N              
-data_writeReg[10]            : V23       : output : 2.5 V             :         : 5         : N              
-q_dmem[16]                   : V24       : output : 2.5 V             :         : 5         : N              
-data_readRegA[10]            : V25       : output : 2.5 V             :         : 5         : N              
-data_readRegA[0]             : V26       : output : 2.5 V             :         : 5         : N              
-data_writeReg[26]            : V27       : output : 2.5 V             :         : 5         : N              
-data[13]                     : V28       : output : 2.5 V             :         : 5         : N              
-address_imem[9]              : W1        : output : 2.5 V             :         : 2         : N              
-address_imem[6]              : W2        : output : 2.5 V             :         : 2         : N              
-reg8[17]                     : W3        : output : 2.5 V             :         : 2         : N              
-pc_in[16]                    : W4        : output : 2.5 V             :         : 2         : N              
+reg21[5]                     : V21       : output : 2.5 V             :         : 5         : N              
+reg25[12]                    : V22       : output : 2.5 V             :         : 5         : N              
+reg20[21]                    : V23       : output : 2.5 V             :         : 5         : N              
+reg24[23]                    : V24       : output : 2.5 V             :         : 5         : N              
+reg24[30]                    : V25       : output : 2.5 V             :         : 5         : N              
+reg26[14]                    : V26       : output : 2.5 V             :         : 5         : N              
+data_writeReg[19]            : V27       : output : 2.5 V             :         : 5         : N              
+data_writeReg[23]            : V28       : output : 2.5 V             :         : 5         : N              
+reg20[10]                    : W1        : output : 2.5 V             :         : 2         : N              
+q_dmem[19]                   : W2        : output : 2.5 V             :         : 2         : N              
+reg22[27]                    : W3        : output : 2.5 V             :         : 2         : N              
+q_imem[3]                    : W4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
-reg4[16]                     : W7        : output : 2.5 V             :         : 2         : N              
-reg13[14]                    : W8        : output : 2.5 V             :         : 2         : N              
+q_imem[25]                   : W7        : output : 2.5 V             :         : 2         : N              
+reg21[20]                    : W8        : output : 2.5 V             :         : 2         : N              
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -813,39 +813,39 @@ GND                          : W17       : gnd    :                   :         
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 GND                          : W19       : gnd    :                   :         :           :                
 VCCINT                       : W20       : power  :                   : 1.2V    :           :                
-q_dmem[3]                    : W21       : output : 2.5 V             :         : 5         : N              
-q_dmem[7]                    : W22       : output : 2.5 V             :         : 5         : N              
+reg24[22]                    : W21       : output : 2.5 V             :         : 5         : N              
+reg20[22]                    : W22       : output : 2.5 V             :         : 5         : N              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-q_dmem[0]                    : W25       : output : 2.5 V             :         : 5         : N              
-data_readRegA[29]            : W26       : output : 2.5 V             :         : 5         : N              
-wren                         : W27       : output : 2.5 V             :         : 5         : N              
-reg7[31]                     : W28       : output : 2.5 V             :         : 5         : N              
+reg24[20]                    : W25       : output : 2.5 V             :         : 5         : N              
+reg26[16]                    : W26       : output : 2.5 V             :         : 5         : N              
+reg26[19]                    : W27       : output : 2.5 V             :         : 5         : N              
+reg20[20]                    : W28       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y1        :        :                   :         : 2         :                
 reset                        : Y2        : input  : 2.5 V             :         : 2         : N              
-data_readRegA[22]            : Y3        : output : 2.5 V             :         : 2         : N              
-reg12[30]                    : Y4        : output : 2.5 V             :         : 2         : N              
-reg13[4]                     : Y5        : output : 2.5 V             :         : 2         : N              
-pc_in[5]                     : Y6        : output : 2.5 V             :         : 2         : N              
-reg12[4]                     : Y7        : output : 2.5 V             :         : 2         : N              
+reg24[8]                     : Y3        : output : 2.5 V             :         : 2         : N              
+data[11]                     : Y4        : output : 2.5 V             :         : 2         : N              
+q_dmem[29]                   : Y5        : output : 2.5 V             :         : 2         : N              
+q_imem[2]                    : Y6        : output : 2.5 V             :         : 2         : N              
+data_writeReg[26]            : Y7        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
-reg4[12]                     : Y10       : output : 2.5 V             :         : 3         : N              
+reg24[11]                    : Y10       : output : 2.5 V             :         : 3         : N              
 GND                          : Y11       : gnd    :                   :         :           :                
-q_dmem[30]                   : Y12       : output : 2.5 V             :         : 3         : N              
-ctrl_writeReg[2]             : Y13       : output : 2.5 V             :         : 3         : N              
-data_readRegA[31]            : Y14       : output : 2.5 V             :         : 3         : N              
-reg12[29]                    : Y15       : output : 2.5 V             :         : 3         : N              
-reg13[31]                    : Y16       : output : 2.5 V             :         : 4         : N              
-reg7[16]                     : Y17       : output : 2.5 V             :         : 4         : N              
+reg22[29]                    : Y12       : output : 2.5 V             :         : 3         : N              
+reg26[5]                     : Y13       : output : 2.5 V             :         : 3         : N              
+reg22[13]                    : Y14       : output : 2.5 V             :         : 3         : N              
+reg22[11]                    : Y15       : output : 2.5 V             :         : 3         : N              
+reg21[22]                    : Y16       : output : 2.5 V             :         : 4         : N              
+q_imem[24]                   : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
-reg13[28]                    : Y19       : output : 2.5 V             :         : 4         : N              
+reg25[18]                    : Y19       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-q_dmem[5]                    : Y22       : output : 2.5 V             :         : 5         : N              
-data_readRegA[23]            : Y23       : output : 2.5 V             :         : 5         : N              
-data_readRegA[7]             : Y24       : output : 2.5 V             :         : 5         : N              
-reg12[16]                    : Y25       : output : 2.5 V             :         : 5         : N              
-ctrl_readRegB[4]             : Y26       : output : 2.5 V             :         : 5         : N              
+reg20[28]                    : Y22       : output : 2.5 V             :         : 5         : N              
+q_imem[20]                   : Y23       : output : 2.5 V             :         : 5         : N              
+reg20[18]                    : Y24       : output : 2.5 V             :         : 5         : N              
+reg21[31]                    : Y25       : output : 2.5 V             :         : 5         : N              
+data_readRegB[20]            : Y26       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y27       :        :                   :         : 5         :                
 GND+                         : Y28       :        :                   :         : 5         :                

@@ -96,7 +96,9 @@ module processor(
 	 wire [31:0] pc_in, pc_out; 
 	 wire [4:0] opcode;
 	 wire [7:0] control;
-	 wire isR, BR, JP, ALUinB, ALUop, DMwe, Rwe, Rdst,Rwd;
+	 wire isR, BR, JP, ALUinB, ALUop, DMwe, Rwe, Rdst, Rwd;
+	 wire isAddi, isLw, isSw;
+	 wire isAdd, isSub;
 	 wire [4:0] ALUOP;
 	 wire [4:0] rd;
 	 wire [4:0] rs;
@@ -122,6 +124,8 @@ module processor(
 	 
 	 // Decode
 	 and (isR, ~q_imem[31], ~q_imem[30], ~q_imem[29], ~q_imem[28], ~q_imem[27]);
+	 and (isAdd, ~q_imem[6], ~q_imem[5], ~q_imem[4], ~q_imem[3], ~q_imem[2], isR);
+	 and (isSub, ~q_imem[6], ~q_imem[5], ~q_imem[4], ~q_imem[3], q_imem[2], isR);
 	 assign opcode = q_imem[31:27];
 	 assign rd = q_imem[26:22];
 	 assign rs = q_imem[21:17];
@@ -131,8 +135,8 @@ module processor(
 	 assign immediate = q_imem[16:0];
 	 extend extend1(ext_immediate,immediate);
 	 
-	 insn_decoder my_decoder(control, opcode, isR);
-	 
+	 control_decoder my_controlDecoder(control, opcode, isR);
+	 insn_decoder my_insnDecoder(opcode, isAddi, isLw, isSw);
 	 and (BR, control[7], 1'b1);
 	and (JP, control[6], 1'b1);
 	and (ALUinB, control[5], 1'b1);
@@ -143,26 +147,30 @@ module processor(
 	and (Rwd, control[0], 1'b1);
 	
 	 // operand fetch
-	 //assign ctrl_writeEnable =Rwe; 
 	 assign ctrl_writeEnable = Rwe;
 	 assign ctrl_readRegA = rs;
-	 assign ctrl_readRegB = (DMwe) ? rd : rt;
+	 assign ctrl_readRegB = isSw ? rd : rt;
 	 // execute
 	 assign ALUINB = isR ? data_readRegB : ext_immediate;
 	 
 	 alu alu1(data_readRegA,ALUINB,ALUOP,shamt,Res_ALU,inNotEqual,isLessThan,temp);
-	 wire isaddOrsub;
-	 and and1(isaddOrsub,~ALUOP[4],~ALUOP[3],~ALUOP[2],~ALUOP[1],isR);
-	 wire isaddi;
-	 xor xor1(isaddi,opcode[0],opcode[1]);
-	 wire isOverflow;
-	 or or1(isOverflow,isaddOrsub,isaddi);
+	 
+//	 wire isaddOrsub;
+//	 and and1(isaddOrsub,~ALUOP[4],~ALUOP[3],~ALUOP[2],~ALUOP[1],isR);
+//	 wire isaddi;
+//	 xor xor1(isaddi,opcode[0],opcode[1]);
+//	 wire isOverflow;
+//	 or or1(isOverflow,isaddOrsub,isaddi);
 	 //assign overflow=isOverflow? temp:0;
 	 //assign overflow = (isaddOrsub||opcode==5'b00011)? temp:0;
-	 assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==5)? temp:0;
+	 wire overflow_flag;
+	 or (overflow_flag, isAddi, isAdd, isSub);
+	 assign overflow = overflow_flag ? temp : 0;
+	 
+//	 assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==5)? temp:0;
 	 // result store
 	 wire [31:0] rstatus_value;
-	 assign rstatus_value = isaddi ? 2 : (ALUOP[0] ? 3 : 1);
+	 assign rstatus_value = isAddi ? 2 : isSub ? 3 : 1;
 	 assign address_dmem = Res_ALU[11:0];
     assign data = data_readRegB;
 	 assign wren = DMwe;

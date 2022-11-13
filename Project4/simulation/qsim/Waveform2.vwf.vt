@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/06/2022 21:40:31"
+// Generated on "11/09/2022 23:05:27"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          skeleton
 // 
@@ -48,14 +48,9 @@ wire imem_clock;
 wire processor_clock;
 wire [31:0] q_dmem;
 wire [31:0] q_imem;
-wire [31:0] reg4;
-wire [31:0] reg5;
-wire [31:0] reg6;
-wire [31:0] reg7;
-wire [31:0] reg8;
-wire [31:0] reg9;
-wire [31:0] reg12;
-wire [31:0] reg13;
+wire [31:0] reg27;
+wire [31:0] reg28;
+wire [31:0] reg29;
 wire regfile_clock;
 wire wren;
 
@@ -78,14 +73,9 @@ skeleton i1 (
 	.processor_clock(processor_clock),
 	.q_dmem(q_dmem),
 	.q_imem(q_imem),
-	.reg4(reg4),
-	.reg5(reg5),
-	.reg6(reg6),
-	.reg7(reg7),
-	.reg8(reg8),
-	.reg9(reg9),
-	.reg12(reg12),
-	.reg13(reg13),
+	.reg27(reg27),
+	.reg28(reg28),
+	.reg29(reg29),
 	.regfile_clock(regfile_clock),
 	.reset(reset),
 	.wren(wren)
@@ -96,15 +86,11 @@ begin
 end 
 
 // clock
-initial
+always
 begin
-	repeat(64)
-	begin
-		clock = 1'b0;
-		clock = #7800 1'b1;
-		# 7800;
-	end
 	clock = 1'b0;
+	clock = #5000 1'b1;
+	#5000;
 end 
 
 // reset
