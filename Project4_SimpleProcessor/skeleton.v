@@ -23,7 +23,6 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 wire clk_div2, clk_div4;
 	 frequency_divider frediv_1(clock,reset,clk_div2);
 	  clk_div4 frediv_4(clock,reset, clk_div4);
-	 //frequency_divider frediv_2(clk_div2,reset,clk_div4);
 	 assign imem_clock = clock;
 	 assign regfile_clock = ~clk_div4;
 	 assign processor_clock = ~clk_div4;

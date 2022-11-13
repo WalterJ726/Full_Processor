@@ -155,19 +155,11 @@ module processor(
 	 
 	 alu alu1(data_readRegA,ALUINB,ALUOP,shamt,Res_ALU,inNotEqual,isLessThan,temp);
 	 
-//	 wire isaddOrsub;
-//	 and and1(isaddOrsub,~ALUOP[4],~ALUOP[3],~ALUOP[2],~ALUOP[1],isR);
-//	 wire isaddi;
-//	 xor xor1(isaddi,opcode[0],opcode[1]);
-//	 wire isOverflow;
-//	 or or1(isOverflow,isaddOrsub,isaddi);
-	 //assign overflow=isOverflow? temp:0;
-	 //assign overflow = (isaddOrsub||opcode==5'b00011)? temp:0;
+
 	 wire overflow_flag;
 	 or (overflow_flag, isAddi, isAdd, isSub);
 	 assign overflow = overflow_flag ? temp : 0;
 	 
-//	 assign overflow=(((ALUOP==5'b00000 ||ALUOP==5'b00001)&& isR)||opcode==5)? temp:0;
 	 // result store
 	 wire [31:0] rstatus_value;
 	 assign rstatus_value = isAddi ? 2 : isSub ? 3 : 1;
@@ -177,6 +169,6 @@ module processor(
 	 assign data_writeReg = Rwd ? q_dmem : overflow ? (rstatus_value): Res_ALU;
 	 assign ctrl_writeReg= overflow ? 5'b11110 : rd;
 	 
-	 // ??? reset status
+
 
 endmodule
