@@ -1,5 +1,5 @@
 EDA Netlist Writer report for processor
-Fri Nov 11 10:34:03 2022
+Thu Nov 17 13:00:09 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 11 10:34:03 2022 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov 17 13:00:09 2022 ;
 ; Revision Name             ; processor                             ;
 ; Top-level Entity Name     ; skeleton                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                        ;
-+---------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                   ;
-+---------------------------------------------------------------------------------------------------+
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_7_1200mv_85c_slow.vo     ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_7_1200mv_0c_slow.vo      ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_min_1200mv_0c_fast.vo    ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor.vo                       ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_7_1200mv_85c_v_slow.sdo  ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_7_1200mv_0c_v_slow.sdo   ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_min_1200mv_0c_v_fast.sdo ;
-; E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/processor_v.sdo                    ;
-+---------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------+
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_7_1200mv_85c_slow.vo     ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_7_1200mv_0c_slow.vo      ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_min_1200mv_0c_fast.vo    ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor.vo                       ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_7_1200mv_85c_v_slow.sdo  ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_7_1200mv_0c_v_slow.sdo   ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_min_1200mv_0c_v_fast.sdo ;
+; E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/processor_v.sdo                    ;
++-------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -89,21 +89,21 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 11 10:33:59 2022
+    Info: Processing started: Thu Nov 17 13:00:07 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file processor_7_1200mv_85c_slow.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor_7_1200mv_0c_slow.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor_min_1200mv_0c_fast.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor_7_1200mv_85c_v_slow.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor_7_1200mv_0c_v_slow.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor_min_1200mv_0c_v_fast.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file processor_v.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_7_1200mv_85c_slow.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_7_1200mv_0c_slow.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_min_1200mv_0c_fast.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor.vo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_7_1200mv_85c_v_slow.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_7_1200mv_0c_v_slow.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_min_1200mv_0c_v_fast.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file processor_v.sdo in folder "E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4681 megabytes
-    Info: Processing ended: Fri Nov 11 10:34:03 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4644 megabytes
+    Info: Processing ended: Thu Nov 17 13:00:09 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

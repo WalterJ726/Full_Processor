@@ -10,211 +10,211 @@
 # Copying D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/processor.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:47 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/processor.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 12:29:47 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/pc.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/pc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:47 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/pc.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/pc.v 
 # -- Compiling module pc
 # 
 # Top level modules:
 # 	pc
-# End time: 12:29:47 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/extend.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/extend.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/extend.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/extend.v 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/Mux_1.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/Mux_1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/Mux_1.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/Mux_1.v 
 # -- Compiling module Mux_1
 # 
 # Top level modules:
 # 	Mux_1
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/Mux_16.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/Mux_16.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/Mux_16.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/Mux_16.v 
 # -- Compiling module Mux_16
 # 
 # Top level modules:
 # 	Mux_16
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/RCA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/RCA.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/RCA.v 
 # -- Compiling module RCA
 # 
 # Top level modules:
 # 	RCA
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/ripple_carry_adder_4b.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/ripple_carry_adder_4b.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/ripple_carry_adder_4b.v 
 # -- Compiling module ripple_carry_adder_4b
 # 
 # Top level modules:
 # 	ripple_carry_adder_4b
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/regfile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/regfile.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/regfile.v 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/CSA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/CSA.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/CSA.v 
 # -- Compiling module CSA
 # 
 # Top level modules:
 # 	CSA
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/alu.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/alu.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/insn_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/insn_decoder.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/insn_decoder.v 
 # -- Compiling module insn_decoder
 # 
 # Top level modules:
 # 	insn_decoder
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:21 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/dffe_ref.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/dffe_ref.v 
+# Start time: 13:00:21 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/dffe_ref.v 
 # -- Compiling module dffe_ref
 # 
 # Top level modules:
 # 	dffe_ref
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/frequency_divider.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/frequency_divider.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/frequency_divider.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/frequency_divider.v 
 # -- Compiling module frequency_divider
 # 
 # Top level modules:
 # 	frequency_divider
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/full_adder.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/full_adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/full_adder.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/skeleton.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/skeleton.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/skeleton.v 
 # -- Compiling module skeleton
 # 
 # Top level modules:
 # 	skeleton
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/clk_div4.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/clk_div4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:48 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/clk_div4.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/clk_div4.v 
 # -- Compiling module clk_div4
 # 
 # Top level modules:
 # 	clk_div4
-# End time: 12:29:48 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/control_decoder.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/control_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:49 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/control_decoder.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/control_decoder.v 
 # -- Compiling module control_decoder
 # 
 # Top level modules:
 # 	control_decoder
-# End time: 12:29:49 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/imem.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/imem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:49 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/imem.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/imem.v 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 12:29:49 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/dmem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:49 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/dmem.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/dmem.v 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 12:29:49 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4 {E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v}
+# vlog -vlog01compat -work work +incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor {E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/skeleton_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:29:49 on Nov 11,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4" E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v 
+# Start time: 13:00:22 on Nov 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor" E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/skeleton_tb.v 
 # -- Compiling module skeleton_tb
 # 
 # Top level modules:
 # 	skeleton_tb
-# End time: 12:29:49 on Nov 11,2022, Elapsed time: 0:00:00
+# End time: 13:00:22 on Nov 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  skeleton_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" skeleton_tb 
-# Start time: 12:29:49 on Nov 11,2022
+# Start time: 13:00:23 on Nov 17,2022
 # Loading work.skeleton_tb
 # Loading work.skeleton
 # Loading work.frequency_divider
@@ -248,23 +248,16 @@
 # run -all
 #                    0 << Starting the Simulation >>
 # The simulation completed without errors
-# ** Note: $stop    : E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v(53)
+# ** Note: $stop    : E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/skeleton_tb.v(53)
 #    Time: 4050 ns  Iteration: 0  Instance: /skeleton_tb
-# Break in Module skeleton_tb at E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v line 53
-# Break key hit
-# Break key hit
-# Macro Break
-# Control-C interrupt
-# 
-# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 35
+# Break in Module skeleton_tb at E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/skeleton_tb.v line 53
+add wave -position insertpoint sim:/skeleton_tb/#INITIAL#33/*
 add wave -position insertpoint  \
 sim:/skeleton_tb/skeleton_test/my_regfile/registers
-restart
 run -continue
-#                    0 << Starting the Simulation >>
-# The simulation completed without errors
-# ** Note: $stop    : E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v(53)
-#    Time: 4050 ns  Iteration: 0  Instance: /skeleton_tb
-# Break in Module skeleton_tb at E:/Duke_Materials/22fall/550/Labs/Project4/skeleton_tb.v line 53
-# End time: 12:41:37 on Nov 11,2022, Elapsed time: 0:11:48
-# Errors: 1, Warnings: 0
+add wave -position insertpoint  \
+sim:/skeleton_tb/skeleton_test/my_regfile/registers
+run
+run -continue
+# End time: 13:04:47 on Nov 17,2022, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 0

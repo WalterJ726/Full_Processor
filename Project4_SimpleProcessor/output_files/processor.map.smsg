@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at processor.v(99): object "ALUop" differs only in case from object "ALUOP" in the same scope File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 99
-Info (10281): Verilog HDL Declaration information at processor.v(99): object "ALUinB" differs only in case from object "ALUINB" in the same scope File: E:/Duke_Materials/22fall/550/Labs/Project4/processor.v Line: 99
+Info (10281): Verilog HDL Declaration information at processor.v(99): object "ALUop" differs only in case from object "ALUOP" in the same scope File: E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/processor.v Line: 99
+Info (10281): Verilog HDL Declaration information at processor.v(99): object "ALUinB" differs only in case from object "ALUINB" in the same scope File: E:/Duke_Materials/22fall/550/Labs/Project4_SimpleProcessor/processor.v Line: 99

@@ -18,14 +18,14 @@ wire [31:0] data_readRegA, data_readRegB;
 	//wire [31:0] reg1, reg2, reg3, reg10, reg11, reg19;
 	//wire [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;		
 		//wire [31:0] reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13;
-		 wire [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26;
+//		 wire [31:0] reg20, reg21, reg22, reg23, reg24, reg25, reg26;
 //		wire [31:0] reg27, reg28, reg29;
-skeleton skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
-					 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,
-					 ctrl_writeReg, ctrl_readRegA, ctrl_readRegB,data_writeReg,data_readRegA, data_readRegB
+skeleton skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock
+//,					 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,
+//					 ctrl_writeReg, ctrl_readRegA, ctrl_readRegB,data_writeReg,data_readRegA, data_readRegB
 					 	//,reg1, reg2, reg3, reg10, reg11, reg19
 						//, reg4, reg5, reg6, reg7, reg8, reg9, reg12, reg13
-						, reg20, reg21, reg22, reg23, reg24, reg25, reg26
+//						, reg20, reg21, reg22, reg23, reg24, reg25, reg26
 						//, reg27, reg28, reg29
 						);
 					 

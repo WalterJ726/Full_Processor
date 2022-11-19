@@ -2,76 +2,40 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk_div4:frediv_4|clk_track'
-Slack : -17.349
-TNS   : -16149.296
-
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -13.304
-TNS   : -590.910
-
-Type  : Slow 1200mV 85C Model Hold 'clk_div4:frediv_4|clk_track'
-Slack : 0.404
+Slack : 0.118
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.407
+Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -350.274
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div4:frediv_4|clk_track'
-Slack : -1.285
-TNS   : -1290.140
-
-Type  : Slow 1200mV 0C Model Setup 'clk_div4:frediv_4|clk_track'
-Slack : -15.903
-TNS   : -14798.412
+TNS   : -5.570
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -12.277
-TNS   : -534.879
-
-Type  : Slow 1200mV 0C Model Hold 'clk_div4:frediv_4|clk_track'
-Slack : 0.354
+Slack : 0.200
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.365
+Slack : 0.353
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -344.642
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div4:frediv_4|clk_track'
-Slack : -1.285
-TNS   : -1290.140
-
-Type  : Fast 1200mV 0C Model Setup 'clk_div4:frediv_4|clk_track'
-Slack : -8.648
-TNS   : -8029.479
+TNS   : -5.570
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -6.511
-TNS   : -227.879
-
-Type  : Fast 1200mV 0C Model Hold 'clk_div4:frediv_4|clk_track'
-Slack : 0.180
+Slack : 0.571
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.188
+Slack : 0.181
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -148.416
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div4:frediv_4|clk_track'
-Slack : -1.000
-TNS   : -1004.000
+TNS   : -5.124
 
 ------------------------------------------------------------
