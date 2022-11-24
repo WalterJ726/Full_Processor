@@ -96,7 +96,8 @@ module processor(
 	 wire [31:0] pc_in, pc_out; 
 	 wire [4:0] opcode;
 	 wire [7:0] control;
-	 wire isR, BR, JP, ALUinB, ALUop, DMwe, Rwe, Rdst, Rwd;
+	 wire isR, BR, Jp, ALUinB, ALUop, DMwe, Rwe, Rdst, Rwd;
+	 wire blt,bne,jal,jr,bex,setx;
 	 wire isAddi, isLw, isSw;
 	 wire isAdd, isSub;
 	 wire [4:0] ALUOP;
@@ -107,10 +108,11 @@ module processor(
 	 wire [31:0] ALUINB;
 	 wire [16:0] immediate;
 	 wire [31:0] ext_immediate;
-	 
 	 wire [31:0] Res_ALU;
 	 wire inNotEqual,isLessThan,overflow;
 	 wire temp;
+	 wire signal;
+	 wire isI;
 	 // PC fetch
 	 pc my_pc(pc_out, pc_in, clock, 1'b1, reset);
 	 // next instruction, pc plus + 1
@@ -123,6 +125,7 @@ module processor(
 	 assign address_imem = pc_out[11:0];
 	 
 	 // Decode
+	 insn_decoder my_ins(opcode, isAddi, isLw, isSw,ALUinB,DMwe,setx,Rwe,blt,bne,bex,jr,jal,j);
 	 and (isR, ~q_imem[31], ~q_imem[30], ~q_imem[29], ~q_imem[28], ~q_imem[27]);
 	 and (isAdd, ~q_imem[6], ~q_imem[5], ~q_imem[4], ~q_imem[3], ~q_imem[2], isR);
 	 and (isSub, ~q_imem[6], ~q_imem[5], ~q_imem[4], ~q_imem[3], q_imem[2], isR);
@@ -131,29 +134,36 @@ module processor(
 	 assign rs = q_imem[21:17];
 	 assign rt = q_imem[16:12];
 	 assign shamt = q_imem[11:7];
-	 assign ALUOP = isR? q_imem[6:2]:5'd0;
+	 //assign ALUOP = isR? q_imem[6:2]:5'd0;
+	 or ortemp(tempALU,isAddi,isLw,isSw);
+	 assign ALUOP = isR? q_imem[6:2]:(tempALU?5'b00000:5'b00001);
 	 assign immediate = q_imem[16:0];
+	
 	 extend extend1(ext_immediate,immediate);
 	 
-	 control_decoder my_controlDecoder(control, opcode, isR);
-	 insn_decoder my_insnDecoder(opcode, isAddi, isLw, isSw);
-	 and (BR, control[7], 1'b1);
-	and (JP, control[6], 1'b1);
-	and (ALUinB, control[5], 1'b1);
-	and (ALUop, control[4], 1'b1);
-	and (DMwe, control[3], 1'b1);
-	and (Rwe, control[2], 1'b1);
-	and (Rdst, control[1], 1'b1);
-	and (Rwd, control[0], 1'b1);
+	 //control_decoder my_controlDecoder(control, opcode, isR);
+	 //insn_decoder my_insnDecoder(opcode, isAddi, isLw, isSw);
+	// and (BR, control[7], 1'b1);
+	//and (JP, control[6], 1'b1);
+	//and (ALUinB, control[5], 1'b1);
+	//and (ALUop, control[4], 1'b1);
+	//and (DMwe, control[3], 1'b1);
+	//and (Rwe, control[2], 1'b1);
+	//and (Rdst, control[1], 1'b1);
+	//and (Rwd, control[0], 1'b1);
+	
+	
 	
 	 // operand fetch
+	 or orS(signal,overflow,setx,bex);
 	 assign ctrl_writeEnable = Rwe;
 	 assign ctrl_readRegA = rs;
-	 assign ctrl_readRegB = isSw ? rd : rt;
+	 assign ctrl_readRegB = Rdst ? rt : (signal? 5'b11110:rd);//Here maybe something wrong;
 	 // execute
-	 assign ALUINB = isR ? data_readRegB : ext_immediate;
-	 
-	 alu alu1(data_readRegA,ALUINB,ALUOP,shamt,Res_ALU,inNotEqual,isLessThan,temp);
+	 assign ALUINB = ALUinB ?  ext_immediate:data_readRegB;
+	 wire [31:0] ALUINA;
+	 assign ALUINA=bex?32'b0:data_readRegA;
+	 alu alu1(ALUINA,ALUINB,ALUOP,shamt,Res_ALU,inNotEqual,isLessThan,temp);
 	 
 
 	 wire overflow_flag;
@@ -162,13 +172,21 @@ module processor(
 	 
 	 // result store
 	 wire [31:0] rstatus_value;
-	 assign rstatus_value = isAddi ? 2 : isSub ? 3 : 1;
+	 wire [31:0] finalT;
+	 wire overOrsetx;
+	 or orOoS(overOrsetx,overflow,setx);
+	 assign finalT[26:0]=q_imem[26:0];
+	 assign finalT[31:27] =5'b00000;
+	 //assign rstatus_value = isAddi ? 2 : isSub ? 3 : 1;
+	 assign rstatus_value = isR? ((isSub)? 3:1): ((isAddi)?2:finalT);
 	 assign address_dmem = Res_ALU[11:0];
     assign data = data_readRegB;
 	 assign wren = DMwe;
-	 assign data_writeReg = Rwd ? q_dmem : overflow ? (rstatus_value): Res_ALU;
-	 assign ctrl_writeReg= overflow ? 5'b11110 : rd;
 	 
-
+	 //assign data_writeReg = Rwd ? q_dmem : overflow ? (rstatus_value): Res_ALU;
+	 assign data_writeReg = overOrsetx? rstatus_value:(jal? PC_Tran:((isLw?)q_dmem:Res_ALU));
+	 assign ctrl_writeReg= jal? 5'b11111:(signal? 5'b11110:rd);
+	 
+	//need to write the PC_Tran;
 
 endmodule

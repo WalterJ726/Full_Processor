@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Duke_Materials/22fall/550/Labs/Project4/simulation/qsim
+vhard_block
+Z1 !s110 1668109950
+!i10b 1
+!s100 XSDof4dEBPKXMGoZBzaUZ2
+I3@:AOKHo[j1;CN>Q3JDnR2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1668109949
+Z4 8processor.vo
+Z5 Fprocessor.vo
+L0 70918
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1668109950.000000
+Z8 !s107 processor.vo|
+Z9 !s90 -work|work|processor.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vpc
+Z12 !s110 1668018808
+!i10b 1
+!s100 OOMM5VMeGP@z3[6]gg^Eo0
+IBOQ>nf[4R4VlIj?HaPF4@0
+R2
+R0
+w1668018807
+R4
+R5
+Z13 L0 32
+R6
+r1
+!s85 0
+31
+Z14 !s108 1668018808.000000
+R8
+R9
+!i113 1
+R10
+R11
+vpc_vlg_vec_tst
+R12
+!i10b 1
+!s100 O^lWeU_;C?2dIbAC6VknY2
+IU^_V;B_e`MT>k9BbVhjOe2
+R2
+R0
+w1668018806
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+Z15 L0 30
+R6
+r1
+!s85 0
+31
+R14
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R10
+R11
+vprocessor
+Z16 !s110 1667333393
+!i10b 1
+!s100 [^E:1z:h:>9l1]B^HjcFX3
+IJh40M`XRmWR36]NMW1K]g2
+R2
+R0
+w1667333392
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+Z17 !s108 1667333393.000000
+R8
+R9
+!i113 1
+R10
+R11
+vprocessor_vlg_vec_tst
+R16
+!i10b 1
+!s100 V=HDG`8Y<6SXVH2iJPUZz2
+IR1?1K<g2bHAYFH^d0ZZcD3
+R2
+R0
+w1667333391
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+R15
+R6
+r1
+!s85 0
+31
+R17
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vskeleton
+R1
+!i10b 1
+!s100 glle`;kAg79Cb[K7kJLbd0
+I3NL[039Jg2h]zASEmK]8k0
+R2
+R0
+R3
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vskeleton_temp
+Z22 !s110 1667341959
+!i10b 1
+!s100 J`lEP?TXM[7F1d`h8ZSFN1
+IZmHdC:@;l8GM>FQz<h]mi0
+R2
+R0
+w1667341958
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+Z23 !s108 1667341959.000000
+R8
+R9
+!i113 1
+R10
+R11
+vskeleton_temp_vlg_vec_tst
+R22
+!i10b 1
+!s100 d9DfjDMYaXZ[7NW_Y]`262
+I3VaJjod;XNdI@fo8<6<ze3
+R2
+R0
+w1667341957
+R18
+R19
+R15
+R6
+r1
+!s85 0
+31
+R23
+R20
+R21
+!i113 1
+R10
+R11
+vskeleton_vlg_vec_tst
+!s110 1668109951
+!i10b 1
+!s100 DK909Oh<UH1ScYf3TM0571
+IYk2eKE>kKJWXbe_hcSG=k0
+R2
+R0
+w1668109948
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R15
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
