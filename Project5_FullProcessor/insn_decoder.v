@@ -37,8 +37,8 @@ module insn_decoder(opcode, isAddi, isLw, isSw,ALUinB,DMwe,setx,Rwe,blt,bne,bex,
 	//isR
 	and and4(isR,~opcode[4],~opcode[3],~opcode[2],~opcode[1],~opcode[0]);
 	or or3(Rwe,isR, isAddi,isLw,jal,setx);
-	assign Rdst=isR? 1'b1:1'b0;// have some question
-	assign Rwd=isLw? 1'b1:1'b0;
+	// assign Rdst=isR? 1'b1:1'b0;// have some question
+	// assign Rwd=isLw? 1'b1:1'b0;
 	and and5(blt, ~opcode[4],~opcode[3],opcode[2],opcode[1],~opcode[0]);
 	and and6(bne, ~opcode[4],~opcode[3],~opcode[2],opcode[1],~opcode[0]);
 	and and7 (jr, ~opcode[4],~opcode[3],opcode[2],~opcode[1],~opcode[0]);

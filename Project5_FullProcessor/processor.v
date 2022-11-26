@@ -96,97 +96,86 @@ module processor(
 	 wire [31:0] pc_in, pc_out; 
 	 wire [4:0] opcode;
 	 wire [7:0] control;
-	 wire isR, BR, Jp, ALUinB, ALUop, DMwe, Rwe, Rdst, Rwd;
-	 wire blt,bne,jal,jr,bex,setx;
+	 wire isR, BR, JP, ALUinB, ALUop, DMwe, Rwe, Rdst, Rwd;
+	 wire blt, bne, jal, jr, j, bex, setx;
+	 wire jump_bex, BR_bne, BR_blt;
 	 wire isAddi, isLw, isSw;
 	 wire isAdd, isSub;
 	 wire [4:0] ALUOP;
-	 wire [4:0] rd;
-	 wire [4:0] rs;
-	 wire [4:0] rt;
+	 wire [4:0] rd, rs, rt;
 	 wire [4:0] shamt;
-	 wire [31:0] ALUINB;
+	 wire [31:0] ALUINA, ALUINB, Res_ALU;
 	 wire [16:0] immediate;
 	 wire [31:0] ext_immediate;
-	 wire [31:0] Res_ALU;
-	 wire inNotEqual,isLessThan,overflow;
-	 wire temp;
-	 wire signal;
-	 wire isI;
+	 wire [31:0] finalT;
+	 wire [31:0] rstatus_value;
+	 wire [31:0] pc_plus1, pc_BR;
+	 wire isNotEqual, isLessThan, overflow;
+	 wire temp, tempALU;
+	 wire overflow_flag, overOrsetx; 
+	 wire pc_cout, pc_overflow,pc_cout1, pc_overflow1;
+	
 	 // PC fetch
 	 pc my_pc(pc_out, pc_in, clock, 1'b1, reset);
-	 // next instruction, pc plus + 1
-	 wire [31:0] pc_next;
-	 wire pc_cout, pc_overflow;
-	CSA my_CSA(pc_out,32'd1,pc_next,1'b0,pc_cout, pc_overflow);//change to 32bit CSA;
+	 
+	 
+	 // next instruction, pc_addr: pc + 1 or pc + 1 + N 
+	 assign immediate = q_imem[16:0];
+	 extend extend1(ext_immediate,immediate);
+	 CSA my_CSA(pc_out,32'd1,pc_plus1,1'b0,pc_cout, pc_overflow);
+	 CSA myBR(pc_out,immediate,pc_BR,1'b1,pc_cout1,pc_overflow1);
 	
+	// execute and get compare signal
+	 insn_decoder my_ins(opcode,isAddi,isLw,isSw,ALUinB,DMwe,setx,Rwe,blt,bne,bex,jr,jal,j);
+	 and (isR, ~q_imem[31], ~q_imem[30], ~q_imem[29], ~q_imem[28], ~q_imem[27]);
+	 assign shamt = q_imem[11:7];
+	 or ortemp(tempALU,isAddi,isLw,isSw);
+	 assign ALUOP = isR ? q_imem[6:2] : (tempALU ? 5'b00000 : 5'b00001);
+	 assign ALUINB = ALUinB ?  ext_immediate : data_readRegB;
+	 assign ALUINA = bex ? 32'b0 : data_readRegA;
+	 
+	 alu alu1(ALUINA,ALUINB,ALUOP,shamt,Res_ALU,isNotEqual,isLessThan,temp);
+	 
+	 // get branch and jump control
+	 and (jump_bex, bex, isNotEqual);
+	 and (BR_bne, bne, isNotEqual);
+	 and (BR_blt, blt, isLessThan);
+	 or (BR, BR_blt, BR_bne);
+	 or (JP, j, jal, jump_bex);	
+	 assign finalT[26:0] = q_imem[26:0];
+	 assign finalT[31:27] = 5'b00000;
 	
-	assign pc_in = pc_next;
+	 assign pc_in = BR ? pc_BR : (jr ?  data_readRegB : (JP ? finalT : pc_plus1));
 	 assign address_imem = pc_out[11:0];
 	 
 	 // Decode
-	 insn_decoder my_ins(opcode, isAddi, isLw, isSw,ALUinB,DMwe,setx,Rwe,blt,bne,bex,jr,jal,j);
-	 and (isR, ~q_imem[31], ~q_imem[30], ~q_imem[29], ~q_imem[28], ~q_imem[27]);
 	 and (isAdd, ~q_imem[6], ~q_imem[5], ~q_imem[4], ~q_imem[3], ~q_imem[2], isR);
 	 and (isSub, ~q_imem[6], ~q_imem[5], ~q_imem[4], ~q_imem[3], q_imem[2], isR);
 	 assign opcode = q_imem[31:27];
 	 assign rd = q_imem[26:22];
 	 assign rs = q_imem[21:17];
 	 assign rt = q_imem[16:12];
-	 assign shamt = q_imem[11:7];
-	 //assign ALUOP = isR? q_imem[6:2]:5'd0;
-	 or ortemp(tempALU,isAddi,isLw,isSw);
-	 assign ALUOP = isR? q_imem[6:2]:(tempALU?5'b00000:5'b00001);
-	 assign immediate = q_imem[16:0];
-	
-	 extend extend1(ext_immediate,immediate);
 	 
-	 //control_decoder my_controlDecoder(control, opcode, isR);
-	 //insn_decoder my_insnDecoder(opcode, isAddi, isLw, isSw);
-	// and (BR, control[7], 1'b1);
-	//and (JP, control[6], 1'b1);
-	//and (ALUinB, control[5], 1'b1);
-	//and (ALUop, control[4], 1'b1);
-	//and (DMwe, control[3], 1'b1);
-	//and (Rwe, control[2], 1'b1);
-	//and (Rdst, control[1], 1'b1);
-	//and (Rwd, control[0], 1'b1);
-	
-	
 	
 	 // operand fetch
-	 or orS(signal,overflow,setx,bex);
 	 assign ctrl_writeEnable = Rwe;
 	 assign ctrl_readRegA = rs;
-	 assign ctrl_readRegB = Rdst ? rt : (signal? 5'b11110:rd);//Here maybe something wrong;
-	 // execute
-	 assign ALUINB = ALUinB ?  ext_immediate:data_readRegB;
-	 wire [31:0] ALUINA;
-	 assign ALUINA=bex?32'b0:data_readRegA;
-	 alu alu1(ALUINA,ALUINB,ALUOP,shamt,Res_ALU,inNotEqual,isLessThan,temp);
+	 assign ctrl_readRegB = isR ? rt : (bex ? 5'b11110 : rd);
 	 
 
-	 wire overflow_flag;
 	 or (overflow_flag, isAddi, isAdd, isSub);
 	 assign overflow = overflow_flag ? temp : 0;
 	 
 	 // result store
-	 wire [31:0] rstatus_value;
-	 wire [31:0] finalT;
-	 wire overOrsetx;
 	 or orOoS(overOrsetx,overflow,setx);
-	 assign finalT[26:0]=q_imem[26:0];
-	 assign finalT[31:27] =5'b00000;
-	 //assign rstatus_value = isAddi ? 2 : isSub ? 3 : 1;
 	 assign rstatus_value = isR? ((isSub)? 3:1): ((isAddi)?2:finalT);
 	 assign address_dmem = Res_ALU[11:0];
     assign data = data_readRegB;
 	 assign wren = DMwe;
-	 
-	 //assign data_writeReg = Rwd ? q_dmem : overflow ? (rstatus_value): Res_ALU;
-	 assign data_writeReg = overOrsetx? rstatus_value:(jal? PC_Tran:((isLw?)q_dmem:Res_ALU));
-	 assign ctrl_writeReg= jal? 5'b11111:(signal? 5'b11110:rd);
-	 
-	//need to write the PC_Tran;
+	
+	
+	 assign data_writeReg = overOrsetx ? rstatus_value : (jal ? pc_plus1:(isLw ? q_dmem : Res_ALU));
+	 assign ctrl_writeReg= jal? 5'b11111:(overOrsetx? 5'b11110:rd);
+
 
 endmodule
