@@ -123,8 +123,8 @@ module processor(
 	 assign immediate = q_imem[16:0];
 	 extend extend1(ext_immediate,immediate);
 	 CSA my_CSA(pc_out,32'd1,pc_plus1,1'b0,pc_cout, pc_overflow);
-	 CSA myBR(pc_out,immediate,pc_BR,1'b1,pc_cout1,pc_overflow1);
-	
+	 //CSA myBR(pc_out,immediate,pc_BR,1'b1,pc_cout1,pc_overflow1);
+	 CSA myBR(pc_out,ext_immediate,pc_BR,1'b1,pc_cout1,pc_overflow1);	
 	// execute and get compare signal
 	 insn_decoder my_ins(opcode,isAddi,isLw,isSw,ALUinB,DMwe,setx,Rwe,blt,bne,bex,jr,jal,j);
 	 and (isR, ~q_imem[31], ~q_imem[30], ~q_imem[29], ~q_imem[28], ~q_imem[27]);
@@ -139,7 +139,7 @@ module processor(
 	 // get branch and jump control
 	 and (jump_bex, bex, isNotEqual);
 	 and (BR_bne, bne, isNotEqual);
-	 and (BR_blt, blt, isLessThan);
+	 and (BR_blt, blt, isNotEqual,~isLessThan);
 	 or (BR, BR_blt, BR_bne);
 	 or (JP, j, jal, jump_bex);	
 	 assign finalT[26:0] = q_imem[26:0];
