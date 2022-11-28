@@ -168,7 +168,11 @@ module processor(
 	 
 	 // result store
 	 or orOoS(overOrsetx,overflow,setx);
-	 assign rstatus_value = isR? ((isSub)? 3:1): ((isAddi)?2:finalT);
+	 wire [31:0] left;
+	 wire [31:0] right;
+	 assign left=(isSub)? 3:1;
+	 assign right=(isAddi)?2:finalT;
+	 assign rstatus_value = isR? left: right;
 	 assign address_dmem = Res_ALU[11:0];
     assign data = data_readRegB;
 	 assign wren = DMwe;
